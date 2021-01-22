@@ -1,0 +1,28 @@
+.main-nav__link {
+  box-sizing: border-box;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  color: #133c5e;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-nav__link:hover {
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: inset 5px 5px 10px #c8d0d1;
+}
+
+@media (max-width: 767px) {
+  .main-nav__link {
+    padding: 10px 40px;
+    white-space: nowrap;
+  }
+
+  .main-nav__link:hover {
+    border-radius: 0;
+    box-shadow: inset 0px 0px 20px #c8d0d1;
+  }
+}

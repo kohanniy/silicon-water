@@ -1,0 +1,25 @@
+.main-nav {
+  font-family: 'Marta', Georgia, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    font-size: 20px;
+    line-height: 1.5;
+    position: fixed;
+    top: 58px;
+    right: 0;
+    max-width: 0;
+    transition: max-width 0.7s linear;
+    background: #edf7fa;
+    overflow: hidden;
+  }
+
+  .menu-opened .main-nav {
+    max-width: 100%;
+  }
+}

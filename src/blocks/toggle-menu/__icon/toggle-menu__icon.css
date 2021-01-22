@@ -1,0 +1,44 @@
+.toggle-menu__icon {
+  position: relative;
+  width: 24px;
+  height: 3px;
+  background: #133c5e;
+  display: block;
+  box-shadow: 0 -9px 0 #133c5e, 0 9px 0 #133c5e;
+  transition:
+    box-shadow 0.25s linear 0.25s,
+    transform 0.25s linear,
+    width 0.25s linear;
+}
+
+.toggle-menu__icon::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #133c5e;
+  transform: rotate(0);
+  transition:
+    transform 0.25s linear,
+    width 0.25s linear;
+}
+
+.menu-opened .toggle-menu__icon {
+  width: 30px;
+  box-shadow: 0 0 0 #133c5e, 0 0 0 #133c5e;
+  transform: rotate(45deg);
+  transition:
+    box-shadow 0.25s linear,
+    transform 0.25s linear 0.25s,
+    width 0.25s linear 0.25s;
+}
+
+.menu-opened .toggle-menu__icon::before {
+  width: 30px;
+  transform: rotate(90deg);
+  transition:
+    transform 0.25s linear 0.25s,
+    width 0.25s linear 0.25s;
+}

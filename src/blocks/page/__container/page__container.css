@@ -1,0 +1,16 @@
+.page__container {
+  width: 1220px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1279px) {
+  .page__container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 575px) {
+  .page__container {
+    width: 88%;
+  }
+}
