@@ -2,18 +2,18 @@ export default class ShowAndHideBlock {
   constructor(containerSelector, buttonSelector) {
     this._container = document.querySelector(containerSelector);
     this._toggleButton = this._container.querySelector(buttonSelector);
-    // this._handleOverlayClose = this._handleOverlayClose.bind(this);
+    this._toggleBlock = this._toggleBlock.bind(this);
   }
 
-  _openBlock = () => {
+  _openBlock() {
     this._container.classList.add('opened');
   }
 
-  _closeBlock = () => {
+  _closeBlock() {
     this._container.classList.remove('opened');
   }
 
-  _toggleBlock = () => {
+  _toggleBlock() {
     if (this._container.classList.contains('opened')) {
       this._closeBlock();
     } else {

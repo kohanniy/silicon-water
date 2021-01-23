@@ -1,8 +1,10 @@
+import './index.css';
 import ShowAndHideBlock from '../components/ShowAndHideBlock.js';
-
 
 //мобильное меню
 const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
+
+toggleMobileMenu.enableBlockToggle();
 
 
 
@@ -63,7 +65,7 @@ const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
 //   })
 // }
 
-toggleMobileMenu.enableBlockToggle();
+
 
 // import './index.css';
 // import '../images/avatar.jpg';
