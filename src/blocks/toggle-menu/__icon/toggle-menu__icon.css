@@ -25,7 +25,7 @@
     width 0.25s linear;
 }
 
-.menu-opened .toggle-menu__icon {
+.opened .toggle-menu__icon {
   width: 30px;
   box-shadow: 0 0 0 #133c5e, 0 0 0 #133c5e;
   transform: rotate(45deg);
@@ -35,7 +35,7 @@
     width 0.25s linear 0.25s;
 }
 
-.menu-opened .toggle-menu__icon::before {
+.opened .toggle-menu__icon::before {
   width: 30px;
   transform: rotate(90deg);
   transition:

@@ -2,6 +2,7 @@
   font-family: 'Marta';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src:
     url('./fonts/Marta.woff2') format('woff2'),
     url('./fonts/Marta.woff') format('woff');
@@ -11,6 +12,7 @@
   font-family: 'Marta';
   font-style: normal;
   font-weight: bold;
+  font-display: swap;
   src:
     url('./fonts/marta-bold.woff2') format('woff2'),
     url('./fonts/marta-bold.woff') format('woff');
@@ -20,6 +22,7 @@
   font-family: 'Marta';
   font-style: italic;
   font-weight: normal;
+  font-display: swap;
   src:
     url('./fonts/marta-italic.woff2') format('woff2'),
     url('./fonts/marta-italic.woff') format('woff');

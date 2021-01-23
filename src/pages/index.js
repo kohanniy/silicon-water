@@ -1,16 +1,69 @@
-const header = document.querySelector('.header')
-const toggleMenu = header.querySelector('.toggle-menu');
+import ShowAndHideBlock from '../components/ShowAndHideBlock.js';
 
-const handleToggleMenu = () => {
-  if (header.classList.contains('menu-opened')) {
-    header.classList.remove('menu-opened');
-  } else {
-    header.classList.add('menu-opened');
-  }
-}
 
-toggleMenu.addEventListener('click', handleToggleMenu);
+//мобильное меню
+const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
 
+
+
+// const introSlider = new Slider(introSliderSelectors);
+
+//слайдер в intro
+// const slides = document.querySelectorAll('.intro__slider-item');
+// const dots = document.querySelectorAll('.intro__dot');
+// const prevButton = document.querySelector('.slider__prev-button');
+// const nextButton = document.querySelector('.slider__next-button');
+// let slideIndex = 1;
+
+// const showSlides = (n) => {
+//   if (n > slides.length) {
+//     slideIndex = 1;
+//   }
+
+//   if (n < 1) {
+//     slideIndex = slides.length;
+//   }
+
+//   slides.forEach((slide) => {
+//     slide.classList.add('intro__slider-item_hide');
+//   });
+
+//   dots.forEach((dot) => {
+//     dot.classList.remove('intro__dot_active');
+//   })
+
+//   slides[slideIndex - 1].classList.remove('intro__slider-item_hide');
+//   dots[slideIndex - 1].classList.add('intro__dot_active');
+// }
+
+// const handlePlusSlides = (n) => {
+//   showSlides(slideIndex += n);
+// };
+
+// const currentSlide = (n) => {
+//   showSlides(slideIndex = n);
+// };
+
+
+// showSlides(slideIndex);
+
+
+// //слушатель на кнопку назад
+// prevButton.addEventListener('click', () => {
+//   handlePlusSlides(-1);
+// });
+
+// nextButton.addEventListener('click', () => {
+//   handlePlusSlides(1);
+// });
+
+// for (let i = 0; i < slides.length; i += 1) {
+//   dots[i].addEventListener('click', () => {
+//     currentSlide(i + 1);
+//   })
+// }
+
+toggleMobileMenu.enableBlockToggle();
 
 // import './index.css';
 // import '../images/avatar.jpg';

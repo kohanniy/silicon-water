@@ -14,12 +14,13 @@
     top: 58px;
     right: 0;
     max-width: 0;
-    transition: max-width 0.7s linear;
-    background: #edf7fa;
+    transition: all 0.7s linear;
+    background: rgba(237, 247, 250, 0.8);
     overflow: hidden;
+    z-index: 100;
   }
 
-  .menu-opened .main-nav {
+  .opened .main-nav {
     max-width: 100%;
   }
 }
