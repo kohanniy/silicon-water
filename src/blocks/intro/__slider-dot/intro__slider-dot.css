@@ -1,0 +1,19 @@
+.intro__slider-dot {
+  margin-right: 22px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border: 2px solid #575757;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+}
+
+.intro__slider-dot:last-of-type {
+  margin-right: 0;
+}
+
+.intro__slider-dot:hover {
+  border-color: #10cddd;
+  background: #10cddd;
+}

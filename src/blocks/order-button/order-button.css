@@ -1,0 +1,25 @@
+.order-button {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  color: #fff;
+  background: linear-gradient(#0a2840 30%, #133c5e 100%);
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: normal;
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  transition: background 0.5s ease;
+}
+
+.order-button:hover {
+  cursor: pointer;
+  background: linear-gradient(#00abbb 30%, #48bcca 100%);
+}
+
+@media (max-width: 1279px) {
+  .order-button {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,13 @@
+.intro__slider-dots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .intro__slider-dots {
+    margin-top: 30px;
+  }
+}

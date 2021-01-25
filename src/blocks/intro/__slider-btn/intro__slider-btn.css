@@ -1,0 +1,21 @@
+.intro__slider-btn {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #10cede;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  user-select: none;
+  padding: 5px;
+}
+
+.intro__slider-btn:hover {
+  color: #133c5e;
+}

@@ -38,7 +38,8 @@
     "eslint-plugin-import": "^2.22.1"
   },
   "dependencies": {
-    "core-js": "^3.8.3"
+    "core-js": "^3.8.3",
+    "swiper": "^6.4.8"
   },
   "browserslist": "> 0.25%, not dead"
 }

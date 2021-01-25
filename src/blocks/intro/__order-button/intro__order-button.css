@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .intro__order-button {
+    flex-grow: 1;
+  }
+}

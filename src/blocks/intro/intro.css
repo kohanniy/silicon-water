@@ -1,0 +1,11 @@
+.intro {
+  font-family: 'Marta', Georgia, serif;
+  padding-top: 45px;
+
+}
+
+@media (max-width: 767px) {
+  .intro {
+    padding-top: 15px;
+  }
+}
