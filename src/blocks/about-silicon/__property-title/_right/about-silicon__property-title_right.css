@@ -1,0 +1,9 @@
+.about-silicon__property-title_right {
+  text-align: right;
+}
+
+@media (max-width: 575px) {
+  .about-silicon__property-title_right {
+    text-align: center;
+  }
+}

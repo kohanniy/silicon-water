@@ -1,0 +1,23 @@
+.section__subtitle {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #005990;
+  font-style: normal;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.section__subtitle::after {
+  content: '';
+  width: 54px;
+  height: 11px;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../../../images/pattern-title.svg) top no-repeat;
+  background-size: 54px 11px;
+}

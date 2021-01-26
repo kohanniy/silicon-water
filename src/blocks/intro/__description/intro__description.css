@@ -6,7 +6,7 @@
   width: 612px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .intro__description {
     width: 100%;
     align-items: center;

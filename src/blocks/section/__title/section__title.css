@@ -1,0 +1,16 @@
+.section__title {
+  margin: 0;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #47bcca;
+  font-style: normal;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 767px) {
+  .section__title {
+    font-size: 36px;
+  }
+}

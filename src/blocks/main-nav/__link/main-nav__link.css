@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 8px;
   color: #133c5e;
   transition: all 0.4s ease-in-out;
 }
@@ -15,7 +15,7 @@
   box-shadow: inset 5px 5px 10px #c8d0d1;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .main-nav__link {
     padding: 10px 40px;
     white-space: nowrap;

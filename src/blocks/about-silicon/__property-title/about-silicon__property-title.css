@@ -1,0 +1,22 @@
+.about-silicon__property-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.1;
+  color: #47bcca;
+  z-index: 4;
+}
+
+@media (max-width: 1279px) {
+  .about-silicon__property-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about-silicon__property-title {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+}

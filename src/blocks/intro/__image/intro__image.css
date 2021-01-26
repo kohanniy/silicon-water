@@ -1,11 +1,11 @@
 .intro__image {
-  display: block;
-  width: 32%;
-  min-width: 270px;
+  height: 720px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .intro__image {
+    height: auto;
+    width: 32%;
     flex-grow: 1;
     order: -1;
   }
