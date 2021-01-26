@@ -1,0 +1,7 @@
+.production__type {
+  border-radius: 20px;
+  box-shadow: 0 0px 30px rgba(17, 44, 145, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}

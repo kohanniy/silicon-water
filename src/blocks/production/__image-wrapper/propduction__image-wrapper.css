@@ -1,0 +1,12 @@
+.propduction__image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .propduction__image-wrapper {
+    height: auto;
+  }
+}

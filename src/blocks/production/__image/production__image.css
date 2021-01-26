@@ -1,0 +1,11 @@
+.production__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s linear;
+}
+
+.production__image:hover {
+  transform: scale(1.05);
+}

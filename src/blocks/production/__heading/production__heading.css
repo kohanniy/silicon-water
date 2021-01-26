@@ -1,0 +1,9 @@
+.production__heading {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.1;
+  font-style: normal;
+  font-weight: bold;
+  color: #47bcca;
+  margin-bottom: 15px;
+}

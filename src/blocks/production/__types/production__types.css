@@ -1,0 +1,23 @@
+.production__types {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1023px) {
+  .production__types {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .production__types {
+    grid-template-columns: 1fr;
+  }
+}

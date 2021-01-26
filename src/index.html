@@ -14,10 +14,10 @@
         <button type="button" class="toggle-menu"><span class="toggle-menu__icon"></span></button>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="#main" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a href="#aboutSilicon" class="main-nav__link">О кремнии</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Продукция</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Отзывы</a></li>
+            <li class="main-nav__item"><a href="#production" class="main-nav__link">Продукция</a></li>
+            <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Справочник</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">О компании</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
@@ -26,7 +26,7 @@
       </div>
     </header>
     <main class="main-content">
-      <section class="intro">
+      <section id="main" class="intro">
         <div class="page__container intro__slider">
           <ul class="intro__slider-wrap">
             <li class="intro__slide">
@@ -111,14 +111,61 @@
           </div>
         </div>
       </section>
-      <section>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfv</p>
-        <p>sfsgfdsgdsfgdfsbdsfbvdfvf</p>
+      <section class="production section">
+        <div class="page__container">
+          <h2 id="production" class="section__title">Продукция</h2>
+          <p class="section__subtitle">Виды упаковки воды</p>
+          <ul class="production__types">
+            <li class="production__type">
+              <p class="propduction__image-wrapper">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+              </p>
+              <div class="production__text-wrapper">
+                <h3 class="production__heading">Dolor laborum tempor id sit magna</h3>
+                <p class="production__description">Occaecat ipsum magna mollit laboris sunt occaecat pariatur ea laborum aute exercitation ut incididunt non.Nulla duis reprehenderit non exercitation tempor.</p>
+                <button type="button" class="order-button order-button_place_production">Заказать</button>
+              </div>
+            </li>
+            <li class="production__type">
+              <p class="propduction__image-wrapper">
+                <img class="production__image" src="<%=require('./images/primer.jpg')%>">
+              </p>
+              <div class="production__text-wrapper">
+                <h3 class="production__heading">Occaecat sunt quis ullamco sit magna in est</h3>
+                <p class="production__description">Voluptate minim quis elit magna consequat occaecat anim ullamco.Qui pariatur duis velit consequat eu non eiusmod irure Lorem officia.</p>
+                <button type="button" class="order-button order-button_place_production">Заказать</button>
+              </div>
+            </li>
+            <li class="production__type">
+              <p class="propduction__image-wrapper">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+              </p>
+              <div class="production__text-wrapper">
+                <h3 class="production__heading">Ut aute dolor sint esse</h3>
+                <p class="production__description">Tempor pariatur officia velit aliqua ullamco sit ullamco dolor.</p>
+                <button type="button" class="order-button order-button_place_production">Заказать</button>
+              </div>
+            </li>
+            <li class="production__type">
+              <p class="propduction__image-wrapper">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+              </p>
+              <div class="production__text-wrapper">
+                <h3 class="production__heading">Consectetur exercitation laboris aliqua</h3>
+                <p class="production__description">Esse aliquip mollit duis proident aliqua laboris.Incididunt labore labore tempor nisi cupidatat aliqua quis consequat elit.</p>
+                <button type="button" class="order-button order-button_place_production">Заказать</button>
+              </div>
+            </li>
+          </ul>
+          <p class="production__advice">эксперты рекомендуют пройти курс очистки и оздоровления (пропить 50 л)</p>
+        </div>
+      </section>
+      <section class="reviews section">
+        <h2 id="reviews" class="section__title">Отзывы</h2>
+        <p class="section__subtitle">
+          Лучше всего о нашей работе говорят отзывы!<br>
+          Ознакомьтесь с ними и оставьте свой
+        </p>
       </section>
     </main>
   </div>

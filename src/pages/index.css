@@ -4,6 +4,7 @@
 @import url(../blocks/page/__content/page__content.css);
 @import url(../blocks/page/__container/page__container.css);
 @import url(../blocks/order-button/order-button.css);
+@import url(../blocks/order-button/_place/order-button_place_production.css);
 @import url(../blocks/section/section.css);
 @import url(../blocks/section/__title/section__title.css);
 @import url(../blocks/section/__subtitle/section__subtitle.css);
@@ -45,3 +46,12 @@
 @import url(../blocks/about-silicon/__images/about-silicon__images.css);
 @import url(../blocks/about-silicon/__figures/about-silicon__figures.css);
 @import url(../blocks/about-silicon/__glass/about-silicon__glass.css);
+@import url(../blocks/production/production.css);
+@import url(../blocks/production/__types/production__types.css);
+@import url(../blocks/production/__type/production__type.css);
+@import url(../blocks/production/__image-wrapper/propduction__image-wrapper.css);
+@import url(../blocks/production/__image/production__image.css);
+@import url(../blocks/production/__text-wrapper/production__text-wrapper.css);
+@import url(../blocks/production/__heading/production__heading.css);
+@import url(../blocks/production/__description/production__description.css);
+@import url(../blocks/production/__advice/production__advice.css);
