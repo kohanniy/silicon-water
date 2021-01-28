@@ -1,0 +1,20 @@
+.about-us__text {
+  max-width: 964px;
+  width: 79%;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.about-us__text + .about-us__text {
+  margin-top: 25px;
+}
+
+@media (max-width: 575px) {
+  .about-us__text {
+    width: 100%;
+  }
+}

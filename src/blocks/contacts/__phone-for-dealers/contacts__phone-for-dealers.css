@@ -1,0 +1,15 @@
+.contacts__phone-for-dealers {
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: #133c5e;
+  background-color: #fff;
+  border-radius: 40px;
+  transition: all 0.5s linear;
+}
+
+.contacts__phone-for-dealers:hover {
+  color:#fff;
+  background-color: #133c5e;
+}

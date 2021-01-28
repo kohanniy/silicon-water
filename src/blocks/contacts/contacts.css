@@ -1,0 +1,19 @@
+.contacts {
+  width: 100%;
+  font-family: 'Marta', Georgia, serif;
+  background: #fff url(../../images/bg-contacts.svg) bottom center / 100% 100% no-repeat;
+  padding: 180px 0 50px;
+}
+
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 100px 0 30px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    padding-top: 80px;
+  }
+}

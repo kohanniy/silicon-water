@@ -1,0 +1,11 @@
+.contacts__icon {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+@media (max-width: 575px) {
+  .contacts__icon {
+    margin-right: 7px;
+  }
+}

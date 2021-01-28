@@ -1,0 +1,46 @@
+.contacts__container {
+  box-sizing: border-box;
+  padding: 0 150px;
+  display: grid;
+  grid-template-columns: 30% 30% 33%;
+  grid-template-rows: 100px 100px auto;
+  row-gap: 40px;
+  justify-content: space-between;
+  grid-template-areas:
+    'logo address map'
+    'social address map'
+    'dealers dealers dealers';
+}
+
+@media (max-width: 1024px) {
+  .contacts__container {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto 200px auto;
+    row-gap: 30px;
+    padding: 0 100px;
+    grid-template-areas:
+      'logo social'
+      'address map'
+      'dealers dealers';
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__container {
+    padding: 25px 25px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts__container {
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 200px auto auto;
+    grid-template-areas:
+      'logo'
+      'address'
+      'map'
+      'dealers'
+      'social';
+  }
+}

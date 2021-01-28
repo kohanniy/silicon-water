@@ -1,0 +1,14 @@
+.social__link {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 100%;
+  transition: background-color 0.5s linear;
+}
+
+.social__link:hover {
+  background-color: #47bcca;
+}

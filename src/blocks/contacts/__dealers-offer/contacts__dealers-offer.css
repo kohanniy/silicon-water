@@ -1,0 +1,14 @@
+.contacts__dealers-offer {
+  margin: 0;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .contacts__dealers-offer {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

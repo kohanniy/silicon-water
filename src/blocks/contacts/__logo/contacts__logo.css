@@ -1,0 +1,12 @@
+.contacts__logo {
+  grid-area: logo;
+  width: 140px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+  .contacts__logo {
+    margin-bottom: 0;
+    width: 100px;
+  }
+}

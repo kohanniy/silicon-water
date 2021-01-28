@@ -53,5 +53,3 @@ const introSlider = new Swiper('.intro__slider', {
     paginationBulletMessage: 'Перейти к {{index}} слайду'
   },
 });
-
-

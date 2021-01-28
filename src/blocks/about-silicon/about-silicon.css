@@ -1,7 +1,12 @@
 .about-silicon {
   width: 100%;
   position: relative;
-  background: url(../../images/bg-for-about-silicon.svg) center no-repeat;
-  background-size: cover;
+  background: url(../../images/bg-for-about-silicon.svg) center / 100% 100% no-repeat;
   font-family: 'Marta', Georgia, serif;
+}
+
+@media (max-width: 575px) {
+  .about-silicon {
+    background-size: cover;
+  }
 }

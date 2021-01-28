@@ -1,0 +1,6 @@
+@media (max-width: 575px) {
+  .address__item_type_email {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}

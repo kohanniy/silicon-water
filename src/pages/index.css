@@ -55,3 +55,45 @@
 @import url(../blocks/production/__heading/production__heading.css);
 @import url(../blocks/production/__description/production__description.css);
 @import url(../blocks/production/__advice/production__advice.css);
+
+@import url(../blocks/about-us/about-us.css);
+@import url(../blocks/about-us/__text/about-us__text.css);
+@import url(../blocks/contacts/contacts.css);
+@import url(../blocks/contacts/__container/contacts__container.css);
+@import url(../blocks/contacts/__logo/contacts__logo.css);
+@import url(../blocks/contacts/__social/contacts__social.css);
+@import url(../blocks/contacts/__address/contacts__address.css);
+@import url(../blocks/contacts/__icon/contacts__icon.css);
+@import url(../blocks/contacts/__icon/_color-phone/contacts__icon_color-phone.css);
+@import url(../blocks/contacts/__map/contacts__map.css);
+@import url(../blocks/contacts/__dealers-wrapper/contacts__dealers-wrapper.css);
+@import url(../blocks/contacts/__dealers-offer/contacts__dealers-offer.css);
+@import url(../blocks/contacts/__phone-for-dealers/contacts__phone-for-dealers.css);
+@import url(../blocks/social/social.css);
+@import url(../blocks/social/__heading/social__heading.css);
+@import url(../blocks/social/__list/social__list.css);
+@import url(../blocks/social/__item/social__item.css);
+@import url(../blocks/social/__link/social__link.css);
+@import url(../blocks/social/__icon/social__icon.css);
+@import url(../blocks/address/address.css);
+@import url(../blocks/address/__title/address__title.css);
+@import url(../blocks/address/__list/address__list.css);
+@import url(../blocks/address/__item/address__item.css);
+@import url(../blocks/address/__item/_type/addres__item_type_location.css);
+@import url(../blocks/address/__item/_type/address__item_type_calendar.css);
+@import url(../blocks/address/__item/_type/address__item_type_email.css);
+@import url(../blocks/address/__item/_type/address__item_type_phone.css);
+@import url(../blocks/address/__link/address__link.css);
+@import url(../blocks/address/__link/_phone/address__link_phone.css);
+@import url(../blocks/icon/icon.css);
+@import url(../blocks/icon/_type/icon_type_calendar.css);
+@import url(../blocks/icon/_type/icon_type_color-phone.css);
+@import url(../blocks/icon/_type/icon_type_email.css);
+@import url(../blocks/icon/_type/icon_type_location.css);
+@import url(../blocks/icon/_type/icon_type_phone.css);
+
+.reviews {
+  width: 100%;
+  background: url(../images/bg-reviews.svg) top left no-repeat;
+  background-size: contain;
+}

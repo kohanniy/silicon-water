@@ -1,0 +1,7 @@
+@media (max-width: 575px) {
+  .addres__item_type_location {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    justify-self: end;
+  }
+}

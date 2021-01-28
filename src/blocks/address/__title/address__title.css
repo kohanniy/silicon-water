@@ -1,0 +1,31 @@
+.address__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: bold;
+  font-style: normal;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.address__title::after {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background-color: #47bcca;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+}
+
+@media (max-width: 575px) {
+  .address__title {
+    text-align: center;
+  }
+
+  .address__title::after {
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
