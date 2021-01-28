@@ -1,0 +1,10 @@
+.footer__developer {
+  margin-left: auto;
+}
+
+@media (max-width: 575px) {
+  .footer__developer {
+    margin-left: 0;
+    margin-bottom: 25px;
+  }
+}

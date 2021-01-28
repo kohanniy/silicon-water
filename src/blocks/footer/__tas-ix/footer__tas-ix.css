@@ -1,0 +1,9 @@
+.footer__tas-ix {
+  width: 84px;
+}
+
+@media (max-width: 575px) {
+  .footer__tas-ix {
+    order: 3;
+  }
+}

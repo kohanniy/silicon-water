@@ -1,0 +1,10 @@
+.footer__copyright {
+  margin-right: 50px;
+}
+
+@media (max-width: 575px) {
+  .footer__copyright {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+}

@@ -18,7 +18,7 @@
             <li class="main-nav__item"><a href="#aboutSilicon" class="main-nav__link">О кремнии</a></li>
             <li class="main-nav__item"><a href="#production" class="main-nav__link">Продукция</a></li>
             <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Справочник</a></li>
+            <li class="main-nav__item"><a href="#catalog" class="main-nav__link">Справочник</a></li>
             <li class="main-nav__item"><a href="#about-us" class="main-nav__link">О компании</a></li>
             <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
           </ul>
@@ -169,6 +169,21 @@
           </p>
         </div>
       </section>
+      <section class="catalog">
+        <div class="page__container catalog__container">
+          <h2 id="catalog" class="section__title">Справочник заболеваний</h2>
+          <p class="section__subtitle">Информация о заболеваниях</p>
+          <div class="catalog__wrapper">
+            <img src="<%=require('./images/body.svg')%>" alt="изображение человеческого тела" class="catalog__image">
+            <article class="catalog__article">
+              <h3 class="catalog__heading">Язва желудка и двенадцатиперстной кишки</h3>
+              <p class="catalog__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы.</p>
+              <p class="catalog__text">Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
+              <button class="order-button" type="button">Читать дальше</button>
+            </article>
+          </div>
+        </div>
+      </section>
       <section class="about-us section">
         <div class="page__container">
           <h2 id="about-us" class="section__title">Немного о нас</h2>
@@ -242,6 +257,23 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="page__container footer__container">
+        <div class="footer__copyright copyright">
+          <p class="copyright__name">&copy;AslKremniySuv</p>
+          <span class="footer__line"></span>
+          <p class="copyright__certified">Товары сертифицированы</p>
+        </div>
+        <div class="footer__tas-ix">
+          <img class="footer__tas-ix-logo" src="<%=require('./images/tas-ix-logo.svg')%>" alt="счетчик посетителей">
+        </div>
+        <div class="footer__developer developer">
+          <p class="developer__text">Разработано в</p>
+          <span class="footer__line"></span>
+          <img class="developer__logo" src="<%=require('./images/developer-logo.svg')%>" alt="логотип разработчика">
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>

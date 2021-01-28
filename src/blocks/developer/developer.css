@@ -1,0 +1,15 @@
+.developer {
+  display: flex;
+  align-items: center;
+  font-family: 'Marta', Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+@media (max-width: 1279px) {
+  .developer {
+    flex-direction: column;
+  }
+}
