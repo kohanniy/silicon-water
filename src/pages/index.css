@@ -104,13 +104,20 @@
 @import url(../blocks/developer/developer.css);
 @import url(../blocks/developer/__text/developer__text.css);
 @import url(../blocks/developer/__logo/developer__logo.css);
+@import url(../blocks/catalog/catalog.css);
+@import url(../blocks/catalog/__wrapper/catalog__wrapper.css);
+@import url(../blocks/catalog/__image/catalog__image.css);
+@import url(../blocks/catalog/__article/catalog__article.css);
+@import url(../blocks/catalog/__heading/catalog__heading.css);
+@import url(../blocks/catalog/__text/catalog__text.css);
+@import url(../blocks/catalog/__order-button/catalog__order-button.css);
 
 .reviews {
   width: 100%;
-  background: url(../images/bg-reviews.svg) top left no-repeat;
-  background-size: contain;
+  background: #fff url(../images/bg-reviews.svg) top center / 100% 100% no-repeat;
 }
 
-.catalog__image {
-  width: 250px;
-}
+
+
+
+

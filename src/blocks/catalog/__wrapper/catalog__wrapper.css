@@ -1,0 +1,10 @@
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .catalog__wrapper {
+    flex-direction: column;
+  }
+}

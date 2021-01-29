@@ -1,0 +1,11 @@
+.catalog__order-button {
+  margin-top: 25px;
+}
+
+@media (max-width: 768px) {
+  .catalog__order-button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
