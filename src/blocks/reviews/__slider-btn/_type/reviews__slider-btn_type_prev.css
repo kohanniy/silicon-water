@@ -1,0 +1,10 @@
+.reviews__slider-btn_type_prev {
+  background-image: url(../../../../images/left-arrow.svg);
+  left: 0;
+}
+
+@media (max-width: 575px) {
+  .reviews__slider-btn_type_prev {
+    display: none;
+  }
+}

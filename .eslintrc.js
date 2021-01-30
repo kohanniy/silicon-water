@@ -10,6 +10,7 @@ module.exports = {
     ecmaVersion: 12,
   },
   rules: {
-    'no-underscore-dangle': off,
+    'no-underscore-dangle': 'off',
+    'no-unused-vars': 'off',
   },
 };

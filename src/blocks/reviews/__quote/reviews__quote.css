@@ -1,0 +1,27 @@
+.reviews__quote {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 20px;
+  color: #b2b3b3;
+  margin: 0;
+  margin-left: 15px;
+  position: relative;
+}
+
+.reviews__quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 4px;
+  height: 10px;
+  background-color: #1b5c91;
+}
+
+@media (max-width: 768px) {
+  .reviews__quote {
+    text-align: center;
+    font-size: 16px;
+  }
+}

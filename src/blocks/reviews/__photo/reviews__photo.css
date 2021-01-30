@@ -1,0 +1,15 @@
+.reviews__photo {
+  max-width: 370px;
+  width: 30%;
+  margin-right: 75px;
+  object-fit: contain;
+  position: relative;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .reviews__photo {
+    width: 200px;
+    margin-right: 0;
+  }
+}

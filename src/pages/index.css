@@ -24,9 +24,6 @@
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__subtitle/intro__subtitle.css);
 @import url(../blocks/intro/__image/intro__image.css);
-@import url(../blocks/intro/__slider-btn/intro__slider-btn.css);
-@import url(../blocks/intro/__slider-btn/_type/intro__slider-btn_type_next.css);
-@import url(../blocks/intro/__slider-btn/_type/intro__slider-btn_type_prev.css);
 @import url(../blocks/intro/__slider-dots/intro__slider-dots.css);
 @import url(../blocks/intro/__slider-dot/intro__slider-dot.css);
 @import url(../blocks/intro/__slider-dot/_active/intro__slider-dot_active.css);
@@ -55,7 +52,30 @@
 @import url(../blocks/production/__heading/production__heading.css);
 @import url(../blocks/production/__description/production__description.css);
 @import url(../blocks/production/__advice/production__advice.css);
-
+@import url(../blocks/reviews/reviews.css);
+@import url(../blocks/reviews/__slider/reviews__slider.css);
+@import url(../blocks/reviews/__slider-wrap/reviews__slider-wrap.css);
+@import url(../blocks/reviews/__slide/reviews__slide.css);
+@import url(../blocks/reviews/__photo/reviews__photo.css);
+@import url(../blocks/reviews/__content/reviews__content.css);
+@import url(../blocks/reviews/__heading/reviews__heading.css);
+@import url(../blocks/reviews/__quote-wrapper/reviews__quote-wrapper.css);
+@import url(../blocks/reviews/__quote/reviews__quote.css);
+@import url(../blocks/reviews/__signature/reviews__signature.css);
+@import url(../blocks/reviews/__rating/reviews__rating.css);
+@import url(../blocks/reviews/__stars/reviews__stars.css);
+@import url(../blocks/reviews/__number-of-reviews/reviews__number-of-reviews.css);
+@import url(../blocks/reviews/__slider-btn/reviews__slider-btn.css);
+@import url(../blocks/reviews/__slider-btn/_disabled/reviews__slider-btn_disabled.css);
+@import url(../blocks/reviews/__slider-btn/_type/reviews__slider-btn_type_next.css);
+@import url(../blocks/reviews/__slider-btn/_type/reviews__slider-btn_type_prev.css);
+@import url(../blocks/catalog/catalog.css);
+@import url(../blocks/catalog/__wrapper/catalog__wrapper.css);
+@import url(../blocks/catalog/__image/catalog__image.css);
+@import url(../blocks/catalog/__article/catalog__article.css);
+@import url(../blocks/catalog/__heading/catalog__heading.css);
+@import url(../blocks/catalog/__text/catalog__text.css);
+@import url(../blocks/catalog/__order-button/catalog__order-button.css);
 @import url(../blocks/about-us/about-us.css);
 @import url(../blocks/about-us/__text/about-us__text.css);
 @import url(../blocks/contacts/contacts.css);
@@ -104,20 +124,3 @@
 @import url(../blocks/developer/developer.css);
 @import url(../blocks/developer/__text/developer__text.css);
 @import url(../blocks/developer/__logo/developer__logo.css);
-@import url(../blocks/catalog/catalog.css);
-@import url(../blocks/catalog/__wrapper/catalog__wrapper.css);
-@import url(../blocks/catalog/__image/catalog__image.css);
-@import url(../blocks/catalog/__article/catalog__article.css);
-@import url(../blocks/catalog/__heading/catalog__heading.css);
-@import url(../blocks/catalog/__text/catalog__text.css);
-@import url(../blocks/catalog/__order-button/catalog__order-button.css);
-
-.reviews {
-  width: 100%;
-  background: #fff url(../images/bg-reviews.svg) top center / 100% 100% no-repeat;
-}
-
-
-
-
-

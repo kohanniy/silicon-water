@@ -1,0 +1,14 @@
+.reviews__signature {
+  position: absolute;
+  right: 35px;
+  bottom: -80px;
+  width: 120px;
+  height: 90px;
+  background: url(../../../images/reviews-signature.svg) center/contain no-repeat;
+}
+
+@media (max-width: 575px) {
+  .reviews__signature {
+    position: static;
+  }
+}

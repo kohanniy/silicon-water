@@ -1,0 +1,13 @@
+.reviews__quote-wrapper {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 575px) {
+  .reviews__quote-wrapper {
+    align-items: center;
+  }
+}

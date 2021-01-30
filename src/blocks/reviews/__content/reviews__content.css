@@ -1,0 +1,12 @@
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .reviews__content {
+    align-items: center;
+    margin-top: 20px;
+  }
+}

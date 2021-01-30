@@ -1,0 +1,12 @@
+.reviews {
+  width: 100%;
+  font-family: 'Marta', Georgia, serif;
+  background: #fff url(../../images/bg-reviews.svg) top center / 100% 100% no-repeat;
+  margin-top: -1px;
+}
+
+@media (max-width: 575px) {
+  .reviews {
+    background-size: cover;
+  }
+}
