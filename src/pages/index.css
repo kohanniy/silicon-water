@@ -5,6 +5,7 @@
 @import url(../blocks/page/__container/page__container.css);
 @import url(../blocks/order-button/order-button.css);
 @import url(../blocks/order-button/_place/order-button_place_production.css);
+@import url(../blocks/order-button/_helper/order-button_helper.css);
 @import url(../blocks/section/section.css);
 @import url(../blocks/section/__title/section__title.css);
 @import url(../blocks/section/__subtitle/section__subtitle.css);
@@ -124,3 +125,5 @@
 @import url(../blocks/developer/developer.css);
 @import url(../blocks/developer/__text/developer__text.css);
 @import url(../blocks/developer/__logo/developer__logo.css);
+@import url(../blocks/up-button/up-button.css);
+@import url(../blocks/up-button/_visible/up-button_visible.css);

@@ -7,11 +7,26 @@ import {
   Autoplay,
 } from 'swiper';
 import ShowAndHideBlock from '../components/ShowAndHideBlock';
-import ScrollTo from '../components/ScrollTo';
 
-const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
-const scrollToBlock = new ScrollTo('.main-nav__list', 'main-nav__link');
 const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
+const aboutSilicon = document.querySelector('.about-silicon');
+const mainNavList = document.querySelector('.main-nav__list');
+const upButton = document.querySelector('.up-button');
+const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
+
+const scrollTo = (position) => {
+  window.scrollTo({ top: position, behavior: 'smooth' });
+};
+
+const showUpButton = (posToScroll) => {
+  upButton.classList.add('up-button_visible');
+  upButton.addEventListener('click', scrollTo);
+};
+
+const hideUpButton = (posToScroll) => {
+  upButton.classList.remove('up-button_visible');
+  upButton.removeEventListener('click', scrollTo);
+};
 
 reviews.forEach((review) => {
   const numberOfReviews = review.querySelector('.reviews__number-of-reviews');
@@ -20,8 +35,6 @@ reviews.forEach((review) => {
 });
 
 toggleMobileMenu.enableBlockToggle();
-
-scrollToBlock.enableScrollTo();
 
 Swiper.use([Navigation, Pagination, A11y, Autoplay]);
 
@@ -85,4 +98,25 @@ const reviewsSlider = new Swiper('.reviews__slider', {
     firstSlideMessage: 'Первый слайд',
     lastSlideMessage: 'Последний слайд',
   },
+});
+
+mainNavList.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('main-nav__link')) {
+    evt.preventDefault();
+
+    const target = document.querySelector(evt.target.hash);
+    const position = target.getBoundingClientRect().top + window.pageYOffset;
+    scrollTo(position);
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const pos = window.pageYOffset;
+  const targetPos = aboutSilicon.getBoundingClientRect().top + window.pageYOffset;
+
+  if (pos >= targetPos) {
+    showUpButton(0);
+  } else {
+    hideUpButton(0);
+  }
 });

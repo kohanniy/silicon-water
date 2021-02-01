@@ -1,10 +1,17 @@
 .catalog__article {
   max-width: 770px;
+  width: 60%;
   margin-top: 90px;
 }
 
 @media (max-width: 1024px) {
   .catalog__article {
     margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__article {
+    width: 100%;
   }
 }

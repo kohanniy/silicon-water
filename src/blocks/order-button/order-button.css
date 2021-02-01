@@ -10,12 +10,10 @@
   border: none;
   outline: none;
   border-radius: 35px;
-  transition: background 0.5s linear;
-}
-
-.order-button:hover {
+  position: relative;
   cursor: pointer;
-  background: linear-gradient(#00abbb 30%, #48bcca 100%);
+  z-index: 9;
+  overflow: hidden;
 }
 
 @media (max-width: 1279px) {

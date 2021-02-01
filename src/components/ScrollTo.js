@@ -10,10 +10,10 @@ export default class ScrollTo {
       evt.preventDefault();
 
       const target = document.querySelector(evt.target.hash);
-      const position = target.getBoundingClientRect().top + pageYOffset;
+      const position = target.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
         top: position,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   }
