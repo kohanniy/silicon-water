@@ -1,0 +1,29 @@
+.uds__bonus-amoutn {
+  display: block;
+  color: #133c5e;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 1;
+  max-width: 462px;
+  margin-right: 12px;
+  letter-spacing: -6px;
+}
+
+@media (max-width: 1279px) {
+  .uds__bonus-amoutn {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__bonus-amoutn {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__bonus-amoutn {
+    font-size: 50px;
+    margin-right: 0;
+  }
+}

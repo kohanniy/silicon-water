@@ -1,0 +1,28 @@
+.uds__cloud {
+  display: block;
+  width: 60px;
+  height: 56px;
+  background: url(../../../images/clouds.svg) center / 60px 56px no-repeat;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .uds__cloud {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__cloud {
+    width: 40px;
+    height: 38px;
+    background-size: 40px 38px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__cloud {
+    display: none;
+  }
+}

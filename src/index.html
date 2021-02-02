@@ -349,6 +349,59 @@
       </div>
     </footer>
     <button class="up-button" type="button"></button>
+    <div class="modal modal_type_uds modal_opened">
+      <div class="modal__container uds">
+        <div class="uds__offer">
+          <p class="uds__bonus">
+            <span class="uds__bonus-amoutn">10000</span> <span class="uds__sup">Бонусных<br> сумов</span>
+          </p>
+          <p class="uds__member">каждому <span class="uds__accent">участнику</span><br> программы лояльности</p>
+        </div>
+        <div class="uds__mobile-apps">
+          <p class="uds__call-container">
+            <span class="uds__cloud"></span>
+            <span class="uds__call">Скачайте бесплатное мобильное приложение UDS</span>
+          </p>
+          <ul class="uds__icons">
+            <li class="uds__icons-item">
+              <a class="uds__icon-link" href="https://apps.apple.com/ru/app/uds-app/id954809132" target="_blank">
+                <img src="<%=require('./images/app-store.svg')%>" alt="логотип App Store" class="uds__icon">
+              </a>
+            </li>
+            <li class="uds__icons-item">
+              <a class="uds__icon-link" href="https://play.google.com/store/apps/details?id=com.setinbox.game&hl=ru&gl=US" target="_blank">
+                <img src="<%=require('./images/google-play.svg')%>" alt="логотип Google Play" class="uds__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="uds__advantages">
+          <li class="uds__advantage uds__advantage_type_points">
+            <h3 class="uds__advantage-heading">10000</h3>
+            <p class="uds__advantage-text">приветственных баллов</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_cashback">
+            <h3 class="uds__advantage-heading">5%</h3>
+            <p class="uds__advantage-text">cashback с каждой покупки</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_friends-points">
+            <h3 class="uds__advantage-heading">1000</h3>
+            <p class="uds__advantage-text">баллов за приглашение друзей</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_friends-cashback">
+            <h3 class="uds__advantage-heading">4%</h3>
+            <p class="uds__advantage-text">cashback с их покупок</p>
+          </li>
+        </ul>
+        <div class="uds__qr-container">
+          <a href="https://aslkremniylisuv.uds.app/c/join/?ref=npbj1941" target="_blank">
+            <img class="uds__qr-code" src="<%=require('./images/qr.svg')%>" alt="QR-код">
+          </a>
+          <p class="uds__qr-text">Сканируйте QR-code для вступления в программу лояльности</p>
+        </div>
+        <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

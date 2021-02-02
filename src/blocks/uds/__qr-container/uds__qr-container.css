@@ -1,0 +1,29 @@
+.uds__qr-container {
+  width: 248px;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  grid-area: qr;
+  justify-self: end;
+}
+
+@media (max-width: 1279px) {
+  .uds__qr-container {
+    flex-direction: column;
+    width: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uds__qr-container {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__qr-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

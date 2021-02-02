@@ -1,0 +1,29 @@
+.uds__mobile-apps {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 12px 20px 16px;
+  border-radius: 10px;
+  width: 385px;
+  grid-area: mobile;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .uds__mobile-apps {
+    align-items: flex-end;
+    justify-self: end;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__mobile-apps {
+    align-items: center;
+    padding: 0;
+  }
+}

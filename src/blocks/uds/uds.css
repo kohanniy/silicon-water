@@ -1,0 +1,66 @@
+.uds {
+  max-width: 1180px;
+  width: 92%;
+  padding: 50px;
+  box-sizing: border-box;
+  background: #eff8fa url(../../images/uds-hand.png) bottom right / contain no-repeat;
+  justify-content: space-between;
+  align-items: start;
+  font-family: 'Marta', Georgia, serif;
+  font-style: normal;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 60px;
+  column-gap: 15px;
+  grid-template-areas:
+    'offer qr'
+    'mobile .'
+    'advantages .';
+}
+
+@media (max-width: 1279px) {
+  .uds {
+    row-gap: 25px;
+    padding: 30px;
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uds {
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'offer qr'
+    'advantages mobile';
+  }
+
+  .uds::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(239, 248, 250, 0.85);
+    z-index: 1;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds {
+    padding: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    row-gap: 15px;
+    grid-template-areas:
+      'offer'
+      'advantages'
+      'mobile'
+      'qr';
+  }
+}

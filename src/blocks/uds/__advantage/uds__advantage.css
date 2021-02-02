@@ -1,0 +1,36 @@
+.uds__advantage {
+  position: relative;
+}
+
+.uds__advantage::after {
+  content: '';
+  width: 3px;
+  height: 46px;
+  background-color: #fff;
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.uds__advantage:last-of-type::after {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .uds__advantage:nth-of-type(3n)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__advantage::after {
+    right: -15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__advantage::after {
+    right: -17px;
+  }
+}

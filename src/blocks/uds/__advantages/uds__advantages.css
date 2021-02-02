@@ -1,0 +1,30 @@
+.uds__advantages {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'points cashback friends-points friends-cashback';
+  column-gap: 45px;
+  grid-area: advantages;
+  z-index: 2;
+}
+
+@media (max-width: 1024px) {
+  .uds__advantages {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 20px;
+    align-self: center;
+    grid-template-areas:
+      'points friends-points'
+      'cashback friends-cashback';
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__advantages {
+    column-gap: 30px;
+  }
+}

@@ -1,0 +1,17 @@
+.uds__qr-code {
+  width: 87px;
+  margin-right: 14px;
+}
+
+@media (max-width: 1279px) {
+  .uds__qr-code {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uds__qr-code {
+    margin-bottom: 0;
+  }
+}

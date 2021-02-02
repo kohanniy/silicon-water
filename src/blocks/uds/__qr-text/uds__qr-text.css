@@ -1,0 +1,36 @@
+.uds__qr-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.05;
+}
+
+@media (max-width: 1279px) {
+  .uds__qr-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .uds__qr-text {
+    font-size: 18px;
+    text-align: right;
+    order: -1;
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__qr-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__qr-text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

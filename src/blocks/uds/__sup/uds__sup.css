@@ -1,0 +1,29 @@
+.uds__sup {
+  display: block;
+  color: #10cede;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 15px;
+}
+
+@media (max-width: 1279px) {
+  .uds__sup {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__sup {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__sup {
+    font-size: 12px;
+    margin-top: 0;
+    text-align: center;
+  }
+}

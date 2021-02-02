@@ -1,0 +1,19 @@
+.uds__icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .uds__icons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__icons {
+    flex-direction: row;
+  }
+}

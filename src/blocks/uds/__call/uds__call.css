@@ -1,0 +1,29 @@
+.uds__call {
+  margin: 0;
+  display: block;
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: normal;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .uds__call {
+    text-align: right;
+    order: -1;
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .uds__call {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__call {
+    text-align: center;
+    margin-right: 0;
+  }
+}

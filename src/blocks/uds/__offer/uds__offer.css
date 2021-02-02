@@ -1,0 +1,12 @@
+.uds__offer {
+  display: flex;
+  flex-direction: column;
+  grid-area: offer;
+  z-index: 2;
+}
+
+@media (max-width: 575px) {
+  .uds__offer {
+    align-items: center;
+  }
+}

@@ -1,0 +1,30 @@
+.uds__icons-item {
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uds__icons-item:last-of-type {
+  margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+  .uds__icons-item {
+    margin-right: 0;
+    margin-bottom: 5px;
+    justify-content: flex-start;
+  }
+
+  .uds__icons-item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__icons-item {
+    margin-right: 10px;
+    margin-bottom: 0;
+    width: 48%;
+  }
+}

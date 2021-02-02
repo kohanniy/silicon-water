@@ -1,0 +1,15 @@
+.uds__icon {
+  width: 160px;
+  transition: transform 0.5s linear;
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .uds__icon {
+    width: 100%;
+  }
+}
+
+.uds__icon-link:hover .uds__icon {
+  transform: scale(1.05);
+}

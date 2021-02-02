@@ -1,0 +1,20 @@
+.uds__advantage-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #10cede;
+  line-height: 1.1;
+}
+
+@media (max-width: 1279px) {
+  .uds__advantage-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .uds__advantage-text {
+    font-size: 13px;
+    text-align: center;
+  }
+}
