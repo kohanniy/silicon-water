@@ -6,13 +6,34 @@ import {
   A11y,
   Autoplay,
 } from 'swiper';
+import Cookies from 'js-cookie';
 import ShowAndHideBlock from '../components/ShowAndHideBlock';
+import Modal from '../components/Modal';
+import {
+  dataForAnimationUDS,
+  udsSelectors,
+} from '../utils/constants';
+import {
+  debounce,
+} from '../utils/utils';
+
+const page = document.querySelector('.page');
 
 const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
+
 const aboutSilicon = document.querySelector('.about-silicon');
+
 const mainNavList = document.querySelector('.main-nav__list');
+
 const upButton = document.querySelector('.up-button');
+
 const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
+
+const udsModal = new Modal(
+  udsSelectors,
+  page,
+  dataForAnimationUDS,
+);
 
 const scrollTo = (position) => {
   window.scrollTo({ top: position, behavior: 'smooth' });
@@ -110,13 +131,21 @@ mainNavList.addEventListener('click', (evt) => {
   }
 });
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', debounce(() => {
   const pos = window.pageYOffset;
   const targetPos = aboutSilicon.getBoundingClientRect().top + window.pageYOffset;
 
-  if (pos >= targetPos) {
+  if (pos > targetPos && !Cookies.get('date')) {
+    Cookies.set('date', 'now');
+    udsModal.open();
+  }
+
+  if (pos > targetPos) {
     showUpButton(0);
   } else {
     hideUpButton(0);
   }
-});
+}));
+
+// const inTwoMinutes = new Date(new Date().getTime() + 2 * 60 * 1000);
+// Cookies.set('date', 'now', { expires: inTwoMinutes });

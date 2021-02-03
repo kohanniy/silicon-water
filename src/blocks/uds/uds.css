@@ -1,7 +1,7 @@
 .uds {
   max-width: 1180px;
   width: 92%;
-  padding: 50px;
+  padding: 40px;
   box-sizing: border-box;
   background: #eff8fa url(../../images/uds-hand.png) bottom right / contain no-repeat;
   justify-content: space-between;
@@ -12,7 +12,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  row-gap: 60px;
+  row-gap: 40px;
   column-gap: 15px;
   grid-template-areas:
     'offer qr'
