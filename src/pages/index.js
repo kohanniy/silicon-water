@@ -12,6 +12,8 @@ import Modal from '../components/Modal';
 import {
   dataForAnimationUDS,
   udsSelectors,
+  introSliderData,
+  reviewsSliderData,
 } from '../utils/constants';
 import {
   debounce,
@@ -19,13 +21,13 @@ import {
 
 const page = document.querySelector('.page');
 
-const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
+const reviews = Array.from(page.querySelectorAll('.reviews__slide'));
 
-const aboutSilicon = document.querySelector('.about-silicon');
+const aboutSilicon = page.querySelector('.about-silicon');
 
-const mainNavList = document.querySelector('.main-nav__list');
+const mainNavList = page.querySelector('.main-nav__list');
 
-const upButton = document.querySelector('.up-button');
+const upButton = page.querySelector('.up-button');
 
 const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
 
@@ -59,67 +61,9 @@ toggleMobileMenu.enableBlockToggle();
 
 Swiper.use([Navigation, Pagination, A11y, Autoplay]);
 
-const introSlider = new Swiper('.intro__slider', {
-  effect: 'slide',
-  speed: 500,
-  watchOverflow: true,
-  centerSlides: true,
-  centerSlidesBounds: true,
-  grabCursor: false,
-  centeredSlides: true,
-  loop: true,
-  spaceBetween: 10,
-  containerModifierClass: 'intro__slider-',
-  slideClass: 'intro__slide',
-  wrapperClass: 'intro__slider-wrap',
-  roundLengths: true,
-  pagination: {
-    el: '.intro__slider-dots',
-    type: 'bullets',
-    bulletElement: 'li',
-    clickable: true,
-    bulletClass: 'intro__slider-dot',
-    bulletActiveClass: 'intro__slider-dot_active',
-    modifierClass: 'intro__slider-dots-',
-  },
-  autoplay: {
-    delay: 4000,
-  },
-  a11y: {
-    firstSlideMessage: 'Первый слайд',
-    lastSlideMessage: 'Последний слайд',
-    paginationBulletMessage: 'Перейти к {{index}} слайду',
-  },
-});
+const introSlider = new Swiper('.intro__slider', introSliderData);
 
-const reviewsSlider = new Swiper('.reviews__slider', {
-  effect: 'slide',
-  speed: 500,
-  watchOverflow: true,
-  centerSlides: true,
-  centerSlidesBounds: true,
-  grabCursor: false,
-  centeredSlides: true,
-  spaceBetween: 10,
-  containerModifierClass: 'reviews__slider-',
-  slideClass: 'reviews__slide',
-  wrapperClass: 'reviews__slider-wrap',
-  roundLengths: true,
-  navigation: {
-    nextEl: '.reviews__slider-btn_type_next',
-    prevEl: '.reviews__slider-btn_type_prev',
-    disabledClass: 'reviews__slider-btn_disabled',
-  },
-  autoplay: {
-    delay: 4000,
-  },
-  a11y: {
-    prevSlideMessage: 'Предыдущий слайд',
-    nextSlideMessage: 'Следующий слайд',
-    firstSlideMessage: 'Первый слайд',
-    lastSlideMessage: 'Последний слайд',
-  },
-});
+const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
 
 mainNavList.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('main-nav__link')) {
