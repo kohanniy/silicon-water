@@ -83,3 +83,11 @@ export const reviewsSliderData = {
     lastSlideMessage: 'Последний слайд',
   },
 };
+
+export const mainNavSelectors = {
+  header: '.header',
+  navigation: '.main-nav__list',
+  toggle: '.toggle-menu',
+};
+
+export const pageSelector = '.page';

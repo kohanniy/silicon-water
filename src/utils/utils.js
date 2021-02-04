@@ -8,4 +8,6 @@ export const debounce = (callback, wait = DEBOUNCE_INTERVAL) => {
   };
 };
 
-export const abc = 'abc';
+export const scrollTo = (position) => {
+  window.scrollTo({ top: position, behavior: 'smooth' });
+};

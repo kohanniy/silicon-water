@@ -1,4 +1,5 @@
 import './index.css';
+
 import {
   Swiper,
   Navigation,
@@ -6,50 +7,50 @@ import {
   A11y,
   Autoplay,
 } from 'swiper';
+
 import Cookies from 'js-cookie';
-import ShowAndHideBlock from '../components/ShowAndHideBlock';
+
 import Modal from '../components/Modal';
+
+import UpButton from '../components/UpButton';
+
+import MainNav from '../components/MainNav';
+
 import {
   dataForAnimationUDS,
   udsSelectors,
   introSliderData,
   reviewsSliderData,
+  mainNavSelectors,
+  pageSelector,
 } from '../utils/constants';
+
 import {
   debounce,
+  scrollTo,
 } from '../utils/utils';
 
-const page = document.querySelector('.page');
+Swiper.use([Navigation, Pagination, A11y, Autoplay]);
 
-const reviews = Array.from(page.querySelectorAll('.reviews__slide'));
+const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
 
-const aboutSilicon = page.querySelector('.about-silicon');
+const aboutSilicon = document.querySelector('.about-silicon');
 
-const mainNavList = page.querySelector('.main-nav__list');
+const upButton = new UpButton('.up-button', () => {
+  scrollTo(0);
+});
 
-const upButton = page.querySelector('.up-button');
-
-const toggleMobileMenu = new ShowAndHideBlock('.header', '.toggle-menu');
+const mainNav = new MainNav(mainNavSelectors, scrollTo);
 
 const udsModal = new Modal(
   udsSelectors,
-  page,
+  pageSelector,
   dataForAnimationUDS,
 );
 
-const scrollTo = (position) => {
-  window.scrollTo({ top: position, behavior: 'smooth' });
-};
+const introSlider = new Swiper('.intro__slider', introSliderData);
 
-const showUpButton = (posToScroll) => {
-  upButton.classList.add('up-button_visible');
-  upButton.addEventListener('click', scrollTo);
-};
-
-const hideUpButton = (posToScroll) => {
-  upButton.classList.remove('up-button_visible');
-  upButton.removeEventListener('click', scrollTo);
-};
+const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
 
 reviews.forEach((review) => {
   const numberOfReviews = review.querySelector('.reviews__number-of-reviews');
@@ -57,23 +58,7 @@ reviews.forEach((review) => {
   numberOfReviews.textContent = `(${reviews.length} ${reviews.length === 1 ? 'отзыв' : 'отзывов'})`;
 });
 
-toggleMobileMenu.enableBlockToggle();
-
-Swiper.use([Navigation, Pagination, A11y, Autoplay]);
-
-const introSlider = new Swiper('.intro__slider', introSliderData);
-
-const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
-
-mainNavList.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('main-nav__link')) {
-    evt.preventDefault();
-
-    const target = document.querySelector(evt.target.hash);
-    const position = target.getBoundingClientRect().top + window.pageYOffset;
-    scrollTo(position);
-  }
-});
+mainNav.enable();
 
 window.addEventListener('scroll', debounce(() => {
   const pos = window.pageYOffset;
@@ -85,9 +70,9 @@ window.addEventListener('scroll', debounce(() => {
   }
 
   if (pos > targetPos) {
-    showUpButton(0);
+    upButton.show();
   } else {
-    hideUpButton(0);
+    upButton.hide();
   }
 }));
 
