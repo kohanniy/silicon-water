@@ -1,0 +1,23 @@
+.catalog__header-icon {
+  position: absolute;
+  left: 12px;
+  bottom: 14px;
+  width: 30px;
+}
+
+
+@media (max-width: 1024px) {
+  .catalog__header-icon {
+    left: 8px;
+    bottom: 11px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__header-icon {
+    left: 7px;
+    bottom: 10px;
+    width: 22px;
+  }
+}

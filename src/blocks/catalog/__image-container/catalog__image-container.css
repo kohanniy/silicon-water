@@ -1,0 +1,20 @@
+.catalog__image-container {
+  width: 250px;
+  margin-right: 80px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .catalog__image-container {
+    width: 180px;
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog__image-container {
+    width: 180px;
+    margin: 0 auto;
+  }
+}

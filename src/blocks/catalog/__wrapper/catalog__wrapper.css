@@ -3,7 +3,7 @@
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
   .catalog__wrapper {
     flex-direction: column;
   }

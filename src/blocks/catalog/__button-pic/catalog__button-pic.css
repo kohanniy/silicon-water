@@ -1,0 +1,9 @@
+.catalog__button-pic {
+  width: 28px;
+}
+
+@media (max-width: 768px) {
+  .catalog__button-pic {
+    width: 25px;
+  }
+}

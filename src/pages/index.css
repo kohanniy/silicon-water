@@ -77,6 +77,14 @@
 @import url(../blocks/catalog/__heading/catalog__heading.css);
 @import url(../blocks/catalog/__text/catalog__text.css);
 @import url(../blocks/catalog/__order-button/catalog__order-button.css);
+@import url(../blocks/catalog/__image-container/catalog__image-container.css);
+@import url(../blocks/catalog/__button/catalog__button.css);
+@import url(../blocks/catalog/__button/_active/catalog__button_active.css);
+@import url(../blocks/catalog/__button-pic/catalog__button-pic.css);
+@import url(../blocks/catalog/__header/catalog__header.css);
+@import url(../blocks/catalog/__header-images/catalog__header-images.css);
+@import url(../blocks/catalog/__header-arrow/catalog__header-arrow.css);
+@import url(../blocks/catalog/__header-icon/catalog__header-icon.css);
 @import url(../blocks/about-us/about-us.css);
 @import url(../blocks/about-us/__text/about-us__text.css);
 @import url(../blocks/contacts/contacts.css);
@@ -157,3 +165,19 @@
 @import url(../blocks/uds/__qr-container/uds__qr-container.css);
 @import url(../blocks/uds/__qr-code/uds__qr-code.css);
 @import url(../blocks/uds/__qr-text/uds__qr-text.css);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

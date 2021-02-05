@@ -1,0 +1,28 @@
+.catalog__header-images {
+  width: 155px;
+  margin-left: 20px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .catalog__header-images {
+    width: 120px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__header-images {
+    width: 100px;
+    order: -1;
+    margin-bottom: 8px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog__header-images {
+    display: none;
+  }
+}

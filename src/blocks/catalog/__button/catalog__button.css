@@ -1,0 +1,76 @@
+.catalog__button {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  background-color: #00355a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  transition: background-color 0.5s linear;
+  outline: none;
+}
+
+.catalog__button:hover {
+  background-color: #47bcca;
+}
+
+.catalog__button[data-image="1"] {
+  top: 132px;
+  right: 42px;
+}
+
+.catalog__button[data-image="2"] {
+  top: 142px;
+  left: 78px;
+}
+
+.catalog__button[data-image="3"] {
+  top: 223px;
+  left: 71px;
+}
+
+.catalog__button[data-image="4"] {
+  top: 256px;
+  left: 106px;
+}
+
+.catalog__button[data-image="5"] {
+  top: 287px;
+  right: 6px;
+}
+
+@media (max-width: 768px) {
+  .catalog__button {
+    width: 35px;
+    height: 35px
+  }
+
+  .catalog__button[data-image="1"] {
+    top: 94px;
+    right: 25px;
+  }
+
+  .catalog__button[data-image="2"] {
+    top: 106px;
+    left: 57px;
+  }
+
+  .catalog__button[data-image="3"] {
+    top: 149px;
+    left: 45px;
+  }
+
+  .catalog__button[data-image="4"] {
+    top: 183px;
+    left: 72px;
+  }
+
+  .catalog__button[data-image="5"] {
+    top: 198px;
+    right: 3px;
+  }
+}

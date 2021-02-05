@@ -1,0 +1,14 @@
+.catalog__header {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .catalog__header {
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+}

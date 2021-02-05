@@ -46,7 +46,7 @@
     width: 30px;
     height: 30px;
     border-width: 3px;
-    bottom: -30px;
+    bottom: -40px;
   }
 
   .modal__close-button::before {

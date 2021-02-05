@@ -248,9 +248,32 @@
           <h2 id="catalog" class="section__title">Справочник заболеваний</h2>
           <p class="section__subtitle">Информация о заболеваниях</p>
           <div class="catalog__wrapper">
-            <img src="<%=require('./images/body.svg')%>" alt="изображение человеческого тела" class="catalog__image">
+            <div class="catalog__image-container">
+              <img src="<%=require('./images/body.svg')%>" alt="изображение человеческого тела" class="catalog__image">
+              <buton type="button" class="catalog__button" data-image="1">
+                <img class="catalog__button-pic" src="<%=require('./images/arthritis.svg')%>" alt="артрит">
+              </buton>
+              <buton type="button" class="catalog__button" data-image="2">
+                <img class="catalog__button-pic" src="<%=require('./images/kidney.svg')%>" alt="легкие">
+              </buton>
+              <buton type="button" class="catalog__button" data-image="3">
+                <img class="catalog__button-pic" src="<%=require('./images/liver.svg')%>" alt="печень">
+              </buton>
+              <buton type="button" class="catalog__button" data-image="4">
+                <img class="catalog__button-pic" src="<%=require('./images/stomach.svg')%>" alt="язва желудка">
+              </buton>
+              <buton type="button" class="catalog__button" data-image="5">
+                <img class="catalog__button-pic" src="<%=require('./images/skin-allergy.svg')%>" alt="кожная аллергия">
+              </buton>
+            </div>
             <article class="catalog__article">
-              <h3 class="catalog__heading">Язва желудка и двенадцатиперстной кишки</h3>
+              <header class="catalog__header">
+                <h3 class="catalog__heading">Язва желудка и двенадцатиперстной кишки</h3>
+                <div class="catalog__header-images">
+                  <img class="catalog__header-arrow" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
+                  <img class="catalog__header-icon" src="<%=require('./images/liver.svg')%>" alt="артрит">
+                </div>
+              </header>
               <p class="catalog__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы.</p>
               <p class="catalog__text">Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
               <button class="order-button catalog__order-button" type="button"><span class="order-button_helper"></span>Читать дальше</button>
