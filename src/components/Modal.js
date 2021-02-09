@@ -1,9 +1,9 @@
 export default class Modal {
-  constructor(selectors, pageSelector, dataForAnimation) {
+  constructor(modalSelector, pageSelector, dataForAnimation) {
     this._page = document.querySelector(pageSelector);
-    this._modal = this._page.querySelector(selectors.modal);
-    this._modalContainer = this._modal.querySelector(selectors.modalContainer);
-    this._closeButton = this._modal.querySelector(selectors.closeButton);
+    this._modal = this._page.querySelector(modalSelector);
+    this._modalContainer = this._modal.querySelector('.modal__container');
+    this._closeButton = this._modal.querySelector('.modal__close-button');
     this._keyframes = dataForAnimation.keyframes;
     this._options = dataForAnimation.options;
 
@@ -12,11 +12,10 @@ export default class Modal {
     this._handleOverlayClose = this._handleOverlayClose.bind(this);
   }
 
-  _startAnimate(direction, delay) {
+  _startAnimate(direction, delay = 0) {
     this._options.delay = delay;
     this._options.direction = direction;
-    const animate = this._modalContainer.animate(this._keyframes, this._options);
-    return animate;
+    return this._modalContainer.animate(this._keyframes, this._options);
   }
 
   open() {
@@ -27,23 +26,23 @@ export default class Modal {
   }
 
   _close() {
-    this._startAnimate('reverse', 0)
-      .onfinish = () => {
-        this._modal.classList.remove('modal_opened');
-        this._page.classList.remove('page_lock');
-      };
-    this._removeEventListeners();
+    this._startAnimate('reverse', 0).addEventListener('finish', () => {
+      this._modalContainer.scrollIntoView();
+      this._modal.classList.remove('modal_opened');
+      this._page.classList.remove('page_lock');
+      this._removeEventListeners();
+    });
   }
 
   _handleEscClose(evt) {
     if (evt.key === 'Escape') {
-      this.close();
+      this._close();
     }
   }
 
   _handleOverlayClose(evt) {
-    if (evt.target === this._modal) {
-      this.close();
+    if (evt.target === this._modalContainer) {
+      this._close();
     }
   }
 

@@ -1,0 +1,30 @@
+.article {
+  width: 60%;
+  font-family: 'Marta', Georgia, serif;
+  font-style: normal;
+  line-height: 1.1;
+  background-color: #eff8fa;
+  border-radius: 20px;
+  padding: 60px 100px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .article {
+    width: 70%;
+    padding: 50px 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .article {
+    width: 100%;
+    padding: 30px 20px;
+  }
+}

@@ -1,5 +1,6 @@
 .uds {
   max-width: 1180px;
+  border-radius: 20px;
   width: 92%;
   padding: 40px;
   box-sizing: border-box;

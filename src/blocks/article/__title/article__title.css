@@ -1,0 +1,14 @@
+.article__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #47bcca;
+}
+
+@media (max-width: 575px) {
+  .article__title {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}

@@ -116,7 +116,7 @@
           <ul class="production__types">
             <li class="production__type">
               <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
               </p>
               <div class="production__text-wrapper">
                 <h3 class="production__heading">Dolor laborum tempor id sit magna</h3>
@@ -126,7 +126,7 @@
             </li>
             <li class="production__type">
               <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/primer.jpg')%>">
+                <img class="production__image" src="<%=require('./images/primer.jpg')%>" alt="#">
               </p>
               <div class="production__text-wrapper">
                 <h3 class="production__heading">Occaecat sunt quis ullamco sit magna in est</h3>
@@ -136,7 +136,7 @@
             </li>
             <li class="production__type">
               <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
               </p>
               <div class="production__text-wrapper">
                 <h3 class="production__heading">Ut aute dolor sint esse</h3>
@@ -146,7 +146,7 @@
             </li>
             <li class="production__type">
               <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>">
+                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
               </p>
               <div class="production__text-wrapper">
                 <h3 class="production__heading">Consectetur exercitation laboris aliqua</h3>
@@ -249,33 +249,32 @@
           <p class="section__subtitle">Информация о заболеваниях</p>
           <div class="catalog__wrapper">
             <div class="catalog__image-container">
-              <img src="<%=require('./images/body.svg')%>" alt="изображение человеческого тела" class="catalog__image">
-              <buton type="button" class="catalog__button" data-image="1">
+              <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
+              <buton type="button" class="catalog__button" data-article="arthritis">
                 <img class="catalog__button-pic" src="<%=require('./images/arthritis.svg')%>" alt="артрит">
               </buton>
-              <buton type="button" class="catalog__button" data-image="2">
+              <buton type="button" class="catalog__button" data-article="kidney">
                 <img class="catalog__button-pic" src="<%=require('./images/kidney.svg')%>" alt="легкие">
               </buton>
-              <buton type="button" class="catalog__button" data-image="3">
+              <buton type="button" class="catalog__button" data-article="liver">
                 <img class="catalog__button-pic" src="<%=require('./images/liver.svg')%>" alt="печень">
               </buton>
-              <buton type="button" class="catalog__button" data-image="4">
+              <buton type="button" class="catalog__button" data-article="stomach">
                 <img class="catalog__button-pic" src="<%=require('./images/stomach.svg')%>" alt="язва желудка">
               </buton>
-              <buton type="button" class="catalog__button" data-image="5">
+              <buton type="button" class="catalog__button" data-article="allergy">
                 <img class="catalog__button-pic" src="<%=require('./images/skin-allergy.svg')%>" alt="кожная аллергия">
               </buton>
             </div>
             <article class="catalog__article">
               <header class="catalog__header">
-                <h3 class="catalog__heading">Язва желудка и двенадцатиперстной кишки</h3>
+                <h3 class="catalog__heading"></h3>
                 <div class="catalog__header-images">
                   <img class="catalog__header-arrow" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
                   <img class="catalog__header-icon" src="<%=require('./images/liver.svg')%>" alt="артрит">
                 </div>
               </header>
-              <p class="catalog__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы.</p>
-              <p class="catalog__text">Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
+              <p class="catalog__text"></p>
               <button class="order-button catalog__order-button" type="button"><span class="order-button_helper"></span>Читать дальше</button>
             </article>
           </div>
@@ -373,55 +372,65 @@
     </footer>
     <button class="up-button" type="button"></button>
     <div class="modal modal_type_uds">
-      <div class="modal__container uds">
-        <div class="uds__offer">
-          <p class="uds__bonus">
-            <span class="uds__bonus-amoutn">10000</span> <span class="uds__sup">Бонусных<br> сумов</span>
-          </p>
-          <p class="uds__member">каждому <span class="uds__accent">участнику</span><br> программы лояльности</p>
-        </div>
-        <div class="uds__mobile-apps">
-          <p class="uds__call-container">
-            <span class="uds__cloud"></span>
-            <span class="uds__call">Скачайте бесплатное мобильное приложение UDS</span>
-          </p>
-          <ul class="uds__icons">
-            <li class="uds__icons-item">
-              <a class="uds__icon-link" href="https://apps.apple.com/ru/app/uds-app/id954809132" target="_blank">
-                <img src="<%=require('./images/app-store.svg')%>" alt="логотип App Store" class="uds__icon">
-              </a>
+      <div class="modal__container">
+        <div class="uds">
+          <div class="uds__offer">
+            <p class="uds__bonus">
+              <span class="uds__bonus-amoutn">10000</span> <span class="uds__sup">Бонусных<br> сумов</span>
+            </p>
+            <p class="uds__member">каждому <span class="uds__accent">участнику</span><br> программы лояльности</p>
+          </div>
+          <div class="uds__mobile-apps">
+            <p class="uds__call-container">
+              <span class="uds__cloud"></span>
+              <span class="uds__call">Скачайте бесплатное мобильное приложение UDS</span>
+            </p>
+            <ul class="uds__icons">
+              <li class="uds__icons-item">
+                <a class="uds__icon-link" href="https://apps.apple.com/ru/app/uds-app/id954809132" target="_blank">
+                  <img src="<%=require('./images/app-store.svg')%>" alt="логотип App Store" class="uds__icon">
+                </a>
+              </li>
+              <li class="uds__icons-item">
+                <a class="uds__icon-link" href="https://play.google.com/store/apps/details?id=com.setinbox.game&hl=ru&gl=US" target="_blank">
+                  <img src="<%=require('./images/google-play.svg')%>" alt="логотип Google Play" class="uds__icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="uds__advantages">
+            <li class="uds__advantage uds__advantage_type_points">
+              <h3 class="uds__advantage-heading">10000</h3>
+              <p class="uds__advantage-text">приветственных баллов</p>
             </li>
-            <li class="uds__icons-item">
-              <a class="uds__icon-link" href="https://play.google.com/store/apps/details?id=com.setinbox.game&hl=ru&gl=US" target="_blank">
-                <img src="<%=require('./images/google-play.svg')%>" alt="логотип Google Play" class="uds__icon">
-              </a>
+            <li class="uds__advantage uds__advantage_type_cashback">
+              <h3 class="uds__advantage-heading">5%</h3>
+              <p class="uds__advantage-text">cashback с каждой покупки</p>
+            </li>
+            <li class="uds__advantage uds__advantage_type_friends-points">
+              <h3 class="uds__advantage-heading">1000</h3>
+              <p class="uds__advantage-text">баллов за приглашение друзей</p>
+            </li>
+            <li class="uds__advantage uds__advantage_type_friends-cashback">
+              <h3 class="uds__advantage-heading">4%</h3>
+              <p class="uds__advantage-text">cashback с их покупок</p>
             </li>
           </ul>
+          <div class="uds__qr-container">
+            <a href="https://aslkremniylisuv.uds.app/c/join/?ref=npbj1941" target="_blank">
+              <img class="uds__qr-code" src="<%=require('./images/qr.svg')%>" alt="QR-код">
+            </a>
+            <p class="uds__qr-text">Сканируйте QR-code для вступления в программу лояльности</p>
+          </div>
         </div>
-        <ul class="uds__advantages">
-          <li class="uds__advantage uds__advantage_type_points">
-            <h3 class="uds__advantage-heading">10000</h3>
-            <p class="uds__advantage-text">приветственных баллов</p>
-          </li>
-          <li class="uds__advantage uds__advantage_type_cashback">
-            <h3 class="uds__advantage-heading">5%</h3>
-            <p class="uds__advantage-text">cashback с каждой покупки</p>
-          </li>
-          <li class="uds__advantage uds__advantage_type_friends-points">
-            <h3 class="uds__advantage-heading">1000</h3>
-            <p class="uds__advantage-text">баллов за приглашение друзей</p>
-          </li>
-          <li class="uds__advantage uds__advantage_type_friends-cashback">
-            <h3 class="uds__advantage-heading">4%</h3>
-            <p class="uds__advantage-text">cashback с их покупок</p>
-          </li>
-        </ul>
-        <div class="uds__qr-container">
-          <a href="https://aslkremniylisuv.uds.app/c/join/?ref=npbj1941" target="_blank">
-            <img class="uds__qr-code" src="<%=require('./images/qr.svg')%>" alt="QR-код">
-          </a>
-          <p class="uds__qr-text">Сканируйте QR-code для вступления в программу лояльности</p>
-        </div>
+        <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+      </div>
+    </div>
+    <div class="modal modal_type_article">
+      <div class="modal__container">
+        <article class="article">
+
+        </article>
         <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
       </div>
     </div>

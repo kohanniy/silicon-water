@@ -18,27 +18,27 @@
   background-color: #47bcca;
 }
 
-.catalog__button[data-image="1"] {
+.catalog__button[data-article="arthritis"] {
   top: 132px;
   right: 42px;
 }
 
-.catalog__button[data-image="2"] {
+.catalog__button[data-article="kidney"] {
   top: 142px;
   left: 78px;
 }
 
-.catalog__button[data-image="3"] {
+.catalog__button[data-article="liver"] {
   top: 223px;
   left: 71px;
 }
 
-.catalog__button[data-image="4"] {
+.catalog__button[data-article="stomach"] {
   top: 256px;
   left: 106px;
 }
 
-.catalog__button[data-image="5"] {
+.catalog__button[data-article="allergy"] {
   top: 287px;
   right: 6px;
 }
@@ -49,27 +49,27 @@
     height: 35px
   }
 
-  .catalog__button[data-image="1"] {
+  .catalog__button[data-article="arthritis"] {
     top: 94px;
     right: 25px;
   }
 
-  .catalog__button[data-image="2"] {
+  .catalog__button[data-article="kidney"] {
     top: 106px;
     left: 57px;
   }
 
-  .catalog__button[data-image="3"] {
+  .catalog__button[data-article="liver"] {
     top: 149px;
     left: 45px;
   }
 
-  .catalog__button[data-image="4"] {
+  .catalog__button[data-article="stomach"] {
     top: 183px;
     left: 72px;
   }
 
-  .catalog__button[data-image="5"] {
+  .catalog__button[data-article="allergy"] {
     top: 198px;
     right: 3px;
   }
