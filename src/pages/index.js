@@ -20,6 +20,8 @@ import Catalog from '../components/Catalog';
 
 import ModalWithArticle from '../components/ModalWithArticle';
 
+import LazyLoadMap from '../components/LazyLoadMap';
+
 import {
   dataForAnimationUDS,
   introSliderData,
@@ -32,6 +34,7 @@ import {
   modalArticleSelector,
   articleSelectors,
   dataForAnimationArticle,
+  mapSelectors,
 } from '../utils/constants';
 
 import {
@@ -68,6 +71,8 @@ window.addEventListener('load', () => {
       },
     },
   );
+
+  const lazyMap = new LazyLoadMap(mapSelectors);
   Swiper.use([Navigation, Pagination, A11y, Autoplay]);
   const introSlider = new Swiper('.intro__slider', introSliderData);
   const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
@@ -81,6 +86,8 @@ window.addEventListener('load', () => {
   mainNav.enable();
 
   catalog.enable();
+
+  lazyMap.enable();
 
   window.addEventListener('scroll', debounce(() => {
     const pos = window.pageYOffset;

@@ -3,4 +3,6 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 0 0 3px #10cede;
+  background: url(../../../images/map.jpg) center / cover no-repeat;
+  cursor: pointer;
 }

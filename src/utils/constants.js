@@ -1,3 +1,8 @@
+export const mapSelectors = {
+  container: '.contacts__map',
+  map: '#ymapLazy',
+};
+
 export const dataForAnimationUDS = {
   keyframes: [
     {
