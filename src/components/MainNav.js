@@ -1,4 +1,4 @@
-export default class Navigation {
+export default class MainNav {
   constructor(selectors, handleLinkClick) {
     this._header = document.querySelector(selectors.header);
     this._navigation = this._header.querySelector(selectors.navigation);
@@ -36,6 +36,7 @@ export default class Navigation {
       if (evt.target.classList.contains('main-nav__link')) {
         evt.preventDefault();
         this._goToSection(evt.target);
+        this._hide();
       }
     });
   }

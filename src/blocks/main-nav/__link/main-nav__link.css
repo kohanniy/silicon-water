@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px 8px;
+  padding: 8px 10px;
   color: #133c5e;
   transition: all 0.4s ease-in-out;
+  text-align: center;
+  /* vertical-align: middle; */
 }
 
 .main-nav__link:hover {
@@ -15,10 +17,13 @@
   box-shadow: inset 5px 5px 10px #c8d0d1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .main-nav__link {
     padding: 10px 40px;
     white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    position: relative;
   }
 
   .main-nav__link:hover {

@@ -8,5 +8,5 @@
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }

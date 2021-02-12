@@ -14,6 +14,7 @@
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/main-nav/main-nav.css);
 @import url(../blocks/main-nav/__list/main-nav__list.css);
+@import url(../blocks/main-nav/__item/main-nav__item.css);
 @import url(../blocks/main-nav/__link/main-nav__link.css);
 @import url(../blocks/toggle-menu/toggle-menu.css);
 @import url(../blocks/toggle-menu/__icon/toggle-menu__icon.css);

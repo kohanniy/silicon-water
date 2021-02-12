@@ -1,0 +1,9 @@
+.main-nav__item {
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .main-nav__item {
+    background: linear-gradient(to bottom,rgba(19, 60, 94, 0) 70%,rgba(19, 60, 94, 0.03) 100%);
+  }
+}
