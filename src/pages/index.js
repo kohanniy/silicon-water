@@ -44,7 +44,7 @@ import {
 
 window.addEventListener('load', () => {
   const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
-  const aboutSilicon = document.querySelector('.about-silicon');
+  const water = document.querySelector('.water');
   const upButton = new UpButton('.up-button', () => {
     scrollTo(0);
   });
@@ -91,7 +91,7 @@ window.addEventListener('load', () => {
 
   window.addEventListener('scroll', debounce(() => {
     const pos = window.pageYOffset;
-    const targetPos = aboutSilicon.getBoundingClientRect().top + window.pageYOffset;
+    const targetPos = water.getBoundingClientRect().top + window.pageYOffset;
 
     if (pos > targetPos && !Cookies.get('date')) {
       Cookies.set('date', 'now');

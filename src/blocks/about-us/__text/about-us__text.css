@@ -2,7 +2,7 @@
   max-width: 964px;
   width: 79%;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 22px;
   line-height: 1.2;
   font-weight: normal;
   font-style: normal;
@@ -10,7 +10,13 @@
 }
 
 .about-us__text + .about-us__text {
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .about-us__text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 575px) {

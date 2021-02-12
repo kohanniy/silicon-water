@@ -1,0 +1,15 @@
+.water__glass {
+  width: 22%;
+}
+
+@media (max-width: 1024px) {
+  .water__glass {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .water__glass {
+    display: none;
+  }
+}

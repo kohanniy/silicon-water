@@ -1,0 +1,11 @@
+.water__property {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .water__property {
+    text-align: center;
+  }
+}

@@ -1,0 +1,22 @@
+.water__images {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+@media (max-width: 1279px) {
+  .water__images {
+    top: 32%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .water__images {
+    top: 38%;
+  }
+}

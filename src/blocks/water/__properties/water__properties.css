@@ -1,0 +1,40 @@
+.water__properties {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3,auto);
+  row-gap: 50px;
+  grid-template-areas:
+      "alkali sodium-chloride"
+      "mineralized hot"
+      "bicarbonate acid";
+}
+
+@media (max-width: 1279px) {
+  .water__properties {
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .water__properties {
+    grid-template-columns: repeat(2, 35%);
+    justify-content: space-between;
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .water__properties {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'alkali'
+      'mineralized'
+      'bicarbonate'
+      'sodium-chloride'
+      'hot'
+      'acid';
+  }
+}

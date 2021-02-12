@@ -1,0 +1,19 @@
+.water__numerals {
+  width: 46%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1279px) {
+  .water__numerals {
+    width: 42%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .water__numerals {
+    display: none;
+  }
+}

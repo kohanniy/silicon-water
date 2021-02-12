@@ -1,9 +1,0 @@
-.about-silicon__images {
-  width: 100%;
-  z-index: 0;
-  grid-area: images;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-  align-items: center;
-}

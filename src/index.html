@@ -15,7 +15,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#main" class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a href="#aboutSilicon" class="main-nav__link">О воде</a></li>
+            <li class="main-nav__item"><a href="#water" class="main-nav__link">О воде</a></li>
             <li class="main-nav__item"><a href="#production" class="main-nav__link">Продукция</a></li>
             <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
             <li class="main-nav__item"><a href="#catalog" class="main-nav__link">Справочник</a></li>
@@ -73,39 +73,39 @@
           <div class="intro__slider-dots"></div>
         </div>
       </section>
-      <section class="section about-silicon">
-        <div class="page__container about-silicon__container">
-          <h2 id="aboutSilicon" class="section__title">О воде</h2>
+      <section class="section water">
+        <div class="page__container water__container">
+          <h2 id="water" class="section__title">О воде</h2>
           <p class="section__subtitle">Химический состав и полезные свойства воды</p>
-          <div class="about-silicon__columns">
-            <div class="about-silicon__property about-silicon__property_area_alkali">
-              <h3 class="about-silicon__property-title">Щелочная</h3>
-              <p class="about-silicon__property-description">Снижает окислительные процессы и кислотность среды, препятствует вымыванию минералов из костей, мышц, волос</p>
-            </div>
-            <div class="about-silicon__property about-silicon__property_area_slightly-mineralized">
-              <h3 class="about-silicon__property-title">Слабоминерализованная</h3>
-              <p class="about-silicon__property-description">Соотношения кальция и магния в составе воды тормозит образование песка и почечных камней</p>
-            </div>
-            <div class="about-silicon__property about-silicon__property_area_bicarbonate">
-              <h3 class="about-silicon__property-title">Гидрокарбонатная</h3>
-              <p class="about-silicon__property-description">Не допускает накопления в мышцах молочной кислоты, рекомендуется при сахарном диабете, болезнях почек и некоторых видах инфекционных заболеваний</p>
-            </div>
-            <div class="about-silicon__images">
-              <img class="about-silicon__figures" alt="цифры" src="<%=require('./images/circle-all.png')%>">
-              <img class="about-silicon__glass" src="<%=require('./images/glass-aks.png')%>" alt="стакан с кремниевосодержащей водой">
-            </div>
-            <div class="about-silicon__property about-silicon__property_area_sodium-chloride">
-              <h3 class="about-silicon__property-title about-silicon__property-title_right">Хлорно-натриевая</h3>
-              <p class="about-silicon__property-description about-silicon__property-description_right">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
-            </div>
-            <div class="about-silicon__property about-silicon__property_area_hot">
-              <h3 class="about-silicon__property-title about-silicon__property-title_right">Горячей</h3>
-              <p class="about-silicon__property-description about-silicon__property-description_right">Размягчает, очищает кожные покровы, тонизирует соединительно-тканевые и эластические структуры кожи, тканей и органов, а также центральную нервную систему, улучшая общее состояние больных</p>
-            </div>
-            <div class="about-silicon__property about-silicon__property_area_silicic-acid">
-              <h3 class="about-silicon__property-title about-silicon__property-title_right">С кремниевой кислотой</h3>
-              <p class="about-silicon__property-description about-silicon__property-description_right">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
-            </div>
+          <ul class="water__properties">
+            <li class="water__property water__property_area_alkali">
+              <h3 class="water__heading">Щелочная</h3>
+              <p class="water__description">Снижает окислительные процессы и кислотность среды, препятствует вымыванию минералов из костей, мышц, волос</p>
+            </li>
+            <li class="water__property water__property_area_mineralized">
+              <h3 class="water__heading">Слабоминерализованная</h3>
+              <p class="water__description">Соотношения кальция и магния в составе воды тормозит образование песка и почечных камней</p>
+            </li>
+            <li class="water__property water__property_area_bicarbonate">
+              <h3 class="water__heading">Гидрокарбонатная</h3>
+              <p class="water__description">Не допускает накопления в мышцах молочной кислоты, рекомендуется при сахарном диабете, болезнях почек и некоторых видах инфекционных заболеваний</p>
+            </li>
+            <li class="water__property water__property_area_sodium-chloride water__property_right">
+              <h3 class="water__heading">Хлорно-натриевая</h3>
+              <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
+            </li>
+            <li class="water__property water__property_area_hot water__property_right">
+              <h3 class="water__heading">Горячей</h3>
+              <p class="water__description">Размягчает, очищает кожные покровы, тонизирует соединительно-тканевые и эластические структуры кожи, тканей и органов, а также центральную нервную систему, улучшая общее состояние больных</p>
+            </li>
+            <li class="water__property water__property_area_acid water__property_right">
+              <h3 class="water__heading">С кремниевой кислотой</h3>
+              <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
+            </li>
+          </ul>
+          <div class="water__images">
+            <img class="water__numerals" alt="цифры" src="<%=require('./images/circle-all.png')%>">
+            <img class="water__glass" src="<%=require('./images/glass-aks.png')%>" alt="стакан с кремниевосодержащей водой">
           </div>
         </div>
       </section>
