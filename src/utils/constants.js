@@ -56,7 +56,7 @@ export const introSliderData = {
   grabCursor: false,
   centeredSlides: true,
   loop: true,
-  spaceBetween: 10,
+  // spaceBetween: 10,
   containerModifierClass: 'intro__slider-',
   slideClass: 'intro__slide',
   wrapperClass: 'intro__slider-wrap',

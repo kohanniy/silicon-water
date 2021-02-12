@@ -1,10 +1,9 @@
 .order-button {
-  width: 200px;
   box-sizing: border-box;
-  padding: 15px 20px;
+  padding: 15px 90px;
   color: #fff;
   background: linear-gradient(#0a2840 30%, #133c5e 100%);
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.25;
   font-weight: normal;
   border: none;
@@ -18,6 +17,18 @@
 
 @media (max-width: 1279px) {
   .order-button {
-    font-size: 15px;
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order-button {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .order-button {
+    width: 100%;
   }
 }
