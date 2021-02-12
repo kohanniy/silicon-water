@@ -1,3 +1,4 @@
 .about-silicon__property_area_silicic-acid {
   grid-area: silicic-acid;
+  align-items: flex-end;
 }

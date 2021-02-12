@@ -1,3 +1,4 @@
 .about-silicon__property_area_hot {
   grid-area: hot;
+  align-items: flex-end;
 }

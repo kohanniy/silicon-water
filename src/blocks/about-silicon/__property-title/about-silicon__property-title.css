@@ -1,11 +1,12 @@
 .about-silicon__property-title {
   margin: 0;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: bold;
   font-style: normal;
   line-height: 1.1;
-  color: #47bcca;
+  color: #10cede;
   z-index: 4;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1279px) {

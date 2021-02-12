@@ -1,3 +1,4 @@
 .about-silicon__property_area_sodium-chloride {
   grid-area: sodium-chloride;
+  align-items: flex-end;
 }
