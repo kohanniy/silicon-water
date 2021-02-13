@@ -15,8 +15,8 @@ export default class Catalog {
   _renderArticle(button) {
     this._title.textContent = this._data[button.dataset.article].title;
     this._preview.textContent = this._data[button.dataset.article].preview;
-    this._icon.src = button.firstElementChild.src;
-    this._icon.alt = button.firstElementChild.alt;
+    this._icon.src = button.dataset.src;
+    this._icon.alt = button.dataset.alt;
     this._moreButton.dataset.article = button.dataset.article;
   }
 

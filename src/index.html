@@ -250,28 +250,18 @@
           <div class="catalog__wrapper">
             <div class="catalog__image-container">
               <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
-              <buton type="button" class="catalog__button" data-article="arthritis">
-                <img class="catalog__button-pic" src="<%=require('./images/arthritis.svg')%>" alt="артрит">
-              </buton>
-              <buton type="button" class="catalog__button" data-article="kidney">
-                <img class="catalog__button-pic" src="<%=require('./images/kidney.svg')%>" alt="легкие">
-              </buton>
-              <buton type="button" class="catalog__button" data-article="liver">
-                <img class="catalog__button-pic" src="<%=require('./images/liver.svg')%>" alt="печень">
-              </buton>
-              <buton type="button" class="catalog__button" data-article="stomach">
-                <img class="catalog__button-pic" src="<%=require('./images/stomach.svg')%>" alt="язва желудка">
-              </buton>
-              <buton type="button" class="catalog__button" data-article="allergy">
-                <img class="catalog__button-pic" src="<%=require('./images/skin-allergy.svg')%>" alt="кожная аллергия">
-              </buton>
+              <buton type="button" class="catalog__button" data-article="arthritis" data-src="<%=require('./images/arthritis.svg')%>" data-alt="артрит" data-info="Полезные свойства при артрите"></buton>
+              <buton type="button" class="catalog__button" data-article="kidney" data-src="<%=require('./images/kidney.svg')%>" data-alt="легкие" data-info="Полезные свойства при болезнях легких"></buton>
+              <buton type="button" class="catalog__button" data-article="liver" data-src="<%=require('./images/liver.svg')%>" data-alt="печень" data-info="Полезные свойства при проблемах с печенью"></buton>
+              <buton type="button" class="catalog__button" data-article="stomach" data-src="<%=require('./images/stomach.svg')%>" data-alt="язва желудка" data-info="Полезные свойства при язве желудка"></buton>
+              <buton type="button" class="catalog__button" data-article="allergy" data-src="<%=require('./images/skin-allergy.svg')%>" data-alt="кожная аллергия" data-info="Полезные свойства при кожной аллергии"></buton>
             </div>
             <article class="catalog__article">
               <header class="catalog__header">
                 <h3 class="catalog__heading"></h3>
                 <div class="catalog__header-images">
                   <img class="catalog__header-arrow" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
-                  <img class="catalog__header-icon" src="<%=require('./images/liver.svg')%>" alt="артрит">
+                  <img class="catalog__header-icon" src="#" alt="#">
                 </div>
               </header>
               <p class="catalog__text"></p>

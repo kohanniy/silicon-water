@@ -1,30 +1,73 @@
 .catalog__button {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #fff;
+  width: 33px;
+  height: 33px;
   border-radius: 100%;
-  background-color: #00355a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
   cursor: pointer;
   position: absolute;
-  transition: background-color 0.5s linear;
   outline: none;
+  background: url(../../../images/catalog-btn.svg) center/cover no-repeat;
+}
+
+.catalog__button::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: -100%;
+  left: 50px;
+  border-radius: 7px;
+  opacity: 0;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.05;
+  padding: 5px 10px;
+  background: rgba(0 , 0, 0, 0.7);
+  box-sizing: border-box;
+  color: #fff;
+  pointer-events: none;
+  transition: opacity 0.5s, top 0.5s;
+}
+
+.catalog__button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: 30px;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: solid transparent 10px;
+  border-right-color: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.5s, top 0.5s, transform 0.5s;
+  transform: translateY(0);
 }
 
 .catalog__button:hover {
-  background-color: #47bcca;
+  z-index: 10;
+}
+
+.catalog__button:hover::after,
+.catalog__button:hover::before {
+  opacity: 1;
+}
+
+.catalog__button:hover::after {
+  top: 0;
+}
+
+.catalog__button:hover::before {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .catalog__button[data-article="arthritis"] {
   top: 132px;
-  right: 42px;
+  right: 50px;
 }
 
 .catalog__button[data-article="kidney"] {
-  top: 142px;
+  top: 150px;
   left: 78px;
 }
 
@@ -34,19 +77,26 @@
 }
 
 .catalog__button[data-article="stomach"] {
-  top: 256px;
-  left: 106px;
+  top: 260px;
+  left: 110px;
 }
 
 .catalog__button[data-article="allergy"] {
-  top: 287px;
-  right: 6px;
+  top: 290px;
+  right: 11px;
 }
 
 @media (max-width: 768px) {
-  .catalog__button {
-    width: 35px;
-    height: 35px
+  .catalog__button::after {
+    width: auto;
+    top: 150%;
+    left: 0px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .catalog__button:hover::after {
+    top: 40px;
   }
 
   .catalog__button[data-article="arthritis"] {

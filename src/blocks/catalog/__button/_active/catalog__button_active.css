@@ -1,3 +1,8 @@
 .catalog__button_active {
-  background-color: #47bcca;
+  background: url(../../../../images/catalog-btn-active.svg);
+}
+
+.catalog__button_active::after,
+.catalog__button_active::before {
+  display: none;
 }

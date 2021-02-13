@@ -45,6 +45,7 @@ import {
 window.addEventListener('load', () => {
   const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
   const water = document.querySelector('.water');
+  const contactsLogo = document.querySelector('.contacts__logo');
   const upButton = new UpButton('.up-button', () => {
     scrollTo(0);
   });
@@ -88,6 +89,10 @@ window.addEventListener('load', () => {
   catalog.enable();
 
   lazyMap.enable();
+
+  contactsLogo.addEventListener('click', () => {
+    scrollTo(0);
+  });
 
   window.addEventListener('scroll', debounce(() => {
     const pos = window.pageYOffset;
