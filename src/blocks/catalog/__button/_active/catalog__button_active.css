@@ -6,3 +6,9 @@
 .catalog__button_active::before {
   display: none;
 }
+
+@media (max-width: 575px) {
+  .catalog__button_active {
+    background-color: #47bcca;
+  }
+}
