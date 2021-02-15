@@ -1,9 +1,19 @@
 .water__numerals {
   width: 46%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  align-self: end;
+  transition: all 0.6s linear;
+}
+
+.js-anim .water__numerals {
+  transform: rotate(270deg);
+  opacity: 0;
+}
+
+.js.anim-active .water__numerals {
+  transform: rotate(0);
+  opacity: 1;
 }
 
 @media (max-width: 1279px) {

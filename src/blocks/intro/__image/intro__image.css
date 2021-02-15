@@ -2,6 +2,15 @@
   height: 720px;
 }
 
+.js-anim .intro__image {
+  transform: scale(0);
+}
+
+.js-anim-active .intro__image {
+  transform: scale(1);
+  transition: transform 0.6s linear 0.3s;
+}
+
 @media (max-width: 768px) {
   .intro__image {
     height: auto;

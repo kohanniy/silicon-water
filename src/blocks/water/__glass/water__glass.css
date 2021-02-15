@@ -1,5 +1,16 @@
 .water__glass {
   width: 22%;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  transition: all 0.3s linear;
+}
+
+.js-anim .water__glass {
+  transform: scale(0);
+}
+
+.js-anim-active .water__glass {
+  transform: scale(1);
 }
 
 @media (max-width: 1024px) {

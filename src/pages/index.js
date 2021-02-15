@@ -22,6 +22,8 @@ import ModalWithArticle from '../components/ModalWithArticle';
 
 import LazyLoadMap from '../components/LazyLoadMap';
 
+import AnimElWhenScrolling from '../components/AnimElWhenScrolling';
+
 import {
   dataForAnimationUDS,
   introSliderData,
@@ -35,21 +37,28 @@ import {
   articleSelectors,
   dataForAnimationArticle,
   mapSelectors,
+  animItemsSelector,
 } from '../utils/constants';
 
 import {
   debounce,
   scrollTo,
+  offset,
 } from '../utils/utils';
 
 window.addEventListener('load', () => {
   const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
+
   const water = document.querySelector('.water');
+
   const contactsLogo = document.querySelector('.contacts__logo');
+
   const upButton = new UpButton('.up-button', () => {
     scrollTo(0);
   });
+
   const mainNav = new MainNav(mainNavSelectors, scrollTo);
+
   const udsModal = new Modal(
     modalUdsSelector,
     pageSelector,
@@ -63,6 +72,7 @@ window.addEventListener('load', () => {
     articles,
     articleSelectors,
   );
+
   const catalog = new Catalog(
     catalogSelectors,
     articles,
@@ -74,8 +84,15 @@ window.addEventListener('load', () => {
   );
 
   const lazyMap = new LazyLoadMap(mapSelectors);
+
+  const animItems = new AnimElWhenScrolling(
+    animItemsSelector,
+  );
+
   Swiper.use([Navigation, Pagination, A11y, Autoplay]);
+
   const introSlider = new Swiper('.intro__slider', introSliderData);
+
   const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
 
   reviews.forEach((review) => {
@@ -83,6 +100,8 @@ window.addEventListener('load', () => {
 
     numberOfReviews.textContent = `(${reviews.length} ${reviews.length === 1 ? 'отзыв' : 'отзывов'})`;
   });
+
+  animItems.animOnScroll();
 
   mainNav.enable();
 
@@ -94,9 +113,11 @@ window.addEventListener('load', () => {
     scrollTo(0);
   });
 
-  window.addEventListener('scroll', debounce(() => {
+  window.addEventListener('scroll', () => {
     const pos = window.pageYOffset;
-    const targetPos = water.getBoundingClientRect().top + window.pageYOffset;
+    const targetPos = offset(water);
+
+    animItems.animOnScroll();
 
     if (pos > targetPos && !Cookies.get('date')) {
       Cookies.set('date', 'now');
@@ -108,7 +129,7 @@ window.addEventListener('load', () => {
     } else {
       upButton.hide();
     }
-  }));
+  });
 });
 
 // const inTwoMinutes = new Date(new Date().getTime() + 2 * 60 * 1000);

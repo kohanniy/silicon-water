@@ -11,3 +11,5 @@ export const debounce = (callback, wait = DEBOUNCE_INTERVAL) => {
 export const scrollTo = (position) => {
   window.scrollTo({ top: position, behavior: 'smooth' });
 };
+
+export const offset = (el) => el.getBoundingClientRect().top + window.pageYOffset;

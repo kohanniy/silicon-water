@@ -5,6 +5,15 @@
   font-weight: bold;
   font-size: 45px;
   line-height: 1.1;
+  transition: all 0.3s linear;
+}
+
+.js-anim .intro__title {
+  transform: translateX(-120%);
+}
+
+.js-anim-active .intro__title {
+  transform: translateX(0);
 }
 
 @media (max-width: 1279px) {

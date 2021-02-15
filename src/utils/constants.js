@@ -1,3 +1,5 @@
+export const animItemsSelector = '.js-anim';
+
 export const mapSelectors = {
   container: '.contacts__map',
   map: '#ymapLazy',

@@ -3,6 +3,7 @@
   overflow: hidden;
   height: 250px;
   margin: 0;
+  transition: all 0.4s linear;
 }
 
 @media (max-width: 575px) {

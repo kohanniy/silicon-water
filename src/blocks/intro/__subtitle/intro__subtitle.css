@@ -5,6 +5,16 @@
   font-size: 30px;
   line-height: 1.1;
   color: #10cede;
+  transition: all 0.3s linear;
+}
+
+.js-anim .intro__subtitle {
+  transform: translateX(-120%);
+}
+
+.js-anim-active .intro__subtitle {
+  transform: translateX(0);
+  transition: all 0.3s linear 0.3s;
 }
 
 @media (max-width: 1279px) {

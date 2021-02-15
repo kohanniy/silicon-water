@@ -4,6 +4,7 @@
   box-sizing: border-box;
   padding: 0 5px;
   min-width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
