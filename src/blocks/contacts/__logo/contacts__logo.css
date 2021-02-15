@@ -1,4 +1,4 @@
-@keyframes swing {
+/* @keyframes swing {
   15% {
     transform: translateX(9px);
   }
@@ -17,7 +17,7 @@
   100% {
     transform: translateX(0);
   }
-}
+} */
 
 .contacts__logo {
   grid-area: logo;
@@ -26,10 +26,10 @@
   cursor: pointer;
 }
 
-.contacts__logo:hover {
+/* .contacts__logo:hover {
   animation: swing 0.6s ease;
   animation-iteration-count: 1;
-}
+} */
 
 @media (max-width: 1024px) {
   .contacts__logo {
