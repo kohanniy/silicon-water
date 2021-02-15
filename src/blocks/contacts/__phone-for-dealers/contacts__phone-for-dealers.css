@@ -2,14 +2,19 @@
   display: flex;
   align-items: center;
   padding: 5px 5px;
-  text-decoration: none;
-  color: #133c5e;
   background-color: #fff;
   border-radius: 40px;
   transition: all 0.5s linear;
+  margin: 0;
 }
 
-.contacts__phone-for-dealers:hover {
-  color:#fff;
-  background-color: #133c5e;
+.contacts__phone-for-dealers a {
+  text-decoration: none;
+  color: #133c5e;
+  font-weight: bold;
+  transition: transform 0.4s linear;
+}
+
+.contacts__phone-for-dealers a:hover {
+  transform: scale(1.05);
 }

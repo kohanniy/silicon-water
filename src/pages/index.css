@@ -94,7 +94,11 @@
 @import url(../blocks/contacts/__social/contacts__social.css);
 @import url(../blocks/contacts/__address/contacts__address.css);
 @import url(../blocks/contacts/__icon/contacts__icon.css);
-@import url(../blocks/contacts/__icon/_color-phone/contacts__icon_color-phone.css);
+@import url(../blocks/contacts/__icon/_type/contacts__icon_type_phone.css);
+@import url(../blocks/contacts/__icon/_type/contacts__icon_type_email.css);
+@import url(../blocks/contacts/__icon/_type/contacts__icon_type_location.css);
+@import url(../blocks/contacts/__icon/_type/contacts__icon_type_calendar.css);
+@import url(../blocks/contacts/__icon/_type/contacts__icon_type_color-phone.css);
 @import url(../blocks/contacts/__map/contacts__map.css);
 @import url(../blocks/contacts/__dealers-wrapper/contacts__dealers-wrapper.css);
 @import url(../blocks/contacts/__dealers-offer/contacts__dealers-offer.css);
@@ -115,12 +119,7 @@
 @import url(../blocks/address/__item/_type/address__item_type_phone.css);
 @import url(../blocks/address/__link/address__link.css);
 @import url(../blocks/address/__link/_phone/address__link_phone.css);
-@import url(../blocks/icon/icon.css);
-@import url(../blocks/icon/_type/icon_type_calendar.css);
-@import url(../blocks/icon/_type/icon_type_color-phone.css);
-@import url(../blocks/icon/_type/icon_type_email.css);
-@import url(../blocks/icon/_type/icon_type_location.css);
-@import url(../blocks/icon/_type/icon_type_phone.css);
+@import url(../blocks/address/__link/_email/address__link_email.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__container/footer__container.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);

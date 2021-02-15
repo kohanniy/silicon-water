@@ -1,0 +1,18 @@
+.contacts__icon_type_color-phone {
+  background: url(../../../../images/color-phone.svg) center / 100% no-repeat;
+  position: relative;
+  margin-right: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.contacts__icon_type_color-phone::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #cacbcc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -9px;
+}
