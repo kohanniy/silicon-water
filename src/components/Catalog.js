@@ -75,6 +75,7 @@ export default class Catalog {
     if (!button.classList.contains('catalog__button_active')) {
       this._switchActiveClass(button);
       this._smoothHideArticle().addEventListener('finish', () => {
+        this._icon.src = '';
         this._renderArticle(button);
         this._smoothShowArticle();
       });
