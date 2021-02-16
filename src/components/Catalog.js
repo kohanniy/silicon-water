@@ -70,12 +70,7 @@ export default class Catalog {
   }
 
   _handleButtonClick(evt) {
-    let button;
-    if (evt.target.classList.contains('catalog__button-pic')) {
-      button = evt.target.parentNode;
-    } else {
-      button = evt.target;
-    }
+    const button = evt.target;
 
     if (!button.classList.contains('catalog__button_active')) {
       this._switchActiveClass(button);
