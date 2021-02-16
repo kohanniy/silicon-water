@@ -11,12 +11,12 @@
 }
 
 .js-anim .catalog__heading {
-  transform: translateX(-120%);
+  transform: translateY(120%);
   opacity: 0;
 }
 
 .js-anim-active .catalog__heading {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
 }
 

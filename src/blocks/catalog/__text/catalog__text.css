@@ -13,12 +13,12 @@
 }
 
 .js-anim .catalog__text {
-  transform: translateX(110%);
+  transform: translateY(120%);
   opacity: 0;
 }
 
 .js-anim-active .catalog__text {
-  transform: translateX(0);
+  transform: translateY(0);
   opacity: 1;
   transition: all 0.4s linear 0.3s;
 }
