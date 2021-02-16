@@ -47,6 +47,7 @@
 @import url(../blocks/water/__glass/water__glass.css);
 @import url(../blocks/water/__numerals/water__numerals.css);
 @import url(../blocks/production/production.css);
+@import url(../blocks/production/__container/production__container.css);
 @import url(../blocks/production/__types/production__types.css);
 @import url(../blocks/production/__type/production__type.css);
 @import url(../blocks/production/__image-wrapper/propduction__image-wrapper.css);
@@ -88,6 +89,7 @@
 @import url(../blocks/catalog/__header-arrow/catalog__header-arrow.css);
 @import url(../blocks/catalog/__header-icon/catalog__header-icon.css);
 @import url(../blocks/about-us/about-us.css);
+@import url(../blocks/about-us/__container/about-us__container.css);
 @import url(../blocks/about-us/__text/about-us__text.css);
 @import url(../blocks/contacts/contacts.css);
 @import url(../blocks/contacts/__container/contacts__container.css);

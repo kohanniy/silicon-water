@@ -53,6 +53,8 @@ window.addEventListener('load', () => {
 
   const contactsLogo = document.querySelector('.contacts__logo');
 
+  const copyrightName = document.querySelector('.copyright__name');
+
   const upButton = new UpButton('.up-button', () => {
     scrollTo(0);
   });
@@ -110,6 +112,10 @@ window.addEventListener('load', () => {
   lazyMap.enable();
 
   contactsLogo.addEventListener('click', () => {
+    scrollTo(0);
+  });
+
+  copyrightName.addEventListener('click', () => {
     scrollTo(0);
   });
 

@@ -3,6 +3,11 @@
   left: 0;
 }
 
+.reviews__slider-btn_type_prev:hover {
+  background-position: left;
+  background-color: transparent;
+}
+
 @media (max-width: 575px) {
   .reviews__slider-btn_type_prev {
     display: none;

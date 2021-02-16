@@ -12,9 +12,9 @@
   text-decoration: none;
   color: #133c5e;
   font-weight: bold;
-  transition: transform 0.4s linear;
+  transition: color 0.4s linear;
 }
 
 .contacts__phone-for-dealers a:hover {
-  transform: scale(1.05);
+  color: #47bcca;
 }

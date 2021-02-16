@@ -8,13 +8,13 @@
   color: #133c5e;
   transition: all 0.4s ease-in-out;
   text-align: center;
-  /* vertical-align: middle; */
 }
 
 .main-nav__link:hover {
   background-color: #fff;
   border-radius: 25px;
   box-shadow: inset 5px 5px 10px #c8d0d1;
+  color: #10cede;
 }
 
 @media (max-width: 1024px) {

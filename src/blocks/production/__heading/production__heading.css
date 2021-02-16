@@ -6,6 +6,12 @@
   font-weight: bold;
   color: #10cede;
   margin-bottom: 15px;
+  transition: color 0.5s linear;
+}
+
+.production__heading:hover {
+  cursor: pointer;
+  color: #002543;
 }
 
 @media (max-width: 768px) {

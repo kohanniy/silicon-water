@@ -1,15 +1,17 @@
 .water {
   width: 100%;
   position: relative;
-  background: url(../../images/bg-for-about-silicon.svg) center / 100% 100% no-repeat;
+  background: url(../../images/bg-for-about-silicon.svg) bottom / 100% 100% no-repeat;
   font-family: 'Marta', Georgia, serif;
   font-weight: 700;
   font-style: normal;
   z-index: 4;
+  transform: translateY(-10px);
 }
 
 @media (max-width: 768px) {
   .water {
     background-size: cover;
+    transform: translateY(0);
   }
 }

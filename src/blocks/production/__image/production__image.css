@@ -6,6 +6,9 @@
   transition: transform 0.5s linear;
 }
 
-.production__image:hover {
+.production__type:hover .production__image {
   transform: scale(1.05);
+  cursor: pointer;
 }
+
+

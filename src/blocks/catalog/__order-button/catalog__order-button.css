@@ -4,6 +4,17 @@
   padding: 15px 40px;
 }
 
+.js-anim .catalog__order-button {
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.js-anim-active .catalog__order-button {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 0.3s linear 0.6s;
+}
+
 @media (max-width: 575px) {
   .catalog__order-button {
     display: block;
