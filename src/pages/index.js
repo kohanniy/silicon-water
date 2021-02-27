@@ -20,9 +20,15 @@ import Catalog from '../components/Catalog';
 
 import ModalWithArticle from '../components/ModalWithArticle';
 
+import ModalWithForm from '../components/ModalWithForm';
+
 import LazyLoadMap from '../components/LazyLoadMap';
 
 import AnimElWhenScrolling from '../components/AnimElWhenScrolling';
+
+import CardClick from '../components/CardClick';
+
+import FormValidator from '../components/FormValidator';
 
 import {
   dataForAnimationUDS,
@@ -38,104 +44,143 @@ import {
   dataForAnimationArticle,
   mapSelectors,
   animItemsSelector,
+  introCardSelectors,
+  productionCardSelectors,
+  modalFormSelector,
+  formObj,
 } from '../utils/constants';
 
 import {
-  debounce,
   scrollTo,
   offset,
 } from '../utils/utils';
 
-window.addEventListener('load', () => {
-  const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
+const reviews = Array.from(document.querySelectorAll('.reviews__slide'));
 
-  const water = document.querySelector('.water');
+const water = document.querySelector('.water');
 
-  const contactsLogo = document.querySelector('.contacts__logo');
+const contactsLogo = document.querySelector('.contacts__logo');
 
-  const copyrightName = document.querySelector('.copyright__name');
+const copyrightName = document.querySelector('.copyright__name');
 
-  const upButton = new UpButton('.up-button', () => {
-    scrollTo(0);
-  });
+const upButton = new UpButton('.up-button', () => {
+  scrollTo(0);
+});
 
-  const mainNav = new MainNav(mainNavSelectors, scrollTo);
+const mainNav = new MainNav(mainNavSelectors, scrollTo);
 
-  const udsModal = new Modal(
-    modalUdsSelector,
-    pageSelector,
-    dataForAnimationUDS,
-  );
+Swiper.use([Navigation, Pagination, A11y, Autoplay]);
 
-  const modalWithArticle = new ModalWithArticle(
-    modalArticleSelector,
-    pageSelector,
-    dataForAnimationArticle,
-    articles,
-    articleSelectors,
-  );
+const introSlider = new Swiper('.intro__slider', introSliderData);
+const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
 
-  const catalog = new Catalog(
-    catalogSelectors,
-    articles,
-    {
-      handleMoreButtonClick: (dataset) => {
-        modalWithArticle.open(dataset);
-      },
+const updateSlider = () => {
+  introSlider.update();
+  reviewsSlider.update();
+};
+
+const udsModal = new Modal(
+  modalUdsSelector,
+  pageSelector,
+  dataForAnimationUDS,
+  updateSlider,
+);
+
+const modalWithArticle = new ModalWithArticle(
+  modalArticleSelector,
+  pageSelector,
+  dataForAnimationArticle,
+  updateSlider,
+  articles,
+  articleSelectors,
+);
+
+const modalWithForm = new ModalWithForm(
+  modalFormSelector,
+  pageSelector,
+  dataForAnimationUDS,
+  updateSlider,
+  formObj,
+);
+
+const formValidator = new FormValidator(formObj, modalWithForm.form);
+
+const introCardClick = new CardClick(introCardSelectors, {
+  handleCardClick: (data) => {
+    modalWithForm.open(data);
+    introSlider.update();
+    formValidator.disableSubmitButton();
+  },
+});
+
+const productionCardClick = new CardClick(productionCardSelectors, {
+  handleCardClick: (data) => {
+    modalWithForm.open(data);
+    reviewsSlider.update();
+    formValidator.disableSubmitButton();
+  },
+});
+
+const catalog = new Catalog(
+  catalogSelectors,
+  articles,
+  {
+    handleMoreButtonClick: (dataset) => {
+      modalWithArticle.open(dataset);
     },
-  );
+  },
+);
 
-  const lazyMap = new LazyLoadMap(mapSelectors);
+const lazyMap = new LazyLoadMap(mapSelectors);
 
-  const animItems = new AnimElWhenScrolling(
-    animItemsSelector,
-  );
+const animItems = new AnimElWhenScrolling(
+  animItemsSelector,
+);
 
-  Swiper.use([Navigation, Pagination, A11y, Autoplay]);
+reviews.forEach((review) => {
+  const numberOfReviews = review.querySelector('.reviews__number-of-reviews');
 
-  const introSlider = new Swiper('.intro__slider', introSliderData);
+  numberOfReviews.textContent = `(${reviews.length} ${reviews.length === 1 ? 'отзыв' : 'отзывов'})`;
+});
 
-  const reviewsSlider = new Swiper('.reviews__slider', reviewsSliderData);
+animItems.animOnScroll();
 
-  reviews.forEach((review) => {
-    const numberOfReviews = review.querySelector('.reviews__number-of-reviews');
+mainNav.enable();
 
-    numberOfReviews.textContent = `(${reviews.length} ${reviews.length === 1 ? 'отзыв' : 'отзывов'})`;
-  });
+catalog.enable();
+
+lazyMap.enable();
+
+introCardClick.enable();
+
+productionCardClick.enable();
+
+formValidator.enableValidation();
+
+contactsLogo.addEventListener('click', () => {
+  scrollTo(0);
+});
+
+copyrightName.addEventListener('click', () => {
+  scrollTo(0);
+});
+
+window.addEventListener('scroll', () => {
+  const pos = window.pageYOffset;
+  const targetPos = offset(water);
 
   animItems.animOnScroll();
 
-  mainNav.enable();
+  if (pos > targetPos && !Cookies.get('date')) {
+    Cookies.set('date', 'now');
+    udsModal.open();
+  }
 
-  catalog.enable();
-
-  lazyMap.enable();
-
-  contactsLogo.addEventListener('click', () => {
-    scrollTo(0);
-  });
-
-  copyrightName.addEventListener('click', () => {
-    scrollTo(0);
-  });
-
-  window.addEventListener('scroll', () => {
-    const pos = window.pageYOffset;
-    const targetPos = offset(water);
-
-    animItems.animOnScroll();
-
-    if (pos > targetPos && !Cookies.get('date')) {
-      Cookies.set('date', 'now');
-      udsModal.open();
-    }
-
-    if (pos > targetPos) {
-      upButton.show();
-    } else {
-      upButton.hide();
-    }
-  });
+  if (pos > targetPos) {
+    upButton.show();
+  } else {
+    upButton.hide();
+  }
 });
 
 // const inTwoMinutes = new Date(new Date().getTime() + 2 * 60 * 1000);

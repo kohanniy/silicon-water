@@ -6,12 +6,10 @@
   font-weight: 700;
   font-style: normal;
   z-index: 4;
-  transform: translateY(-10px);
 }
 
 @media (max-width: 768px) {
   .water {
     background-size: cover;
-    transform: translateY(0);
   }
 }

@@ -1,5 +1,23 @@
 export const animItemsSelector = '.js-anim';
 
+export const formObj = {
+  inputSelector: '.form__input',
+  submitButtonSelector: '.form__order-button',
+  inactiveButtonClass: 'form__order-button_disabled',
+  inputErrorClass: 'form__input_invalid',
+  isLoading: '.form__isLoading',
+};
+
+export const introCardSelectors = {
+  container: '.intro__slider-wrap',
+  button: 'order-button',
+};
+
+export const productionCardSelectors = {
+  container: '.production__types',
+  button: 'order-button',
+};
+
 export const mapSelectors = {
   container: '.contacts__map',
   map: '#ymapLazy',
@@ -42,6 +60,8 @@ export const dataForAnimationArticle = {
 export const modalUdsSelector = '.modal_type_uds';
 
 export const modalArticleSelector = '.modal_type_article';
+
+export const modalFormSelector = '.modal_type_form';
 
 export const articleSelectors = {
   article: '.article',

@@ -1,8 +1,10 @@
 import Modal from './Modal';
 
 export default class ModalWithArticle extends Modal {
-  constructor(modalSelector, pageSelector, dataForAnimation, data, articleSelectors) {
-    super(modalSelector, pageSelector, dataForAnimation);
+  constructor(
+    modalSelector, pageSelector, dataForAnimation, updateSlider, data, articleSelectors,
+  ) {
+    super(modalSelector, pageSelector, dataForAnimation, updateSlider);
     this._data = data;
     this._article = this._modalContainer.querySelector(articleSelectors.article);
     this._title = this._article.querySelector(articleSelectors.title);

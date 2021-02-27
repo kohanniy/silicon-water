@@ -1,11 +1,12 @@
 export default class Modal {
-  constructor(modalSelector, pageSelector, dataForAnimation) {
+  constructor(modalSelector, pageSelector, dataForAnimation, updateSlider) {
     this._page = document.querySelector(pageSelector);
     this._modal = this._page.querySelector(modalSelector);
     this._modalContainer = this._modal.querySelector('.modal__container');
     this._closeButton = this._modal.querySelector('.modal__close-button');
     this._keyframes = dataForAnimation.keyframes;
     this._options = dataForAnimation.options;
+    this.updateSlider = updateSlider;
 
     this._close = this._close.bind(this);
     this._handleEscClose = this._handleEscClose.bind(this);
@@ -31,6 +32,7 @@ export default class Modal {
       this._modal.classList.remove('modal_opened');
       this._page.classList.remove('page_lock');
       this._removeEventListeners();
+      this.updateSlider();
     });
   }
 
