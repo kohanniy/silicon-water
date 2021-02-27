@@ -69,9 +69,7 @@ export default class Catalog {
     this._moreButton.animate(animateData.keyframes, animateData.options);
   }
 
-  _handleButtonClick(evt) {
-    const button = evt.target;
-
+  _handleButtonClick(button) {
     if (!button.classList.contains('catalog__button_active')) {
       this._switchActiveClass(button);
       this._smoothHideArticle().addEventListener('finish', () => {
@@ -83,8 +81,10 @@ export default class Catalog {
   }
 
   _setEventListeners() {
-    this._buttonsContainer.addEventListener('click', (evt) => {
-      this._handleButtonClick(evt);
+    this._buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        this._handleButtonClick(button);
+      });
     });
 
     this._moreButton.addEventListener('click', () => {
