@@ -1,0 +1,33 @@
+.form__input {
+  color: #002543;
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  background: transparent;
+  padding: 22px 30px;
+  border: 1px solid rgba(17, 44, 145, .15);
+  border-radius: 32px;
+  background-clip: padding-box;
+  transition: all .3s ease;
+  box-sizing: border-box;
+  font: inherit;
+  outline: none;
+  margin: 0 0 5px
+}
+
+.form__input:focus {
+  border-color: #21b6ff
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none
+}
+
+input[type=number],
+input[type=number]:focus,
+input[type=number]:hover {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield
+}

@@ -250,23 +250,23 @@
           <div class="catalog__wrapper js-anim">
             <div class="catalog__image-container">
               <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
-              <buton type="button" class="catalog__button" data-article="arthritis" data-src="<%=require('./images/arthritis.svg')%>" data-alt="артрит" data-info="Полезные свойства при артрите"></buton>
-              <buton type="button" class="catalog__button" data-article="kidney" data-src="<%=require('./images/kidney.svg')%>" data-alt="легкие" data-info="Полезные свойства при болезнях легких"></buton>
-              <buton type="button" class="catalog__button" data-article="liver" data-src="<%=require('./images/liver.svg')%>" data-alt="печень" data-info="Полезные свойства при проблемах с печенью"></buton>
-              <buton type="button" class="catalog__button" data-article="stomach" data-src="<%=require('./images/stomach.svg')%>" data-alt="язва желудка" data-info="Полезные свойства при язве желудка"></buton>
-              <buton type="button" class="catalog__button" data-article="allergy" data-src="<%=require('./images/skin-allergy.svg')%>" data-alt="кожная аллергия" data-info="Полезные свойства при кожной аллергии"></buton>
+              <a href="#arthritis" class="catalog__button catalog__button_type_arthritis" data-info="Полезные свойства при артрите"></a>
+              <a href="#kidney" class="catalog__button catalog__button_type_kidney" data-info="Полезные свойства при болезнях легких"></a>
+              <a href="#liver" class="catalog__button catalog__button_type_liver" data-info="Полезные свойства при проблемах с печенью"></a>
+              <a href="#stomach" class="catalog__button catalog__button_type_stomach" data-info="Полезные свойства при язве желудка"></a>
+              <a href="#allergy" class="catalog__button catalog__button_type_allergy" data-info="Полезные свойства при кожной аллергии"></a>
             </div>
-            <article class="catalog__article">
-              <header class="catalog__header">
-                <h3 class="catalog__heading"></h3>
-                <div class="catalog__header-images">
-                  <img class="catalog__header-arrow" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
-                  <img class="catalog__header-icon" src="#" alt="#">
-                </div>
-              </header>
-              <p class="catalog__text"></p>
-              <button class="order-button catalog__order-button" type="button">Читать дальше</button>
-            </article>
+            <div class="catalog__previews previews">
+              <img class="catalog__arrow-icon" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
+              <ul class="previews__list">
+                <li class="preview">
+                  <h3 class="preview__title">Артрит тра-та-та</h3>
+                  <img class="preview__icon" src="<%=require('./images/arthritis.svg')%>" alt="#">
+                  <p class="preview__text">Velit ullamco nostrud reprehenderit velit laborum nulla ut exercitation.Non proident laborum ipsum anim consequat.Velit culpa amet reprehenderit qui.Proident duis sit fugiat laboris.'</p>
+                  <button class="order-button catalog__order-button preview__order-button" type="button">Читать дальше</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -429,16 +429,16 @@
       <div class="modal__container">
         <form class="form" name="form" novalidate>
           <h2 class="form__title">Заполните форму заказа</h2>
-          <label class="form__label" for="name">Как вас зовут *</label> 
-          <input id="name" class="form__input" name="name" required minlength="2" placeholder="Например, Дильшод"> 
-          <span id="name-error" class="form__error"></span> 
-          <label class="form__label" for="tel">Ваш номер телефона *</label> 
-          <input id="tel" type="tel" class="form__input" name="tel" required placeholder="(00)000-00-00"> 
-          <span id="tel-error" class="form__error"></span> 
-          <label class="form__label" for="amount">Сколько бутылей воды хотите заказать *</label> 
-          <input id="amount" type="number"class="form__input" name="amount" placeholder="Например, 8" step="1" min="1" required> 
-          <span id="amount-error" class="form__error"></span> 
-          <button type="submit" class="order-button form__order-button">Заказать</button> 
+          <label class="form__label" for="name">Как вас зовут *</label>
+          <input id="name" class="form__input" name="name" required minlength="2" placeholder="Например, Дильшод">
+          <span id="name-error" class="form__error"></span>
+          <label class="form__label" for="tel">Ваш номер телефона *</label>
+          <input id="tel" type="tel" class="form__input" name="tel" required placeholder="(00)000-00-00">
+          <span id="tel-error" class="form__error"></span>
+          <label class="form__label" for="amount">Сколько бутылей воды хотите заказать *</label>
+          <input id="amount" type="number"class="form__input" name="amount" placeholder="Например, 8" step="1" min="1" required>
+          <span id="amount-error" class="form__error"></span>
+          <button type="submit" class="order-button form__order-button">Заказать</button>
           <button type="button" class="order-button form__isLoading hide">Форма отправляется...</button>
         </form>
         <button type="button" class="modal__close-button" aria-label="Закрыть"></button>

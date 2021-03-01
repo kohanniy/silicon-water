@@ -1,0 +1,7 @@
+.form__order-button {
+  margin-top: 12px
+}
+
+.form__order-button.hide {
+  display: none
+}

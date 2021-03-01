@@ -75,18 +75,11 @@
 @import url(../blocks/catalog/catalog.css);
 @import url(../blocks/catalog/__wrapper/catalog__wrapper.css);
 @import url(../blocks/catalog/__image/catalog__image.css);
-@import url(../blocks/catalog/__article/catalog__article.css);
-@import url(../blocks/catalog/__heading/catalog__heading.css);
-@import url(../blocks/catalog/__text/catalog__text.css);
-@import url(../blocks/catalog/__order-button/catalog__order-button.css);
 @import url(../blocks/catalog/__image-container/catalog__image-container.css);
 @import url(../blocks/catalog/__button/catalog__button.css);
 @import url(../blocks/catalog/__button/_active/catalog__button_active.css);
-@import url(../blocks/catalog/__button-pic/catalog__button-pic.css);
-@import url(../blocks/catalog/__header/catalog__header.css);
-@import url(../blocks/catalog/__header-images/catalog__header-images.css);
-@import url(../blocks/catalog/__header-arrow/catalog__header-arrow.css);
-@import url(../blocks/catalog/__header-icon/catalog__header-icon.css);
+@import url(../blocks/catalog/__previews/catalog__previews.css);
+@import url(../blocks/catalog/__arrow-icon/catalog__arrow-icon.css);
 @import url(../blocks/about-us/about-us.css);
 @import url(../blocks/about-us/__container/about-us__container.css);
 @import url(../blocks/about-us/__text/about-us__text.css);
@@ -170,122 +163,18 @@
 @import url(../blocks/article/article.css);
 @import url(../blocks/article/__title/article__title.css);
 @import url(../blocks/article/__text/article__text.css);
-
-.form {
-  width: 430px;
-  background-color: #eff8fa;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 30px;
-  font-family: Marta, Georgia, serif;
-  font-style: normal;
-  box-sizing: border-box
-}
-
-@media (max-width:575px) {
-  .form {
-    width: 95%;
-    padding: 20px
-  }
-}
-
-.form__title {
-  margin: 0 0 36px;
-  color: #10cede;
-  font-size: 24px;
-  line-height: 1.1
-}
-
-.form__label,
-.form__title {
-  font-weight: 700;
-  text-align: center
-}
-
-.form__label {
-  display: block;
-  color: #002543;
-  font-size: 16px;
-  line-height: 1;
-  margin-bottom: 10px
-}
-
-.form__label_accent {
-  font-style: italic;
-  font-weight: 400
-}
-
-.form__input {
-  color: #002543;
-  width: 100%;
-  font-size: 14px;
-  display: block;
-  background: transparent;
-  padding: 22px 30px;
-  border: 1px solid rgba(17, 44, 145, .15);
-  border-radius: 32px;
-  background-clip: padding-box;
-  transition: all .3s ease;
-  box-sizing: border-box;
-  font: inherit;
-  outline: none;
-  margin: 0 0 5px
-}
-
-.form__input:focus {
-  border-color: #21b6ff
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none
-}
-
-input[type=number],
-input[type=number]:focus,
-input[type=number]:hover {
-  -webkit-appearance: none;
-  appearance: none;
-  -moz-appearance: textfield
-}
-
-.form__input_invalid {
-  border-color: #c11501
-}
-
-.form__error {
-  color: red;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  display: block;
-  min-height: 14px;
-  margin-bottom: 24px;
-  text-align: center;
-}
-
-.form__order-button {
-  margin-top: 12px
-}
-
-.form__order-button.hide {
-  display: none
-}
-
-.form__isLoading {
-  margin-top: 12px
-}
-
-.form__isLoading.hide {
-  display: none
-}
-
-.form__order-button_disabled {
-  border: 1px solid #000;
-  background: transparent;
-  opacity: .2;
-  color: #000;
-  transition: all .3s
-}
-
+@import url(../blocks/form/form.css);
+@import url(../blocks/form/__title/form__title.css);
+@import url(../blocks/form/__label/form__label.css);
+@import url(../blocks/form/__input/form__input.css);
+@import url(../blocks/form/__input/_invalid/form__input_invalid.css);
+@import url(../blocks/form/__error/form__error.css);
+@import url(../blocks/form/__order-button/form__order-button.css);
+@import url(../blocks/form/__order-button/_disabled/form__order-button_disabled.css);
+@import url(../blocks/form/__isLoading/form__isLoading.css);
+@import url(../blocks/previews/__list/previews__list.css);
+@import url(../blocks/preview/preview.css);
+@import url(../blocks/preview/__title/preview__title.css);
+@import url(../blocks/preview/__icon/preview__icon.css);
+@import url(../blocks/preview/__text/preview__text.css);
+@import url(../blocks/preview/__order-button/preview__order-button.css);

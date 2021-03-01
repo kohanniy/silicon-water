@@ -1,0 +1,39 @@
+.preview__icon {
+  width: 30px;
+  position: absolute;
+  top: 117px;
+  left: 429px;
+  transform-origin: left bottom;
+}
+
+
+@media (max-width: 1024px) {
+  .preview__icon {
+    width: 25px;
+    top: 89px;
+    left: 262px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preview__icon {
+    width: 22px;
+    top: 74px;
+    left: 4px;
+  }
+}
+
+@media (max-width: 575px) {
+  .preview__icon {
+    display: none;
+  }
+}
+
+.js-anim .preview__icon {
+  transform: scale(0);
+}
+
+.js-anim-active .preview__icon {
+  transform: scale(1);
+  transition: all 0.6s linear 0.3s;
+}

@@ -1,4 +1,4 @@
-.catalog__text {
+.preview__text {
   text-indent: 30px;
   margin: 0;
   font-size: 18px;
@@ -6,25 +6,22 @@
   font-style: normal;
   line-height: 1.2;
   color: #002543;
+  grid-row: 2/3;
 }
 
-.catalog__text + .catalog__text {
-  margin-top: 10px;
-}
-
-.js-anim .catalog__text {
+.js-anim .preview__text {
   transform: translateY(120%);
   opacity: 0;
 }
 
-.js-anim-active .catalog__text {
+.js-anim-active .preview__text {
   transform: translateY(0);
   opacity: 1;
   transition: all 0.4s linear 0.3s;
 }
 
 @media (max-width: 575px) {
-  .catalog__text {
+  .preview__text {
     margin-right: auto;
     margin-left: auto;
     text-align: center;

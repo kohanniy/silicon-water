@@ -1,0 +1,18 @@
+.form {
+  width: 430px;
+  background-color: #eff8fa;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  font-family: Marta, Georgia, serif;
+  font-style: normal;
+  box-sizing: border-box
+}
+
+@media (max-width:575px) {
+  .form {
+    width: 95%;
+    padding: 20px
+  }
+}

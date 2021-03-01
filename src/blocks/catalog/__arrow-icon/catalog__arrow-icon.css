@@ -1,0 +1,36 @@
+.catalog__arrow-icon {
+  width: 155px;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  transform-origin: left bottom;
+}
+
+@media (max-width: 1024px) {
+  .catalog__arrow-icon {
+    width: 120px;
+    left: 256px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__arrow-icon {
+    width: 100px;
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog__arrow-icon {
+    display: none;
+  }
+}
+
+.js-anim .catalog__arrow-icon {
+  transform: scale(0);
+}
+
+.js-anim-active .catalog__arrow-icon {
+  transform: scale(1);
+  transition: all 0.6s linear 0.3s;
+}

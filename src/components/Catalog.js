@@ -12,13 +12,13 @@ export default class Catalog {
     this._handleMoreButtonClick = handleMoreButtonClick;
   }
 
-  _renderArticle(button) {
-    this._title.textContent = this._data[button.dataset.article].title;
-    this._preview.textContent = this._data[button.dataset.article].preview;
-    this._icon.src = button.dataset.src;
-    this._icon.alt = button.dataset.alt;
-    this._moreButton.dataset.article = button.dataset.article;
-  }
+  // _renderArticle(button) {
+  //   this._title.textContent = this._data[button.dataset.article].title;
+  //   this._preview.textContent = this._data[button.dataset.article].preview;
+  //   this._icon.src = button.dataset.src;
+  //   this._icon.alt = button.dataset.alt;
+  //   this._moreButton.dataset.article = button.dataset.article;
+  // }
 
   _switchActiveClass(button) {
     const activeButton = this._buttons.find((item) => item.classList.contains('catalog__button_active'));
@@ -26,10 +26,10 @@ export default class Catalog {
     button.classList.add('catalog__button_active');
   }
 
-  _defaultRenderArticle() {
-    this._renderArticle(this._buttons[0]);
-    this._buttons[0].classList.add('catalog__button_active');
-  }
+  // _defaultRenderArticle() {
+  //   this._renderArticle(this._buttons[0]);
+  //   this._buttons[0].classList.add('catalog__button_active');
+  // }
 
   _smoothHideArticle() {
     const animateData = {
@@ -73,8 +73,7 @@ export default class Catalog {
     if (!button.classList.contains('catalog__button_active')) {
       this._switchActiveClass(button);
       this._smoothHideArticle().addEventListener('finish', () => {
-        this._icon.src = '';
-        this._renderArticle(button);
+        // this._renderArticle(button);
         this._smoothShowArticle();
       });
     }
@@ -93,7 +92,7 @@ export default class Catalog {
   }
 
   enable() {
-    this._defaultRenderArticle();
+    // this._defaultRenderArticle();
     this._setEventListeners();
   }
 }

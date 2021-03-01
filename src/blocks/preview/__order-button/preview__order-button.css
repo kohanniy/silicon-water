@@ -1,0 +1,17 @@
+.preview__order-button {
+  font-size: 20px;
+  padding: 15px 40px;
+  grid-row: 3/4;
+  justify-self: start;
+}
+
+.js-anim .preview__order-button {
+  transform: translateY(120%);
+  opacity: 0;
+}
+
+.js-anim-active .preview__order-button {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s linear 0.7s;
+}
