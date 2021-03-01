@@ -1,6 +1,6 @@
 .preview {
   width: 100%;
-  display: grid;
+  display: none;
   grid-template-rows: 155px repeat(2, auto);
   row-gap: 30px;
 }

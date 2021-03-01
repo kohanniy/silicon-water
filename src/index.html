@@ -250,7 +250,7 @@
           <div class="catalog__wrapper js-anim">
             <div class="catalog__image-container">
               <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
-              <a href="#arthritis" class="catalog__button catalog__button_type_arthritis" data-info="Полезные свойства при артрите"></a>
+              <a href="#arthritis" class="catalog__button catalog__button_type_arthritis catalog__button_active" data-info="Полезные свойства при артрите"></a>
               <a href="#kidney" class="catalog__button catalog__button_type_kidney" data-info="Полезные свойства при болезнях легких"></a>
               <a href="#liver" class="catalog__button catalog__button_type_liver" data-info="Полезные свойства при проблемах с печенью"></a>
               <a href="#stomach" class="catalog__button catalog__button_type_stomach" data-info="Полезные свойства при язве желудка"></a>
@@ -259,11 +259,35 @@
             <div class="catalog__previews previews">
               <img class="catalog__arrow-icon" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
               <ul class="previews__list">
-                <li class="preview">
+                <li data-relations="#arthritis" class="preview preview_active">
                   <h3 class="preview__title">Артрит тра-та-та</h3>
                   <img class="preview__icon" src="<%=require('./images/arthritis.svg')%>" alt="#">
                   <p class="preview__text">Velit ullamco nostrud reprehenderit velit laborum nulla ut exercitation.Non proident laborum ipsum anim consequat.Velit culpa amet reprehenderit qui.Proident duis sit fugiat laboris.'</p>
-                  <button class="order-button catalog__order-button preview__order-button" type="button">Читать дальше</button>
+                  <button data-slug="arthritis" class="order-button preview__order-button" type="button">Читать дальше</button>
+                </li>
+                <li data-relations="#kidney" class="preview">
+                  <h3 class="preview__title">Легкие тра-та-та</h3>
+                  <img class="preview__icon" src="<%=require('./images/kidney.svg')%>" alt="#">
+                  <p class="preview__text">In in veniam consequat aliquip id consectetur veniam aute voluptate.Consectetur exercitation velit amet fugiat nisi in id cupidatat dolore fugiat sint deserunt veniam sit.Et veniam labore Lorem irure Lorem tempor cupidatat eu ut id dolor consectetur consectetur.</p>
+                  <button data-slug="kidney" class="order-button preview__order-button" type="button">Читать дальше</button>
+                </li>
+                <li data-relations="#liver" class="preview">
+                  <h3 class="preview__title">Печень, печенка, печенюшка</h3>
+                  <img class="preview__icon" src="<%=require('./images/liver.svg')%>" alt="#">
+                  <p class="preview__text">Veniam in proident et pariatur esse sint sint.Nulla aute consequat incididunt fugiat eiusmod consequat laboris aliqua quis ad sint voluptate.Ut duis est qui enim minim qui do laborum ut fugiat occaecat nostrud.</p>
+                  <button data-slug="liver" class="order-button preview__order-button" type="button">Читать дальше</button>
+                </li>
+                <li data-relations="#stomach" class="preview">
+                  <h3 class="preview__title">Язва желудка и двенадцатиперстной кишки</h3>
+                  <img class="preview__icon" src="<%=require('./images/stomach.svg')%>" alt="#">
+                  <p class="preview__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы. Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
+                  <button data-slug="stomach" class="order-button preview__order-button" type="button">Читать дальше</button>
+                </li>
+                <li data-relations="#allergy" class="preview">
+                  <h3 class="preview__title">Кожная аллергия тра-та-та</h3>
+                  <img class="preview__icon" src="<%=require('./images/skin-allergy.svg')%>" alt="#">
+                  <p class="preview__text">Do non ad dolor elit pariatur.Cillum minim laborum et culpa cillum anim incididunt ad cupidatat aliqua.Officia nulla do ad ipsum aliqua nulla incididunt dolore velit non.Minim do laborum occaecat velit nisi voluptate amet.Sunt reprehenderit eu id nulla cillum non duis aute veniam dolor id esse.Commodo culpa id Lorem exercitation ullamco.Aliqua id velit adipisicing ipsum aliquip do Lorem excepteur reprehenderit magna.</p>
+                  <button data-slug="allergy" class="order-button preview__order-button" type="button">Читать дальше</button>
                 </li>
               </ul>
             </div>

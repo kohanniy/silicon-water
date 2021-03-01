@@ -138,13 +138,8 @@ export const mainNavSelectors = {
 export const pageSelector = '.page';
 
 export const catalogSelectors = {
-  wrapper: '.catalog__wrapper',
   button: '.catalog__button',
-  article: '.catalog__article',
-  title: '.catalog__heading',
-  preview: '.catalog__text',
-  icon: '.catalog__header-icon',
-  more: '.catalog__order-button',
+  preview: '.preview',
 };
 
 export const articles = {

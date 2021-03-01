@@ -16,7 +16,7 @@ import UpButton from '../components/UpButton';
 
 import MainNav from '../components/MainNav';
 
-// import Catalog from '../components/Catalog';
+import Catalog from '../components/Catalog';
 
 import ModalWithArticle from '../components/ModalWithArticle';
 
@@ -37,7 +37,7 @@ import {
   mainNavSelectors,
   pageSelector,
   articles,
-  // catalogSelectors,
+  catalogSelectors,
   modalUdsSelector,
   modalArticleSelector,
   articleSelectors,
@@ -121,15 +121,14 @@ const productionCardClick = new CardClick(productionCardSelectors, {
   },
 });
 
-// const catalog = new Catalog(
-//   catalogSelectors,
-//   articles,
-//   {
-//     handleMoreButtonClick: (dataset) => {
-//       modalWithArticle.open(dataset);
-//     },
-//   },
-// );
+const catalog = new Catalog(
+  catalogSelectors,
+  {
+    handleMoreButtonClick: (dataset) => {
+      console.log(dataset);
+    },
+  },
+);
 
 const lazyMap = new LazyLoadMap(mapSelectors);
 
@@ -147,7 +146,7 @@ animItems.animOnScroll();
 
 mainNav.enable();
 
-// catalog.enable();
+catalog.enable();
 
 lazyMap.enable();
 

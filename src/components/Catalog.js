@@ -1,98 +1,73 @@
 export default class Catalog {
-  constructor(selectors, data, { handleMoreButtonClick }) {
-    this._wrapper = document.querySelector(selectors.wrapper);
-    this._buttonsContainer = this._wrapper.querySelector('.catalog__image-container');
-    this._buttons = Array.from(this._wrapper.querySelectorAll(selectors.button));
-    this._article = this._wrapper.querySelector(selectors.article);
-    this._title = this._article.querySelector(selectors.title);
-    this._icon = this._article.querySelector(selectors.icon);
-    this._preview = this._article.querySelector(selectors.preview);
-    this._moreButton = this._article.querySelector(selectors.more);
-    this._data = data;
+  constructor(selectors, { handleMoreButtonClick }) {
+    this._buttons = Array.from(document.querySelectorAll(selectors.button));
+    this._previews = Array.from(document.querySelectorAll(selectors.preview));
     this._handleMoreButtonClick = handleMoreButtonClick;
+    this._hideKeyFrames = [
+      { opacity: 1 },
+      { opacity: 0 },
+    ];
+    this._showKeyFrames = [
+      { opacity: 0 },
+      { opacity: 1 },
+    ];
+    this._options = {
+      duration: 600,
+      easing: 'ease-out',
+      fill: 'both',
+    };
   }
 
-  // _renderArticle(button) {
-  //   this._title.textContent = this._data[button.dataset.article].title;
-  //   this._preview.textContent = this._data[button.dataset.article].preview;
-  //   this._icon.src = button.dataset.src;
-  //   this._icon.alt = button.dataset.alt;
-  //   this._moreButton.dataset.article = button.dataset.article;
-  // }
+  _hidePreviewSmooth(preview) {
+    return preview.animate(this._hideKeyFrames, this._options);
+  }
+
+  _showPreviewSmooth(preview) {
+    preview.animate(this._showKeyFrames, this._options);
+  }
+
+  _addActiveClass(button) {
+    const targetPreview = this._previews.find(
+      (preview) => preview.dataset.relations === button.hash,
+    );
+
+    targetPreview.classList.add('preview_active');
+    this._showPreviewSmooth(targetPreview);
+  }
 
   _switchActiveClass(button) {
-    const activeButton = this._buttons.find((item) => item.classList.contains('catalog__button_active'));
+    const activeButton = this._buttons.find((btn) => btn.classList.contains('catalog__button_active'));
+    const activePreview = this._previews.find((preview) => preview.classList.contains('preview_active'));
+
     activeButton.classList.remove('catalog__button_active');
     button.classList.add('catalog__button_active');
-  }
 
-  // _defaultRenderArticle() {
-  //   this._renderArticle(this._buttons[0]);
-  //   this._buttons[0].classList.add('catalog__button_active');
-  // }
-
-  _smoothHideArticle() {
-    const animateData = {
-      keyframes: [
-        { opacity: 1 },
-        { opacity: 0 },
-      ],
-      options: {
-        duration: 600,
-        easing: 'ease-out',
-        fill: 'both',
-      },
-    };
-
-    this._icon.animate(animateData.keyframes, animateData.options);
-    this._preview.animate(animateData.keyframes, animateData.options);
-    this._moreButton.animate(animateData.keyframes, animateData.options);
-    return this._title.animate(animateData.keyframes, animateData.options);
-  }
-
-  _smoothShowArticle() {
-    const animateData = {
-      keyframes: [
-        { opacity: 0 },
-        { opacity: 1 },
-      ],
-      options: {
-        duration: 600,
-        easing: 'ease-out',
-        fill: 'both',
-      },
-    };
-
-    this._title.animate(animateData.keyframes, animateData.options);
-    this._icon.animate(animateData.keyframes, animateData.options);
-    this._preview.animate(animateData.keyframes, animateData.options);
-    this._moreButton.animate(animateData.keyframes, animateData.options);
-  }
-
-  _handleButtonClick(button) {
-    if (!button.classList.contains('catalog__button_active')) {
-      this._switchActiveClass(button);
-      this._smoothHideArticle().addEventListener('finish', () => {
-        // this._renderArticle(button);
-        this._smoothShowArticle();
-      });
-    }
+    this._hidePreviewSmooth(activePreview).addEventListener('finish', () => {
+      activePreview.classList.remove('preview_active');
+      this._addActiveClass(button);
+    });
   }
 
   _setEventListeners() {
     this._buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        this._handleButtonClick(button);
+      button.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        if (!button.classList.contains('catalog__button_active')) {
+          this._switchActiveClass(button);
+        }
       });
     });
 
-    this._moreButton.addEventListener('click', () => {
-      this._handleMoreButtonClick(this._moreButton.dataset);
+    this._previews.forEach((preview) => {
+      const moreButton = preview.querySelector('.preview__order-button');
+
+      moreButton.addEventListener('click', () => {
+        this._handleMoreButtonClick(moreButton.dataset.slug);
+      });
     });
   }
 
   enable() {
-    // this._defaultRenderArticle();
     this._setEventListeners();
   }
 }

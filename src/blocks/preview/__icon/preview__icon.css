@@ -1,8 +1,8 @@
 .preview__icon {
   width: 30px;
   position: absolute;
-  top: 117px;
-  left: 429px;
+  top: 116px;
+  left: 430px;
   transform-origin: left bottom;
 }
 
@@ -10,16 +10,16 @@
 @media (max-width: 1024px) {
   .preview__icon {
     width: 25px;
-    top: 89px;
-    left: 262px;
+    top: 88px;
+    left: 263px;
   }
 }
 
 @media (max-width: 768px) {
   .preview__icon {
     width: 22px;
-    top: 74px;
-    left: 4px;
+    top: 73px;
+    left: 5px;
   }
 }
 
