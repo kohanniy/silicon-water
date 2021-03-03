@@ -1,7 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts.css);
 @import url(../blocks/page/page.css);
-@import url(../blocks/page/__content/page__content.css);
 @import url(../blocks/page/__container/page__container.css);
 @import url(../blocks/order-button/order-button.css);
 @import url(../blocks/order-button/_place/order-button_place_production.css);
@@ -179,3 +178,7 @@
 @import url(../blocks/preview/__icon/preview__icon.css);
 @import url(../blocks/preview/__text/preview__text.css);
 @import url(../blocks/preview/__order-button/preview__order-button.css);
+
+.preview__content {
+  display: none;
+}

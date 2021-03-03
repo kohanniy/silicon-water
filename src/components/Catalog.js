@@ -62,7 +62,11 @@ export default class Catalog {
       const moreButton = preview.querySelector('.preview__order-button');
 
       moreButton.addEventListener('click', () => {
-        this._handleMoreButtonClick(moreButton.dataset.slug);
+        const dataArticle = {
+          title: preview.querySelector('.preview__title').textContent,
+          text: preview.querySelector('.preview__content').textContent,
+        };
+        this._handleMoreButtonClick(dataArticle);
       });
     });
   }

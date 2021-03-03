@@ -28,15 +28,12 @@ import AnimElWhenScrolling from '../components/AnimElWhenScrolling';
 
 import CardClick from '../components/CardClick';
 
-import FormValidator from '../components/FormValidator';
-
 import {
   dataForAnimationUDS,
   introSliderData,
   reviewsSliderData,
   mainNavSelectors,
   pageSelector,
-  articles,
   catalogSelectors,
   modalUdsSelector,
   modalArticleSelector,
@@ -91,7 +88,6 @@ const modalWithArticle = new ModalWithArticle(
   pageSelector,
   dataForAnimationArticle,
   updateSlider,
-  articles,
   articleSelectors,
 );
 
@@ -103,13 +99,10 @@ const modalWithForm = new ModalWithForm(
   formObj,
 );
 
-const formValidator = new FormValidator(formObj, modalWithForm.form);
-
 const introCardClick = new CardClick(introCardSelectors, {
   handleCardClick: (data) => {
     modalWithForm.open(data);
     introSlider.update();
-    formValidator.disableSubmitButton();
   },
 });
 
@@ -117,15 +110,14 @@ const productionCardClick = new CardClick(productionCardSelectors, {
   handleCardClick: (data) => {
     modalWithForm.open(data);
     reviewsSlider.update();
-    formValidator.disableSubmitButton();
   },
 });
 
 const catalog = new Catalog(
   catalogSelectors,
   {
-    handleMoreButtonClick: (dataset) => {
-      console.log(dataset);
+    handleMoreButtonClick: (data) => {
+      modalWithArticle.open(data);
     },
   },
 );
@@ -153,8 +145,6 @@ lazyMap.enable();
 introCardClick.enable();
 
 productionCardClick.enable();
-
-formValidator.enableValidation();
 
 contactsLogo.addEventListener('click', () => {
   scrollTo(0);

@@ -1,7 +1,14 @@
 .page {
-  margin: 0;
   position: relative;
   background-color: #eff8fa;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
 }
 
 .page_lock {

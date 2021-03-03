@@ -1,4 +1,5 @@
 .modal__container {
+  width: 100%;
   position: relative;
   padding: 60px 0;
   display: flex;

@@ -18,12 +18,12 @@ export default class ModalWithForm extends Modal {
     return this._formValues;
   }
 
-  // _setEventListeners() {
-  //   super._setEventListeners();
-  //   this.form.addEventListener('submit', () => {
-  //     this._handleFormSubmit(this._getInputValues());
-  //   });
-  // }
+  _setEventListeners() {
+    super._setEventListeners();
+    this.form.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+    });
+  }
 
   open(productName) {
     super.open();

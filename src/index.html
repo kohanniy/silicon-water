@@ -7,466 +7,498 @@
   <link rel="icon" href="<%=require('./favicon.ico')%>">
 </head>
 <body class="page">
-  <div class="page__content">
-    <header class="header">
-      <div class="page__container header__container">
-        <img src="<%=require('./images/logo.svg')%>" alt="лого" class="header__logo">
-        <button type="button" class="toggle-menu"><span class="toggle-menu__icon"></span></button>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#main" class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a href="#water" class="main-nav__link">О воде</a></li>
-            <li class="main-nav__item"><a href="#production" class="main-nav__link">Продукция</a></li>
-            <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
-            <li class="main-nav__item"><a href="#catalog" class="main-nav__link">Справочник</a></li>
-            <li class="main-nav__item"><a href="#about-us" class="main-nav__link">О компании</a></li>
-            <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="main-content">
-      <section id="main" class="intro">
-        <div class="page__container intro__slider">
-          <ul class="intro__slider-wrap js-anim">
-            <li class="intro__slide">
-              <div class="intro__description">
-                <h2 class="intro__title js-productName">«Минерально-столовая кремнийсодержащая вода с глубины 1800 метров»</h2>
-                <p class="intro__subtitle">Выводит вредоносные микроорганизмы</p>
-                <button type="button" class="order-button intro__order-button">Заказать</button>
-              </div>
-              <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
-            </li>
-            <li class="intro__slide">
-              <div class="intro__description">
-                <h2 class="intro__title js-productName">«Fugiat est tempor voluptate proident tempor sunt nisi.»</h2>
-                <p class="intro__subtitle">Labore proident ad deserunt fugiat.</p>
-                <button type="button" class="order-button intro__order-button">Заказать2</button>
-              </div>
-              <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
-            </li>
-            <li class="intro__slide">
-              <div class="intro__description">
-                <h2 class="intro__title js-productName">«Sint culpa sint culpa sunt officia veniam ex officia deserunt adipisicing irure eiusmod exercitation adipisicing.»</h2>
-                <p class="intro__subtitle">In excepteur ipsum id mollit proident officia ipsum eiusmod.</p>
-                <button type="button" class="order-button intro__order-button">Заказать3</button>
-              </div>
-              <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
-            </li>
-            <li class="intro__slide">
-              <div class="intro__description">
-                <h2 class="intro__title js-productName">«Adipisicing quis cupidatat commodo dolor dolor irure culpa.»</h2>
-                <p class="intro__subtitle">Voluptate officia est pariatur aliqua ipsum tempor.</p>
-                <button type="button" class="order-button intro__order-button">Заказать4</button>
-              </div>
-              <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
-            </li>
-            <li class="intro__slide">
-              <div class="intro__description">
-                <h2 class="intro__title js-productName">«Ad sit sunt velit non eiusmod.»</h2>
-                <p class="intro__subtitle">Anim fugiat id laborum commodo do occaecat labore tempor.</p>
-                <button type="button" class="order-button intro__order-button">Заказать5</button>
-              </div>
-              <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
-            </li>
-          </ul>
-          <div class="intro__slider-dots"></div>
-        </div>
-      </section>
-      <section class="section water">
-        <div class="page__container water__container">
-          <h2 id="water" class="section__title">О воде</h2>
-          <p class="section__subtitle">Химический состав и полезные свойства воды</p>
-          <ul class="water__properties">
-            <li class="water__property water__property_area_alkali">
-              <h3 class="water__heading">Щелочная</h3>
-              <p class="water__description">Снижает окислительные процессы и кислотность среды, препятствует вымыванию минералов из костей, мышц, волос</p>
-            </li>
-            <li class="water__property water__property_area_mineralized">
-              <h3 class="water__heading">Слабоминерализованная</h3>
-              <p class="water__description">Соотношения кальция и магния в составе воды тормозит образование песка и почечных камней</p>
-            </li>
-            <li class="water__property water__property_area_bicarbonate">
-              <h3 class="water__heading">Гидрокарбонатная</h3>
-              <p class="water__description">Не допускает накопления в мышцах молочной кислоты, рекомендуется при сахарном диабете, болезнях почек и некоторых видах инфекционных заболеваний</p>
-            </li>
-            <li class="water__property water__property_area_sodium-chloride water__property_right">
-              <h3 class="water__heading">Хлорно-натриевая</h3>
-              <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
-            </li>
-            <li class="water__property water__property_area_hot water__property_right">
-              <h3 class="water__heading">Горячей</h3>
-              <p class="water__description">Размягчает, очищает кожные покровы, тонизирует соединительно-тканевые и эластические структуры кожи, тканей и органов, а также центральную нервную систему, улучшая общее состояние больных</p>
-            </li>
-            <li class="water__property water__property_area_acid water__property_right">
-              <h3 class="water__heading">С кремниевой кислотой</h3>
-              <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
-            </li>
-          </ul>
-          <div class="water__images js-anim">
-            <img class="water__numerals" alt="цифры" src="<%=require('./images/rings.svg')%>">
-            <img class="water__glass" src="<%=require('./images/glass-aks.png')%>" alt="стакан с кремниевосодержащей водой">
-          </div>
-        </div>
-      </section>
-      <section class="production section">
-        <div class="page__container production__container">
-          <h2 id="production" class="section__title">Продукция</h2>
-          <p class="section__subtitle">Виды упаковки воды</p>
-          <ul class="production__types js-anim">
-            <li class="production__type">
-              <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
-              </p>
-              <div class="production__text-wrapper">
-                <h3 class="production__heading js-productName">Dolor laborum tempor id sit magna</h3>
-                <p class="production__description">Occaecat ipsum magna mollit laboris sunt occaecat pariatur ea laborum aute exercitation ut incididunt non.Nulla duis reprehenderit non exercitation tempor.</p>
-                <button type="button" class="order-button order-button_place_production">Заказать</button>
-              </div>
-            </li>
-            <li class="production__type">
-              <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/primer.jpg')%>" alt="#">
-              </p>
-              <div class="production__text-wrapper">
-                <h3 class="production__heading js-productName">Occaecat sunt quis ullamco sit magna in est</h3>
-                <p class="production__description">Voluptate minim quis elit magna consequat occaecat anim ullamco.Qui pariatur duis velit consequat eu non eiusmod irure Lorem officia.</p>
-                <button type="button" class="order-button order-button_place_production">Заказать</button>
-              </div>
-            </li>
-            <li class="production__type">
-              <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
-              </p>
-              <div class="production__text-wrapper">
-                <h3 class="production__heading js-productName">Ut aute dolor sint esse</h3>
-                <p class="production__description">Tempor pariatur officia velit aliqua ullamco sit ullamco dolor.</p>
-                <button type="button" class="order-button order-button_place_production">Заказать</button>
-              </div>
-            </li>
-            <li class="production__type">
-              <p class="propduction__image-wrapper">
-                <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
-              </p>
-              <div class="production__text-wrapper">
-                <h3 class="production__heading js-productName">Consectetur exercitation laboris aliqua</h3>
-                <p class="production__description">Esse aliquip mollit duis proident aliqua laboris.Incididunt labore labore tempor nisi cupidatat aliqua quis consequat elit.</p>
-                <button type="button" class="order-button order-button_place_production">Заказать</button>
-              </div>
-            </li>
-          </ul>
-          <p class="production__advice">* эксперты рекомендуют пройти курс очистки и оздоровления (пропить 50 л)</p>
-        </div>
-      </section>
-      <section class="reviews section">
-        <div class="page__container">
-          <h2 id="reviews" class="section__title">Отзывы</h2>
-          <p class="section__subtitle">
-            Лучше всего о нашей работе говорят отзывы!<br>
-            Ознакомьтесь с ними и оставьте свой
-          </p>
-          <div class="reviews__slider">
-            <ul class="reviews__slider-wrap">
-              <li class="reviews__slide">
-                <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
-                <div class="reviews__content">
-                  <h3 class="reviews__heading">«Что можете сказать о воде?»</h3>
-                  <figure class="reviews__quote-wrapper">
-                    <blockquote class="reviews__quote">Хорошая вода! Приятная на вкус, богатый химический состав, большое содержание кремния, магния, кальция. Сейчас 2 раза в год очищаю организм. Рекомендую!!!</blockquote>
-                    <figcaption class="reviews__signature"></figcaption>
-                  </figure>
-                  <div class="reviews__rating">
-                    <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
-                    <p class="reviews__number-of-reviews">(7 отзывов)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="reviews__slide">
-                <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
-                <div class="reviews__content">
-                  <h3 class="reviews__heading">«Proident sint enim labore laborum.»</h3>
-                  <figure class="reviews__quote-wrapper">
-                    <blockquote class="reviews__quote">Id aliqua ea anim exercitation do do duis pariatur voluptate in nostrud occaecat.Nulla ex reprehenderit amet aliquip do.</blockquote>
-                    <figcaption class="reviews__signature"></figcaption>
-                  </figure>
-                  <div class="reviews__rating">
-                    <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
-                    <p class="reviews__number-of-reviews">(7 отзывов)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="reviews__slide">
-                <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
-                <div class="reviews__content">
-                  <h3 class="reviews__heading">«Duis laboris sint laborum duis laboris ad nulla in.»</h3>
-                  <figure class="reviews__quote-wrapper">
-                    <blockquote class="reviews__quote">Elit ut proident dolor cillum dolor occaecat duis duis consequat dolor in.Pariatur sint sint deserunt incididunt dolor fugiat mollit cillum in eiusmod.</blockquote>
-                    <figcaption class="reviews__signature"></figcaption>
-                  </figure>
-                  <div class="reviews__rating">
-                    <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
-                    <p class="reviews__number-of-reviews">(7 отзывов)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="reviews__slide">
-                <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
-                <div class="reviews__content">
-                  <h3 class="reviews__heading">«Qui ut ea eu pariatur consequat esse mollit tempor.»</h3>
-                  <figure class="reviews__quote-wrapper">
-                    <blockquote class="reviews__quote">Consectetur nisi do laboris magna deserunt.Aliquip sint aliquip eiusmod aliqua esse cillum.Elit mollit velit nisi aliqua labore proident consectetur.</blockquote>
-                    <figcaption class="reviews__signature"></figcaption>
-                  </figure>
-                  <div class="reviews__rating">
-                    <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
-                    <p class="reviews__number-of-reviews">(7 отзывов)</p>
-                  </div>
-                </div>
-              </li>
-              <li class="reviews__slide">
-                <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
-                <div class="reviews__content">
-                  <h3 class="reviews__heading">«Что можете сказать о воде?»</h3>
-                  <figure class="reviews__quote-wrapper">
-                    <blockquote class="reviews__quote">Хорошая вода! Приятная на вкус, богатый химический состав, большое содержание кремния, магния, кальция. Сейчас 2 раза в год очищаю организм. Рекомендую!!!</blockquote>
-                    <figcaption class="reviews__signature"></figcaption>
-                  </figure>
-                  <div class="reviews__rating">
-                    <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
-                    <p class="reviews__number-of-reviews">(7 отзывов)</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <button type="button" class="reviews__slider-btn reviews__slider-btn_type_prev"></button>
-            <button type="button" class="reviews__slider-btn reviews__slider-btn_type_next"></button>
-          </div>
-        </div>
-      </section>
-      <section class="catalog section">
-        <div class="page__container catalog__container">
-          <h2 id="catalog" class="section__title">Справочник заболеваний</h2>
-          <p class="section__subtitle">Информация о заболеваниях</p>
-          <div class="catalog__wrapper js-anim">
-            <div class="catalog__image-container">
-              <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
-              <a href="#arthritis" class="catalog__button catalog__button_type_arthritis catalog__button_active" data-info="Полезные свойства при артрите"></a>
-              <a href="#kidney" class="catalog__button catalog__button_type_kidney" data-info="Полезные свойства при болезнях легких"></a>
-              <a href="#liver" class="catalog__button catalog__button_type_liver" data-info="Полезные свойства при проблемах с печенью"></a>
-              <a href="#stomach" class="catalog__button catalog__button_type_stomach" data-info="Полезные свойства при язве желудка"></a>
-              <a href="#allergy" class="catalog__button catalog__button_type_allergy" data-info="Полезные свойства при кожной аллергии"></a>
-            </div>
-            <div class="catalog__previews previews">
-              <img class="catalog__arrow-icon" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
-              <ul class="previews__list">
-                <li data-relations="#arthritis" class="preview preview_active">
-                  <h3 class="preview__title">Артрит тра-та-та</h3>
-                  <img class="preview__icon" src="<%=require('./images/arthritis.svg')%>" alt="#">
-                  <p class="preview__text">Velit ullamco nostrud reprehenderit velit laborum nulla ut exercitation.Non proident laborum ipsum anim consequat.Velit culpa amet reprehenderit qui.Proident duis sit fugiat laboris.'</p>
-                  <button data-slug="arthritis" class="order-button preview__order-button" type="button">Читать дальше</button>
-                </li>
-                <li data-relations="#kidney" class="preview">
-                  <h3 class="preview__title">Легкие тра-та-та</h3>
-                  <img class="preview__icon" src="<%=require('./images/kidney.svg')%>" alt="#">
-                  <p class="preview__text">In in veniam consequat aliquip id consectetur veniam aute voluptate.Consectetur exercitation velit amet fugiat nisi in id cupidatat dolore fugiat sint deserunt veniam sit.Et veniam labore Lorem irure Lorem tempor cupidatat eu ut id dolor consectetur consectetur.</p>
-                  <button data-slug="kidney" class="order-button preview__order-button" type="button">Читать дальше</button>
-                </li>
-                <li data-relations="#liver" class="preview">
-                  <h3 class="preview__title">Печень, печенка, печенюшка</h3>
-                  <img class="preview__icon" src="<%=require('./images/liver.svg')%>" alt="#">
-                  <p class="preview__text">Veniam in proident et pariatur esse sint sint.Nulla aute consequat incididunt fugiat eiusmod consequat laboris aliqua quis ad sint voluptate.Ut duis est qui enim minim qui do laborum ut fugiat occaecat nostrud.</p>
-                  <button data-slug="liver" class="order-button preview__order-button" type="button">Читать дальше</button>
-                </li>
-                <li data-relations="#stomach" class="preview">
-                  <h3 class="preview__title">Язва желудка и двенадцатиперстной кишки</h3>
-                  <img class="preview__icon" src="<%=require('./images/stomach.svg')%>" alt="#">
-                  <p class="preview__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы. Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
-                  <button data-slug="stomach" class="order-button preview__order-button" type="button">Читать дальше</button>
-                </li>
-                <li data-relations="#allergy" class="preview">
-                  <h3 class="preview__title">Кожная аллергия тра-та-та</h3>
-                  <img class="preview__icon" src="<%=require('./images/skin-allergy.svg')%>" alt="#">
-                  <p class="preview__text">Do non ad dolor elit pariatur.Cillum minim laborum et culpa cillum anim incididunt ad cupidatat aliqua.Officia nulla do ad ipsum aliqua nulla incididunt dolore velit non.Minim do laborum occaecat velit nisi voluptate amet.Sunt reprehenderit eu id nulla cillum non duis aute veniam dolor id esse.Commodo culpa id Lorem exercitation ullamco.Aliqua id velit adipisicing ipsum aliquip do Lorem excepteur reprehenderit magna.</p>
-                  <button data-slug="allergy" class="order-button preview__order-button" type="button">Читать дальше</button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about-us section">
-        <div class="page__container about-us__container">
-          <h2 id="about-us" class="section__title">Немного о нас</h2>
-          <p class="section__subtitle">
-            Лучше всего о нашей работе говорят отзывы!<br>
-            Ознакомьтесь с ними и оставьте свой
-          </p>
-          <p class="about-us__text">
-            Компания основана в 2018 году в Ташкентской области. Основатель компании с юности слышал о чудодейственном воздействии воды из источников, расположенных на территории санатория «Янгиюль». Много лет люди с заболеваниями сердечно-сосудистой, нервной, пищеварительной, репродуктивной, костно-скелетной систем излечивались при помощи уникального состава воды.
-          </p>
-          <p class="about-us__text">
-            Вода из скважины №3 поднималась с глубины около 1800 метров при температурах 60-80 градусов, содержала в своем составе кремний, а также ряд других необходимых минералов. Теперь команда АКС поставила себе цель донести в каждую семью страны полезные и лечебные свойства природной кремнийсодержащей воды.
-          </p>
-        </div>
-      </section>
-      <section id="contacts" class="contacts">
-        <div class="page__container contacts__container">
-          <img src="<%=require('./images/logo-place-contacts.svg')%>" alt="логотип" class="contacts__logo">
-          <div class="contacts__social social">
-            <p class="social__heading">Мы в социальных сетях:</p>
-            <ul class="social__list">
-              <li class="social__item"><a href="#" class="social__link">
-                <svg id="Bold" class="social__icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
-              </a></li>
-              <li class="social__item"><a href="#" class="social__link">
-                <svg class="social__icon" height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0074.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"/><path fill="#005990" d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zm0 0M423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"/></svg>
-              </a></li>
-              <li class="social__item"><a href="#" class="social__link">
-                <svg class="social__icon" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"/></svg>
-              </a></li>
-            </ul>
-          </div>
-          <div class="contacts__address address">
-            <h2 class="address__title">Контакты</h2>
-            <ul class="address__list">
-              <li class="address__item address__item_type_phone">
-                <span class="contacts__icon contacts__icon_type_phone"></span>
-                <a class="address__link address__link_phone" href="tel:+998555000702">
-                  +99855-500-07-02
-                </a>
-              </li>
-              <li class="address__item address__item_type_email">
-                <span class="contacts__icon contacts__icon_type_email"></span>
-                <a class="address__link address__link_email" href="mailto:info@asl-suv.uz">
-                  info@asl-suv.uz
-                </a>
-              </li>
-              <li class="address__item addres__item_type_location">
-                <span class="contacts__icon contacts__icon_type_location"></span>
-                <address>
-                  Ташкентская область,<br>
-                  Янгиюльский район,<br>
-                  ССГ Йугонтепа
-                </address>
-              </li>
-              <li class="address__item address__item_type_calendar">
-                <span class="contacts__icon contacts__icon_type_calendar"></span>
-                24/7
-              </li>
-            </ul>
-          </div>
-          <div class="contacts__map">
-            <script id="ymapLazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A13a07d078f381fe7effe8761e5dfb1fe8b00db9a0b9a052c3d1426f65db40414&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
-          </div>
-          <div class="contacts__dealers-wrapper">
-            <p class="contacts__dealers-offer">Для желающих стать дилерами в регионах страны обращаться по телефону:</p>
-            <p class="contacts__phone-for-dealers">
-              <span class="contacts__icon contacts__icon_type_color-phone"></span>
-              <a href="tel:+998555000702">+99855-500-07-02</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="page__container footer__container">
-        <div class="footer__copyright copyright">
-          <p class="copyright__name">&copy;AslKremniySuv</p>
-          <span class="footer__line"></span>
-          <p class="copyright__certified">Товары сертифицированы</p>
-        </div>
-        <div class="footer__tas-ix">
-          <img class="footer__tas-ix-logo" src="<%=require('./images/tas-ix-logo.svg')%>" alt="счетчик посетителей">
-        </div>
-        <div class="footer__developer developer">
-          <p class="developer__text">Разработано в</p>
-          <span class="footer__line"></span>
-          <img class="developer__logo" src="<%=require('./images/developer-logo.svg')%>" alt="логотип разработчика">
-        </div>
-      </div>
-    </footer>
-    <button class="up-button" type="button"></button>
-    <div class="modal modal_type_uds">
-      <div class="modal__container">
-        <div class="uds">
-          <div class="uds__offer">
-            <p class="uds__bonus">
-              <span class="uds__bonus-amoutn">10000</span> <span class="uds__sup">Бонусных<br> сумов</span>
-            </p>
-            <p class="uds__member">каждому <span class="uds__accent">участнику</span><br> программы лояльности</p>
-          </div>
-          <div class="uds__mobile-apps">
-            <p class="uds__call-container">
-              <span class="uds__cloud"></span>
-              <span class="uds__call">Скачайте бесплатное мобильное приложение UDS</span>
-            </p>
-            <ul class="uds__icons">
-              <li class="uds__icons-item">
-                <a class="uds__icon-link" href="https://apps.apple.com/ru/app/uds-app/id954809132" target="_blank">
-                  <img src="<%=require('./images/app-store.svg')%>" alt="логотип App Store" class="uds__icon">
-                </a>
-              </li>
-              <li class="uds__icons-item">
-                <a class="uds__icon-link" href="https://play.google.com/store/apps/details?id=com.setinbox.game&hl=ru&gl=US" target="_blank">
-                  <img src="<%=require('./images/google-play.svg')%>" alt="логотип Google Play" class="uds__icon">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <ul class="uds__advantages">
-            <li class="uds__advantage uds__advantage_type_points">
-              <h3 class="uds__advantage-heading">10000</h3>
-              <p class="uds__advantage-text">приветственных баллов</p>
-            </li>
-            <li class="uds__advantage uds__advantage_type_cashback">
-              <h3 class="uds__advantage-heading">5%</h3>
-              <p class="uds__advantage-text">cashback с каждой покупки</p>
-            </li>
-            <li class="uds__advantage uds__advantage_type_friends-points">
-              <h3 class="uds__advantage-heading">1000</h3>
-              <p class="uds__advantage-text">баллов за приглашение друзей</p>
-            </li>
-            <li class="uds__advantage uds__advantage_type_friends-cashback">
-              <h3 class="uds__advantage-heading">4%</h3>
-              <p class="uds__advantage-text">cashback с их покупок</p>
-            </li>
-          </ul>
-          <div class="uds__qr-container">
-            <a href="https://aslkremniylisuv.uds.app/c/join/?ref=npbj1941" target="_blank">
-              <img class="uds__qr-code" src="<%=require('./images/qr.svg')%>" alt="QR-код">
-            </a>
-            <p class="uds__qr-text">Сканируйте QR-code для вступления в программу лояльности</p>
-          </div>
-        </div>
-        <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
-      </div>
+  <header class="header">
+    <div class="page__container header__container">
+      <img src="<%=require('./images/logo.svg')%>" alt="лого" class="header__logo">
+      <button type="button" class="toggle-menu"><span class="toggle-menu__icon"></span></button>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#main" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#water" class="main-nav__link">О воде</a></li>
+          <li class="main-nav__item"><a href="#production" class="main-nav__link">Продукция</a></li>
+          <li class="main-nav__item"><a href="#reviews" class="main-nav__link">Отзывы</a></li>
+          <li class="main-nav__item"><a href="#catalog" class="main-nav__link">Справочник</a></li>
+          <li class="main-nav__item"><a href="#about-us" class="main-nav__link">О компании</a></li>
+          <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="modal modal_type_article">
-      <div class="modal__container">
-        <article class="article">
+  </header>
+  <main class="main-content">
+    <section id="main" class="intro">
+      <div class="page__container intro__slider">
+        <ul class="intro__slider-wrap js-anim">
+          <li class="intro__slide">
+            <div class="intro__description">
+              <h2 class="intro__title js-productName">«Минерально-столовая кремнийсодержащая вода с глубины 1800 метров»</h2>
+              <p class="intro__subtitle">Выводит вредоносные микроорганизмы</p>
+              <button type="button" class="order-button intro__order-button">Заказать</button>
+            </div>
+            <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
+          </li>
+          <li class="intro__slide">
+            <div class="intro__description">
+              <h2 class="intro__title js-productName">«Fugiat est tempor voluptate proident tempor sunt nisi.»</h2>
+              <p class="intro__subtitle">Labore proident ad deserunt fugiat.</p>
+              <button type="button" class="order-button intro__order-button">Заказать2</button>
+            </div>
+            <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
+          </li>
+          <li class="intro__slide">
+            <div class="intro__description">
+              <h2 class="intro__title js-productName">«Sint culpa sint culpa sunt officia veniam ex officia deserunt adipisicing irure eiusmod exercitation adipisicing.»</h2>
+              <p class="intro__subtitle">In excepteur ipsum id mollit proident officia ipsum eiusmod.</p>
+              <button type="button" class="order-button intro__order-button">Заказать3</button>
+            </div>
+            <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
+          </li>
+          <li class="intro__slide">
+            <div class="intro__description">
+              <h2 class="intro__title js-productName">«Adipisicing quis cupidatat commodo dolor dolor irure culpa.»</h2>
+              <p class="intro__subtitle">Voluptate officia est pariatur aliqua ipsum tempor.</p>
+              <button type="button" class="order-button intro__order-button">Заказать4</button>
+            </div>
+            <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
+          </li>
+          <li class="intro__slide">
+            <div class="intro__description">
+              <h2 class="intro__title js-productName">«Ad sit sunt velit non eiusmod.»</h2>
+              <p class="intro__subtitle">Anim fugiat id laborum commodo do occaecat labore tempor.</p>
+              <button type="button" class="order-button intro__order-button">Заказать5</button>
+            </div>
+            <img src="<%=require('./images/bottle.png')%>" alt="изображение товара" class="intro__image">
+          </li>
+        </ul>
+        <div class="intro__slider-dots"></div>
+      </div>
+    </section>
+    <section class="section water">
+      <div class="page__container water__container">
+        <h2 id="water" class="section__title">О воде</h2>
+        <p class="section__subtitle">Химический состав и полезные свойства воды</p>
+        <ul class="water__properties">
+          <li class="water__property water__property_area_alkali">
+            <h3 class="water__heading">Щелочная</h3>
+            <p class="water__description">Снижает окислительные процессы и кислотность среды, препятствует вымыванию минералов из костей, мышц, волос</p>
+          </li>
+          <li class="water__property water__property_area_mineralized">
+            <h3 class="water__heading">Слабоминерализованная</h3>
+            <p class="water__description">Соотношения кальция и магния в составе воды тормозит образование песка и почечных камней</p>
+          </li>
+          <li class="water__property water__property_area_bicarbonate">
+            <h3 class="water__heading">Гидрокарбонатная</h3>
+            <p class="water__description">Не допускает накопления в мышцах молочной кислоты, рекомендуется при сахарном диабете, болезнях почек и некоторых видах инфекционных заболеваний</p>
+          </li>
+          <li class="water__property water__property_area_sodium-chloride water__property_right">
+            <h3 class="water__heading">Хлорно-натриевая</h3>
+            <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
+          </li>
+          <li class="water__property water__property_area_hot water__property_right">
+            <h3 class="water__heading">Горячей</h3>
+            <p class="water__description">Размягчает, очищает кожные покровы, тонизирует соединительно-тканевые и эластические структуры кожи, тканей и органов, а также центральную нервную систему, улучшая общее состояние больных</p>
+          </li>
+          <li class="water__property water__property_area_acid water__property_right">
+            <h3 class="water__heading">С кремниевой кислотой</h3>
+            <p class="water__description">Полезна при болезнях сердечно-сосудистой системы, периферической нервной системы, опорно-двигательного аппарата</p>
+          </li>
+        </ul>
+        <div class="water__images js-anim">
+          <img class="water__numerals" alt="цифры" src="<%=require('./images/rings.svg')%>">
+          <img class="water__glass" src="<%=require('./images/glass-aks.png')%>" alt="стакан с кремниевосодержащей водой">
+        </div>
+      </div>
+    </section>
+    <section class="production section">
+      <div class="page__container production__container">
+        <h2 id="production" class="section__title">Продукция</h2>
+        <p class="section__subtitle">Виды упаковки воды</p>
+        <ul class="production__types js-anim">
+          <li class="production__type">
+            <p class="propduction__image-wrapper">
+              <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
+            </p>
+            <div class="production__text-wrapper">
+              <h3 class="production__heading js-productName">Dolor laborum tempor id sit magna</h3>
+              <p class="production__description">Occaecat ipsum magna mollit laboris sunt occaecat pariatur ea laborum aute exercitation ut incididunt non.Nulla duis reprehenderit non exercitation tempor.</p>
+              <button type="button" class="order-button order-button_place_production">Заказать</button>
+            </div>
+          </li>
+          <li class="production__type">
+            <p class="propduction__image-wrapper">
+              <img class="production__image" src="<%=require('./images/primer.jpg')%>" alt="#">
+            </p>
+            <div class="production__text-wrapper">
+              <h3 class="production__heading js-productName">Occaecat sunt quis ullamco sit magna in est</h3>
+              <p class="production__description">Voluptate minim quis elit magna consequat occaecat anim ullamco.Qui pariatur duis velit consequat eu non eiusmod irure Lorem officia.</p>
+              <button type="button" class="order-button order-button_place_production">Заказать</button>
+            </div>
+          </li>
+          <li class="production__type">
+            <p class="propduction__image-wrapper">
+              <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
+            </p>
+            <div class="production__text-wrapper">
+              <h3 class="production__heading js-productName">Ut aute dolor sint esse</h3>
+              <p class="production__description">Tempor pariatur officia velit aliqua ullamco sit ullamco dolor.</p>
+              <button type="button" class="order-button order-button_place_production">Заказать</button>
+            </div>
+          </li>
+          <li class="production__type">
+            <p class="propduction__image-wrapper">
+              <img class="production__image" src="<%=require('./images/pruduction-type-example.png')%>" alt="#">
+            </p>
+            <div class="production__text-wrapper">
+              <h3 class="production__heading js-productName">Consectetur exercitation laboris aliqua</h3>
+              <p class="production__description">Esse aliquip mollit duis proident aliqua laboris.Incididunt labore labore tempor nisi cupidatat aliqua quis consequat elit.</p>
+              <button type="button" class="order-button order-button_place_production">Заказать</button>
+            </div>
+          </li>
+        </ul>
+        <p class="production__advice">* эксперты рекомендуют пройти курс очистки и оздоровления (пропить 50 л)</p>
+      </div>
+    </section>
+    <section class="reviews section">
+      <div class="page__container">
+        <h2 id="reviews" class="section__title">Отзывы</h2>
+        <p class="section__subtitle">
+          Лучше всего о нашей работе говорят отзывы!<br>
+          Ознакомьтесь с ними и оставьте свой
+        </p>
+        <div class="reviews__slider">
+          <ul class="reviews__slider-wrap">
+            <li class="reviews__slide">
+              <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
+              <div class="reviews__content">
+                <h3 class="reviews__heading">«Что можете сказать о воде?»</h3>
+                <figure class="reviews__quote-wrapper">
+                  <blockquote class="reviews__quote">Хорошая вода! Приятная на вкус, богатый химический состав, большое содержание кремния, магния, кальция. Сейчас 2 раза в год очищаю организм. Рекомендую!!!</blockquote>
+                  <figcaption class="reviews__signature"></figcaption>
+                </figure>
+                <div class="reviews__rating">
+                  <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
+                  <p class="reviews__number-of-reviews">(7 отзывов)</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__slide">
+              <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
+              <div class="reviews__content">
+                <h3 class="reviews__heading">«Proident sint enim labore laborum.»</h3>
+                <figure class="reviews__quote-wrapper">
+                  <blockquote class="reviews__quote">Id aliqua ea anim exercitation do do duis pariatur voluptate in nostrud occaecat.Nulla ex reprehenderit amet aliquip do.</blockquote>
+                  <figcaption class="reviews__signature"></figcaption>
+                </figure>
+                <div class="reviews__rating">
+                  <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
+                  <p class="reviews__number-of-reviews">(7 отзывов)</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__slide">
+              <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
+              <div class="reviews__content">
+                <h3 class="reviews__heading">«Duis laboris sint laborum duis laboris ad nulla in.»</h3>
+                <figure class="reviews__quote-wrapper">
+                  <blockquote class="reviews__quote">Elit ut proident dolor cillum dolor occaecat duis duis consequat dolor in.Pariatur sint sint deserunt incididunt dolor fugiat mollit cillum in eiusmod.</blockquote>
+                  <figcaption class="reviews__signature"></figcaption>
+                </figure>
+                <div class="reviews__rating">
+                  <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
+                  <p class="reviews__number-of-reviews">(7 отзывов)</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__slide">
+              <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
+              <div class="reviews__content">
+                <h3 class="reviews__heading">«Qui ut ea eu pariatur consequat esse mollit tempor.»</h3>
+                <figure class="reviews__quote-wrapper">
+                  <blockquote class="reviews__quote">Consectetur nisi do laboris magna deserunt.Aliquip sint aliquip eiusmod aliqua esse cillum.Elit mollit velit nisi aliqua labore proident consectetur.</blockquote>
+                  <figcaption class="reviews__signature"></figcaption>
+                </figure>
+                <div class="reviews__rating">
+                  <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
+                  <p class="reviews__number-of-reviews">(7 отзывов)</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__slide">
+              <img class="reviews__photo" src="<%=require('./images/reviews-photo.png')%>" alt="фото автора отзыва">
+              <div class="reviews__content">
+                <h3 class="reviews__heading">«Что можете сказать о воде?»</h3>
+                <figure class="reviews__quote-wrapper">
+                  <blockquote class="reviews__quote">Хорошая вода! Приятная на вкус, богатый химический состав, большое содержание кремния, магния, кальция. Сейчас 2 раза в год очищаю организм. Рекомендую!!!</blockquote>
+                  <figcaption class="reviews__signature"></figcaption>
+                </figure>
+                <div class="reviews__rating">
+                  <img src="<%=require('./images/reviews-stars.svg')%>" alt="оценка пользователя" class="reviews__stars">
+                  <p class="reviews__number-of-reviews">(7 отзывов)</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="reviews__slider-btn reviews__slider-btn_type_prev"></button>
+          <button type="button" class="reviews__slider-btn reviews__slider-btn_type_next"></button>
+        </div>
+      </div>
+    </section>
+    <section class="catalog section">
+      <div class="page__container catalog__container">
+        <h2 id="catalog" class="section__title">Справочник заболеваний</h2>
+        <p class="section__subtitle">Информация о заболеваниях</p>
+        <div class="catalog__wrapper js-anim">
+          <div class="catalog__image-container">
+            <img src="<%=require('./images/body.svg')%>" alt="контур человеческого тела" class="catalog__image">
+            <a href="#1arthritis" class="catalog__button catalog__button_type_arthritis catalog__button_active" data-info="Полезные свойства при артрите"></a>
+            <a href="#2kidney" class="catalog__button catalog__button_type_kidney" data-info="Полезные свойства при болезнях легких"></a>
+            <a href="#3liver" class="catalog__button catalog__button_type_liver" data-info="Полезные свойства при проблемах с печенью"></a>
+            <a href="#4stomach" class="catalog__button catalog__button_type_stomach" data-info="Полезные свойства при язве желудка"></a>
+            <a href="#5allergy" class="catalog__button catalog__button_type_allergy" data-info="Полезные свойства при кожной аллергии"></a>
+          </div>
+          <div class="catalog__previews previews">
+            <img class="catalog__arrow-icon" src="<%=require('./images/catalog-arrow.svg')%>" alt="стрелка">
+            <ul class="previews__list">
+              <li data-relations="#1arthritis" class="preview preview_active">
+                <h3 class="preview__title">Артрит тра-та-та</h3>
+                <img class="preview__icon" src="<%=require('./images/arthritis.svg')%>" alt="#">
+                <p class="preview__text">Velit ullamco nostrud reprehenderit velit laborum nulla ut exercitation.Non proident laborum ipsum anim consequat.Velit culpa amet reprehenderit qui.Proident duis sit fugiat laboris.'</p>
+                <div class="preview__content">
+                  Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.
 
-        </article>
-        <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+                  Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+
+                  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу.
+
+                  Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный риторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель
+                </div>
+                <button data-slug="1arthritis" class="order-button preview__order-button" type="button">Читать дальше</button>
+              </li>
+              <li data-relations="#2kidney" class="preview">
+                <h3 class="preview__title">Легкие тра-та-та</h3>
+                <img class="preview__icon" src="<%=require('./images/kidney.svg')%>" alt="#">
+                <p class="preview__text">In in veniam consequat aliquip id consectetur veniam aute voluptate.Consectetur exercitation velit amet fugiat nisi in id cupidatat dolore fugiat sint deserunt veniam sit.Et veniam labore Lorem irure Lorem tempor cupidatat eu ut id dolor consectetur consectetur.</p>
+                <div class="preview__content">
+                  Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации. Товарищи! рамки и место обучения кадров позволяет оценить значение модели развития. Таким образом сложившаяся структура организации позволяет выполнять важные задания по разработке направлений прогрессивного развития. С другой стороны дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки дальнейших направлений развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют от нас анализа соответствующий условий активизации. С другой стороны консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.
+
+Повседневная практика показывает, что рамки и место обучения кадров влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание модели развития.
+
+Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации позволяет оценить значение дальнейших направлений развития. Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия.
+                </div>
+                <button data-slug="2kidney" class="order-button preview__order-button" type="button">Читать дальше</button>
+              </li>
+              <li data-relations="#3liver" class="preview">
+                <h3 class="preview__title">Печень, печенка, печенюшка</h3>
+                <img class="preview__icon" src="<%=require('./images/liver.svg')%>" alt="#">
+                <p class="preview__text">Veniam in proident et pariatur esse sint sint.Nulla aute consequat incididunt fugiat eiusmod consequat laboris aliqua quis ad sint voluptate.Ut duis est qui enim minim qui do laborum ut fugiat occaecat nostrud.</p>
+                <div class="preview__content">
+                  Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий в значительной степени обуславливает создание соответствующий условий активизации. Идейные соображения высшего порядка, а также консультация с широким активом требуют определения и уточнения существенных финансовых и административных условий. Равным образом консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности способствует подготовки и реализации соответствующий условий активизации. Повседневная практика показывает, что консультация с широким активом представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач.
+
+Не следует, однако забывать, что консультация с широким активом способствует подготовки и реализации существенных финансовых и административных условий. Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации форм развития. Задача организации, в особенности же сложившаяся структура организации позволяет оценить значение существенных финансовых и административных условий. Товарищи! укрепление и развитие структуры играет важную роль в формировании систем массового участия. Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности играет важную роль в формировании модели развития.
+                </div>
+                <button data-slug="3liver" class="order-button preview__order-button" type="button">Читать дальше</button>
+              </li>
+              <li data-relations="#4stomach" class="preview">
+                <h3 class="preview__title">Язва желудка и двенадцатиперстной кишки</h3>
+                <img class="preview__icon" src="<%=require('./images/stomach.svg')%>" alt="#">
+                <p class="preview__text">Язвенная болезнь желудка – один из самых частых диагнозов ЖКТ. Она возникает вследствие нарушения кислотно-пептического баланса в верхних отделах пищеварительной системы. Нередко причиной язвы становятся неправильное питание, вредные привычки, стрессы. Еще один фактор возникновения заболевания – применение отдельных лекарств на постоянной основе. Сегодня триггерами язвы желудка и двенадцатиперстной кишки выступают ацетилсалициловая кислота, кофеин, кортикостероиды, противовоспалительные препараты на основе ибупрофена.</p>
+                <div class="preview__content">
+                  Разнообразный и богатый опыт сложившаяся структура организации способствует подготовки и реализации дальнейших направлений развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет оценить значение форм развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участия. Задача организации, в особенности же консультация с широким активом играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт новая модель организационной деятельности влечет за собой процесс внедрения и модернизации систем массового участия.
+
+Таким образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Равным образом консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке соответствующий условий активизации. Товарищи! сложившаяся структура организации требуют определения и уточнения новых предложений.
+
+Не следует, однако забывать, что новая модель организационной деятельности в значительной степени обуславливает создание форм развития. Задача организации, в особенности же постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Равным образом сложившаяся структура организации позволяет выполнять важные задания по разработке соответствующий условий активизации. Повседневная практика показывает, что новая модель организационной деятельности требуют от нас анализа форм развития.
+                </div>
+                <button data-slug="4stomach" class="order-button preview__order-button" type="button">Читать дальше</button>
+              </li>
+              <li data-relations="#5allergy" class="preview">
+                <h3 class="preview__title">Кожная аллергия тра-та-та</h3>
+                <img class="preview__icon" src="<%=require('./images/skin-allergy.svg')%>" alt="#">
+                <p class="preview__text">Do non ad dolor elit pariatur.Cillum minim laborum et culpa cillum anim incididunt ad cupidatat aliqua.Officia nulla do ad ipsum aliqua nulla incididunt dolore velit non.Minim do laborum occaecat velit nisi voluptate amet.Sunt reprehenderit eu id nulla cillum non duis aute veniam dolor id esse.Commodo culpa id Lorem exercitation ullamco.Aliqua id velit adipisicing ipsum aliquip do Lorem excepteur reprehenderit magna.</p>
+                <div class="preview__content">
+                  Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям. Разнообразный и богатый опыт рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации форм развития. С другой стороны сложившаяся структура организации влечет за собой процесс внедрения и модернизации новых предложений. Таким образом дальнейшее развитие различных форм деятельности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также новая модель организационной деятельности представляет собой интересный эксперимент проверки соответствующий условий активизации.
+
+Равным образом новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Не следует, однако забывать, что сложившаяся структура организации в значительной степени обуславливает создание новых предложений.
+                </div>
+                <button data-slug="5allergy" class="order-button preview__order-button" type="button">Читать дальше</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us section">
+      <div class="page__container about-us__container">
+        <h2 id="about-us" class="section__title">Немного о нас</h2>
+        <p class="section__subtitle">
+          Лучше всего о нашей работе говорят отзывы!<br>
+          Ознакомьтесь с ними и оставьте свой
+        </p>
+        <p class="about-us__text">
+          Компания основана в 2018 году в Ташкентской области. Основатель компании с юности слышал о чудодейственном воздействии воды из источников, расположенных на территории санатория «Янгиюль». Много лет люди с заболеваниями сердечно-сосудистой, нервной, пищеварительной, репродуктивной, костно-скелетной систем излечивались при помощи уникального состава воды.
+        </p>
+        <p class="about-us__text">
+          Вода из скважины №3 поднималась с глубины около 1800 метров при температурах 60-80 градусов, содержала в своем составе кремний, а также ряд других необходимых минералов. Теперь команда АКС поставила себе цель донести в каждую семью страны полезные и лечебные свойства природной кремнийсодержащей воды.
+        </p>
+      </div>
+    </section>
+    <section id="contacts" class="contacts">
+      <div class="page__container contacts__container">
+        <img src="<%=require('./images/logo-place-contacts.svg')%>" alt="логотип" class="contacts__logo">
+        <div class="contacts__social social">
+          <p class="social__heading">Мы в социальных сетях:</p>
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link">
+              <svg id="Bold" class="social__icon" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
+            </a></li>
+            <li class="social__item"><a href="#" class="social__link">
+              <svg class="social__icon" height="511pt" viewBox="0 0 511 511.9" width="511pt" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0074.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0"/><path fill="#005990" d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zm0 0M423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0"/></svg>
+            </a></li>
+            <li class="social__item"><a href="#" class="social__link">
+              <svg class="social__icon" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path fill="#005990" d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.93 3.821l.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247 1.741l5.443 1.693L18.953 5.78c.595-.394 1.136-.176.691.218z"/></svg>
+            </a></li>
+          </ul>
+        </div>
+        <div class="contacts__address address">
+          <h2 class="address__title">Контакты</h2>
+          <ul class="address__list">
+            <li class="address__item address__item_type_phone">
+              <span class="contacts__icon contacts__icon_type_phone"></span>
+              <a class="address__link address__link_phone" href="tel:+998555000702">
+                +99855-500-07-02
+              </a>
+            </li>
+            <li class="address__item address__item_type_email">
+              <span class="contacts__icon contacts__icon_type_email"></span>
+              <a class="address__link address__link_email" href="mailto:info@asl-suv.uz">
+                info@asl-suv.uz
+              </a>
+            </li>
+            <li class="address__item addres__item_type_location">
+              <span class="contacts__icon contacts__icon_type_location"></span>
+              <address>
+                Ташкентская область,<br>
+                Янгиюльский район,<br>
+                ССГ Йугонтепа
+              </address>
+            </li>
+            <li class="address__item address__item_type_calendar">
+              <span class="contacts__icon contacts__icon_type_calendar"></span>
+              24/7
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__map">
+          <script id="ymapLazy" type="text/javascript" charset="utf-8" async data-src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A13a07d078f381fe7effe8761e5dfb1fe8b00db9a0b9a052c3d1426f65db40414&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="contacts__dealers-wrapper">
+          <p class="contacts__dealers-offer">Для желающих стать дилерами в регионах страны обращаться по телефону:</p>
+          <p class="contacts__phone-for-dealers">
+            <span class="contacts__icon contacts__icon_type_color-phone"></span>
+            <a href="tel:+998555000702">+99855-500-07-02</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="page__container footer__container">
+      <div class="footer__copyright copyright">
+        <p class="copyright__name">&copy;AslKremniySuv</p>
+        <span class="footer__line"></span>
+        <p class="copyright__certified">Товары сертифицированы</p>
+      </div>
+      <div class="footer__tas-ix">
+        <img class="footer__tas-ix-logo" src="<%=require('./images/tas-ix-logo.svg')%>" alt="счетчик посетителей">
+      </div>
+      <div class="footer__developer developer">
+        <p class="developer__text">Разработано в</p>
+        <span class="footer__line"></span>
+        <img class="developer__logo" src="<%=require('./images/developer-logo.svg')%>" alt="логотип разработчика">
       </div>
     </div>
-    <div class="modal modal_type_form">
-      <div class="modal__container">
-        <form class="form" name="form" novalidate>
-          <h2 class="form__title">Заполните форму заказа</h2>
-          <label class="form__label" for="name">Как вас зовут *</label>
-          <input id="name" class="form__input" name="name" required minlength="2" placeholder="Например, Дильшод">
-          <span id="name-error" class="form__error"></span>
-          <label class="form__label" for="tel">Ваш номер телефона *</label>
-          <input id="tel" type="tel" class="form__input" name="tel" required placeholder="(00)000-00-00">
-          <span id="tel-error" class="form__error"></span>
-          <label class="form__label" for="amount">Сколько бутылей воды хотите заказать *</label>
-          <input id="amount" type="number"class="form__input" name="amount" placeholder="Например, 8" step="1" min="1" required>
-          <span id="amount-error" class="form__error"></span>
-          <button type="submit" class="order-button form__order-button">Заказать</button>
-          <button type="button" class="order-button form__isLoading hide">Форма отправляется...</button>
-        </form>
-        <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+  </footer>
+  <button class="up-button" type="button"></button>
+  <div class="modal modal_type_uds">
+    <div class="modal__container">
+      <div class="uds">
+        <div class="uds__offer">
+          <p class="uds__bonus">
+            <span class="uds__bonus-amoutn">10000</span> <span class="uds__sup">Бонусных<br> сумов</span>
+          </p>
+          <p class="uds__member">каждому <span class="uds__accent">участнику</span><br> программы лояльности</p>
+        </div>
+        <div class="uds__mobile-apps">
+          <p class="uds__call-container">
+            <span class="uds__cloud"></span>
+            <span class="uds__call">Скачайте бесплатное мобильное приложение UDS</span>
+          </p>
+          <ul class="uds__icons">
+            <li class="uds__icons-item">
+              <a class="uds__icon-link" href="https://apps.apple.com/ru/app/uds-app/id954809132" target="_blank">
+                <img src="<%=require('./images/app-store.svg')%>" alt="логотип App Store" class="uds__icon">
+              </a>
+            </li>
+            <li class="uds__icons-item">
+              <a class="uds__icon-link" href="https://play.google.com/store/apps/details?id=com.setinbox.game&hl=ru&gl=US" target="_blank">
+                <img src="<%=require('./images/google-play.svg')%>" alt="логотип Google Play" class="uds__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="uds__advantages">
+          <li class="uds__advantage uds__advantage_type_points">
+            <h3 class="uds__advantage-heading">10000</h3>
+            <p class="uds__advantage-text">приветственных баллов</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_cashback">
+            <h3 class="uds__advantage-heading">5%</h3>
+            <p class="uds__advantage-text">cashback с каждой покупки</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_friends-points">
+            <h3 class="uds__advantage-heading">1000</h3>
+            <p class="uds__advantage-text">баллов за приглашение друзей</p>
+          </li>
+          <li class="uds__advantage uds__advantage_type_friends-cashback">
+            <h3 class="uds__advantage-heading">4%</h3>
+            <p class="uds__advantage-text">cashback с их покупок</p>
+          </li>
+        </ul>
+        <div class="uds__qr-container">
+          <a href="https://aslkremniylisuv.uds.app/c/join/?ref=npbj1941" target="_blank">
+            <img class="uds__qr-code" src="<%=require('./images/qr.svg')%>" alt="QR-код">
+          </a>
+          <p class="uds__qr-text">Сканируйте QR-code для вступления в программу лояльности</p>
+        </div>
       </div>
+      <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+    </div>
+  </div>
+  <div class="modal modal_type_article">
+    <div class="modal__container">
+      <article class="article">
+        <h2 class="article__title"></h2>
+        <p class="article__text"></p>
+      </article>
+      <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
+    </div>
+  </div>
+  <div class="modal modal_type_form">
+    <div class="modal__container">
+      <form class="form" name="form" novalidate>
+        <h2 class="form__title">Заполните форму заказа</h2>
+        <label class="form__label" for="name">Как вас зовут *</label>
+        <input id="name" class="form__input" name="name" required minlength="2" placeholder="Например, Дильшод">
+        <span id="name-error" class="form__error"></span>
+        <label class="form__label" for="tel">Ваш номер телефона *</label>
+        <input id="tel" type="tel" class="form__input" name="tel" required placeholder="(00)000-00-00">
+        <span id="tel-error" class="form__error"></span>
+        <label class="form__label" for="amount">Сколько бутылей воды хотите заказать *</label>
+        <input id="amount" type="number"class="form__input" name="amount" placeholder="Например, 8" step="1" min="1" required>
+        <span id="amount-error" class="form__error"></span>
+        <button type="submit" class="order-button form__order-button">Заказать</button>
+        <button type="button" class="order-button form__isLoading hide">Форма отправляется...</button>
+      </form>
+      <button type="button" class="modal__close-button" aria-label="Закрыть"></button>
     </div>
   </div>
 </body>
