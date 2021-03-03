@@ -4,4 +4,15 @@
   padding: 20px 10px 10px;
   box-sizing: border-box;
   flex-grow: 1;
+  transition: all 0.4s linear 0.3s;
+}
+
+.js-anim .production__text-wrapper {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.js-anim-active .production__text-wrapper {
+  opacity: 1;
+  transform: translateY(0);
 }

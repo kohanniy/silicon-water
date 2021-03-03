@@ -12,7 +12,6 @@
   box-sizing: border-box;
   font: inherit;
   outline: none;
-  margin: 0 0 5px
 }
 
 .form__input:focus {

@@ -1,10 +1,10 @@
-.form__error {
-  color: red;
+.wpcf7-not-valid-tip {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
   display: block;
-  min-height: 14px;
-  margin-bottom: 24px;
   text-align: center;
+  margin-top: 8px;
 }
+
+

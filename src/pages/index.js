@@ -44,7 +44,6 @@ import {
   introCardSelectors,
   productionCardSelectors,
   modalFormSelector,
-  formObj,
 } from '../utils/constants';
 
 import {
@@ -96,7 +95,6 @@ const modalWithForm = new ModalWithForm(
   pageSelector,
   dataForAnimationUDS,
   updateSlider,
-  formObj,
 );
 
 const introCardClick = new CardClick(introCardSelectors, {

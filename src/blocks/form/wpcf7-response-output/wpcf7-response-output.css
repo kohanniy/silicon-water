@@ -1,0 +1,6 @@
+.wpcf7 form.sent .wpcf7-response-output {
+  margin: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

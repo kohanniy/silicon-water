@@ -1,21 +1,9 @@
 import Modal from './Modal';
 
 export default class ModalWithForm extends Modal {
-  constructor(modalSelector, pageSelector, dataForAnimation, updateSlider, formObj) {
+  constructor(modalSelector, pageSelector, dataForAnimation, updateSlider) {
     super(modalSelector, pageSelector, dataForAnimation, updateSlider);
     this.form = this._modal.querySelector('.form');
-    this.submitButton = this.form.querySelector(formObj.submitButtonSelector);
-    this.isLoadingButton = this.form.querySelector(formObj.isLoading);
-    this._formValues = {};
-  }
-
-  _getInputValues() {
-    this._inputList = this.form.querySelectorAll('.form__input');
-    this._inputList.forEach((input) => {
-      this._formValues[input.name] = input.value;
-    });
-
-    return this._formValues;
   }
 
   _setEventListeners() {
@@ -27,8 +15,12 @@ export default class ModalWithForm extends Modal {
 
   open(productName) {
     super.open();
-    this._formValues.product = productName;
-    return this._formValues;
+    this.form.querySelector('.hide-title').value = productName;
+    if (this.form.classList.contains('sent')) {
+      this.form.classList.remove('sent');
+      this.form.classList.add('init');
+      this.form.dataset.status = 'init';
+    }
   }
 
   _close() {
