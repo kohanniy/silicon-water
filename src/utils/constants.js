@@ -33,6 +33,22 @@ export const dataForAnimationUDS = {
   },
 };
 
+export const dataForAnimationForm = {
+  keyframes: [
+    {
+      opacity: 0,
+    },
+    {
+      opacity: 1,
+    },
+  ],
+  options: {
+    duration: 600,
+    easing: 'ease-out',
+    fill: 'both',
+  },
+};
+
 export const dataForAnimationArticle = {
   keyframes: [
     {
