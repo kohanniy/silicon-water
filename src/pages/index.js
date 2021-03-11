@@ -130,7 +130,7 @@ const animItems = new AnimElWhenScrolling(
 reviews.forEach((review) => {
   const numberOfReviews = review.querySelector('.reviews__number-of-reviews');
 
-  numberOfReviews.textContent = `(${reviews.length} ${reviews.length === 1 ? 'отзыв' : 'отзывов'})`;
+  numberOfReviews.textContent = `(Количесво отзывов: ${reviews.length})`;
 });
 
 animItems.animOnScroll();

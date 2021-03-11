@@ -64,7 +64,7 @@ export default class Catalog {
       moreButton.addEventListener('click', () => {
         const dataArticle = {
           title: preview.querySelector('.preview__title').textContent,
-          text: preview.querySelector('.preview__content').textContent,
+          text: preview.querySelector('.preview__content').innerHTML,
         };
         this._handleMoreButtonClick(dataArticle);
       });

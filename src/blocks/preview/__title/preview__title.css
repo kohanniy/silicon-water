@@ -39,9 +39,14 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
   .preview__title {
     width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .preview__title {
     margin-right: auto;
     margin-left: auto;
     text-align: center;

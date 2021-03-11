@@ -13,6 +13,6 @@ export default class ModalWithArticle extends Modal {
   open(data) {
     super.open();
     this._title.textContent = data.title;
-    this._text.innerHTML = data.text.split('\n').join('<br>');
+    this._text.innerHTML = data.text;
   }
 }
