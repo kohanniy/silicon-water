@@ -1,5 +1,6 @@
 .intro__image {
-  height: 720px;
+  display: block;
+  height: 100%;
 }
 
 .js-anim .intro__image {
@@ -9,13 +10,4 @@
 .js-anim-active .intro__image {
   transform: scale(1);
   transition: transform 0.6s linear 0.3s;
-}
-
-@media (max-width: 768px) {
-  .intro__image {
-    height: auto;
-    width: 32%;
-    flex-grow: 1;
-    order: -1;
-  }
 }

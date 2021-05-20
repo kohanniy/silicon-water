@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 612px;
+  width: 60%;
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

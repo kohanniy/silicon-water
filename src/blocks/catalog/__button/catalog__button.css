@@ -122,9 +122,3 @@
     right: 3px;
   }
 }
-
-@media (max-width: 575px) {
-  .catalog__button {
-    background-color: #00355a;
-  }
-}

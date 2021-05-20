@@ -1,0 +1,14 @@
+.intro__image-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .intro__image-wrapper {
+    width: 100%;
+    height: calc(100vh - 200px);
+    order: -1;
+  }
+}

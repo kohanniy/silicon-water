@@ -1,0 +1,15 @@
+.intro__container {
+  position: relative;
+}
+
+.intro__container::before {
+  content: '';
+  display: block;
+  padding-bottom: 61%;
+}
+
+@media (max-width: 768px) {
+  .intro__container::before {
+    display: none;
+  }
+}

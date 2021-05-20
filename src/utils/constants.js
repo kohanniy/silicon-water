@@ -90,6 +90,7 @@ export const introSliderData = {
   slideClass: 'intro__slide',
   wrapperClass: 'intro__slider-wrap',
   roundLengths: true,
+  spaceBetween: 20,
   pagination: {
     el: '.intro__slider-dots',
     type: 'bullets',
@@ -99,9 +100,9 @@ export const introSliderData = {
     bulletActiveClass: 'intro__slider-dot_active',
     modifierClass: 'intro__slider-dots-',
   },
-  autoplay: {
-    delay: 4000,
-  },
+  // autoplay: {
+  //   delay: 4000,
+  // },
   a11y: {
     firstSlideMessage: 'Первый слайд',
     lastSlideMessage: 'Последний слайд',
